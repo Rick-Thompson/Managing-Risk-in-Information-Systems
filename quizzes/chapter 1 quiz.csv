@@ -1,0 +1,279 @@
+//Information Systems Risk Management Quiz - Chapter 1
+//Total Points: 20
+//20 Questions covering key concepts from the chapter
+
+//Question 1 - Multiple Choice
+NewQuestion,MC,,,
+ID,ISRM101-001,,,
+Title,Components of Information Systems,,,
+QuestionText,Which of the following is NOT one of the five core components of information systems?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,Hardware (physical devices),,Hardware is indeed a core component
+Option,0,Software (operating systems and applications),,Software is indeed a core component
+Option,100,Networks (internet connections),,Correct! The five core components are hardware, software, data, procedures, and people
+Option,0,People (users and specialists),,People are indeed a core component
+Hint,Remember the five fundamental components that make up any information system,,,
+Feedback,The five core components of information systems are hardware, software, data, procedures, and people. Networks are part of hardware infrastructure.,,,
+
+//Question 2 - True/False
+NewQuestion,TF,,,
+ID,ISRM101-002,,,
+Title,Evolution of Computing,,,
+QuestionText,The introduction of personal computers in the 1980s democratized computing power by making it accessible to individuals and small businesses.,,,
+Points,1,,,
+Difficulty,1,,,
+TRUE,100,Correct! PCs made computing accessible beyond large organizations,,
+FALSE,0,Actually, PCs in the 1980s did democratize computing,,
+Feedback,The 1980s marked a major shift when personal computers became available to individuals and small businesses, not just large organizations with mainframes.,,,
+
+//Question 3 - Multiple Choice
+NewQuestion,MC,,,
+ID,ISRM101-003,,,
+Title,Natural Disaster Examples,,,
+QuestionText,Which natural disaster demonstrated the devastating impact on digital infrastructure and disrupted operations for weeks in 2005?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,100,Hurricane Katrina,,Correct! Hurricane Katrina severely impacted digital infrastructure
+Option,0,Tōhoku earthquake and tsunami,,This occurred in 2011, not 2005
+Option,0,Hurricane Sandy,,Hurricane Sandy occurred in 2012
+Option,0,California wildfires,,While destructive, this wasn't the 2005 example mentioned
+Hint,This hurricane hit the Gulf Coast and New Orleans particularly hard,,,
+Feedback,Hurricane Katrina in 2005 demonstrated how natural disasters can devastate digital infrastructure and disrupt operations for extended periods.,,,
+
+//Question 4 - Multi-Select
+NewQuestion,MS,,,
+ID,ISRM101-004,,,
+Title,Types of Technical Failures,,,
+QuestionText,Select all the types of technical failures that can threaten information systems:,,,
+Points,1,,,
+Difficulty,2,,,
+Scoring,RightAnswers,,,
+Option,1,Hardware component failures due to defects or wear,,This is a type of technical failure
+Option,1,Software bugs and compatibility issues,,This is a type of technical failure
+Option,0,Phishing attacks by cybercriminals,,This is a malicious action, not a technical failure
+Option,1,Integration failures between different systems,,This is a type of technical failure
+Hint,Technical failures are unintentional system problems, not deliberate attacks,,,
+Feedback,Technical failures include hardware failures, software bugs, and integration issues. Phishing is a malicious action, not a technical failure.,,,
+
+//Question 5 - Short Answer
+NewQuestion,SA,,,
+ID,ISRM101-005,,,
+Title,Human Error Impact,,,
+QuestionText,Name TWO specific types of human errors that can impact information systems (separate with semicolon),,,
+Points,1,,,
+Difficulty,3,,,
+InputBox,5,50,,
+Answer,100,configuration errors; data entry mistakes,,
+Answer,100,accidental deletion; misconfigured security,,
+Answer,100,incorrect settings; file deletion,,
+Hint,Think about mistakes employees might make when using or managing systems,,,
+Feedback,Common human errors include configuration errors, data entry mistakes, accidental deletion of files, and misconfigured security settings.,,,
+
+//Question 6 - Multiple Choice
+NewQuestion,MC,,,
+ID,ISRM101-006,,,
+Title,Ransomware Definition,,,
+QuestionText,What is the primary characteristic of a ransomware attack?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,It steals user credentials through fake emails,,This describes phishing
+Option,100,It encrypts critical data and demands payment for release,,Correct! This is the defining feature of ransomware
+Option,0,It overwhelms systems with traffic to make them unusable,,This describes a DDoS attack
+Option,0,It compromises trusted vendors to access customer systems,,This describes supply chain attacks
+Hint,Think about what "ransom" means in this context,,,
+Feedback,Ransomware attacks encrypt an organization's data and demand payment (ransom) for the decryption key to restore access.,,,
+
+//Question 7 - True/False
+NewQuestion,TF,,,
+ID,ISRM101-007,,,
+Title,Supply Chain Vulnerability,,,
+QuestionText,The Log4j vulnerability discovered in 2021 demonstrated how vulnerabilities in widely used software components can affect millions of systems worldwide.,,,
+Points,1,,,
+Difficulty,3,,,
+TRUE,100,Correct! Log4j was a critical example of supply chain risk,,
+FALSE,0,Log4j did affect millions of systems globally,,
+Feedback,The Log4j vulnerability was a perfect example of supply chain risk, as this logging library was used in countless applications worldwide.,,,
+
+//Question 8 - Multiple Choice
+NewQuestion,MC,,,
+ID,ISRM101-008,,,
+Title,Executive Accountability,,,
+QuestionText,Who bears ultimate responsibility for organizational governance, including oversight of information systems risks?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,Chief Information Security Officer (CISO),,The CISO specializes in security but doesn't have ultimate responsibility
+Option,0,IT Department personnel,,IT staff implement controls but don't have ultimate responsibility
+Option,100,Board of directors and executive leadership,,Correct! They have ultimate accountability
+Option,0,System administrators,,System admins are technical implementers, not ultimately responsible
+Hint,Think about who is accountable to shareholders and regulators,,,
+Feedback,The board of directors and executive leadership bear ultimate responsibility for governance and are accountable to shareholders and regulators.,,,
+
+//Question 9 - Matching
+NewQuestion,M,,,
+ID,ISRM101-009,,,
+Title,Stakeholder Roles,,,
+QuestionText,Match each stakeholder with their primary role in information systems management:,,,
+Points,1,,,
+Difficulty,3,,,
+Scoring,EquallyWeighted,,,
+Choice,1,CIO,,
+Choice,2,Business unit managers,,
+Choice,3,End users,,
+Match,1,Oversees overall IT strategy and translates business requirements to technical specs,,
+Match,2,Provide insights about operational requirements and business impact,,
+Match,3,Serve as "human firewall" through day-to-day security practices,,
+Hint,Consider the primary responsibility of each role,,,
+Feedback,CIOs oversee IT strategy, business managers understand operational needs, and end users are crucial for daily security practices.,,,
+
+//Question 10 - Multiple Choice
+NewQuestion,MC,,,
+ID,ISRM101-010,,,
+Title,Cost Categories,,,
+QuestionText,Which of the following is considered an INDIRECT cost of information system failures?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Investigation expenses,,This is a direct cost
+Option,0,Legal fees and regulatory fines,,These are direct costs
+Option,100,Damage to customer relationships,,Correct! This is an indirect cost
+Option,0,Customer notification services,,This is a direct cost
+Hint,Indirect costs are harder to quantify but can be more damaging,,,
+Feedback,Indirect costs like damaged customer relationships and reputational harm can be more difficult to quantify but potentially more damaging than direct costs.,,,
+
+//Question 11 - Multi-Select
+NewQuestion,MS,,,
+ID,ISRM101-011,,,
+Title,Compliance Regulations,,,
+QuestionText,Select all the regulations mentioned in the chapter that impose information security requirements:,,,
+Points,1,,,
+Difficulty,3,,,
+Scoring,RightAnswers,,,
+Option,1,HIPAA (healthcare),,Mentioned as sector-specific for healthcare
+Option,1,Gramm-Leach-Bliley (financial),,Mentioned as sector-specific for financial institutions
+Option,1,GDPR (data protection),,Mentioned as applying to organizations processing European data
+Option,0,Sarbanes-Oxley,,Not mentioned in the chapter
+Hint,The chapter mentions both US sector-specific and international regulations,,,
+Feedback,The chapter specifically mentions HIPAA for healthcare, Gramm-Leach-Bliley for financial institutions, and GDPR for data protection.,,,
+
+//Question 12 - True/False
+NewQuestion,TF,,,
+ID,ISRM101-012,,,
+Title,Security as Business Enabler,,,
+QuestionText,Organizations can frame risk management as an enabler of business relationships and market access, not just a protective function.,,,
+Points,1,,,
+Difficulty,2,,,
+TRUE,100,Correct! Security capabilities can enable business opportunities,,
+FALSE,0,Security can indeed be positioned as enabling business,,
+Feedback,Strong security capabilities are increasingly required for vendor selection and partnerships, making security a business enabler.,,,
+
+//Question 13 - Short Answer
+NewQuestion,SA,,,
+ID,ISRM101-013,,,
+Title,Reputational Impact,,,
+QuestionText,List TWO specific consequences of reputational damage from security incidents (separate with semicolon),,,
+Points,1,,,
+Difficulty,3,,,
+InputBox,5,60,,
+Answer,100,customer attrition; difficulty attracting new business,,
+Answer,100,challenges recruiting talent; increased regulatory scrutiny,,
+Answer,100,loss of trust; customer loss,,
+Hint,Think about how damaged reputation affects various stakeholder relationships,,,
+Feedback,Reputational damage can lead to customer attrition, difficulty attracting new business, recruitment challenges, and increased regulatory scrutiny.,,,
+
+//Question 14 - Multiple Choice
+NewQuestion,MC,,,
+ID,ISRM101-014,,,
+Title,Climate Change Impact,,,
+QuestionText,According to the chapter, how has climate change affected natural disaster threats to information systems?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,It has reduced the overall threat level,,Climate change has increased, not reduced threats
+Option,0,It has only affected coastal regions,,Climate change impacts are not limited to coasts
+Option,100,It has increased both frequency and severity of natural disasters,,Correct! Both aspects have increased
+Option,0,It has made disasters more predictable,,Predictability is not mentioned as improving
+Hint,Think about the overall trend in natural disasters,,,
+Feedback,Climate change has increased both the frequency and severity of natural disasters, making disaster preparation increasingly critical.,,,
+
+//Question 15 - Multiple Choice
+NewQuestion,MC,,,
+ID,ISRM101-015,,,
+Title,SolarWinds Attack Type,,,
+QuestionText,The SolarWinds attack is an example of which type of threat?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Natural disaster,,SolarWinds was a deliberate attack
+Option,0,Technical failure,,This was an intentional compromise
+Option,0,Human error,,This was a sophisticated deliberate attack
+Option,100,Supply chain attack,,Correct! Malicious code was inserted into software updates
+Hint,Consider how the attack was delivered to thousands of organizations,,,
+Feedback,The SolarWinds attack was a supply chain attack where malicious code was inserted into software updates delivered to thousands of organizations.,,,
+
+//Question 16 - True/False
+NewQuestion,TF,,,
+ID,ISRM101-016,,,
+Title,Cybercrime Barriers,,,
+QuestionText,The professionalization of cybercrime, with ready-made attack tools on dark web marketplaces, has lowered technical barriers to launching sophisticated attacks.,,,
+Points,1,,,
+Difficulty,2,,,
+TRUE,100,Correct! Attack tools are now more accessible,,
+FALSE,0,The availability of tools has indeed lowered barriers,,
+Feedback,The dark web marketplace for attack tools has made it easier for less technically skilled criminals to launch sophisticated attacks.,,,
+
+//Question 17 - Matching
+NewQuestion,M,,,
+ID,ISRM101-017,,,
+Title,Attack Types,,,
+QuestionText,Match each attack type with its description:,,,
+Points,1,,,
+Difficulty,3,,,
+Scoring,EquallyWeighted,,,
+Choice,1,Phishing,,
+Choice,2,DDoS,,
+Choice,3,Supply chain attack,,
+Match,1,Campaigns that target employees to steal credentials or install malware,,
+Match,2,Overwhelms systems with traffic to render them unusable,,
+Match,3,Compromises trusted vendors to gain access to customer systems,,
+Hint,Consider the method and goal of each attack type,,,
+Feedback,Phishing targets people, DDoS overwhelms systems with traffic, and supply chain attacks compromise trusted relationships.,,,
+
+//Question 18 - Multiple Choice
+NewQuestion,MC,,,
+ID,ISRM101-018,,,
+Title,Risk Appetite Definition,,,
+QuestionText,What does "risk appetite" refer to in the context of information systems management?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,The speed at which an organization responds to incidents,,This describes response time, not risk appetite
+Option,100,The amount and type of risk an organization is willing to accept,,Correct! This defines risk appetite
+Option,0,The budget allocated for security measures,,This is security budget, not risk appetite
+Option,0,The number of security professionals employed,,This is staffing level, not risk appetite
+Hint,Think about organizational tolerance for risk,,,
+Feedback,Risk appetite refers to the amount and type of risk that an organization is willing to accept in pursuit of its objectives.,,,
+
+//Question 19 - Short Answer
+NewQuestion,SA,,,
+ID,ISRM101-019,,,
+Title,Critical Infrastructure Examples,,,
+QuestionText,Name TWO examples from the chapter of organizations where system failures could have life-threatening consequences (separate with semicolon),,,
+Points,1,,,
+Difficulty,2,,,
+InputBox,5,40,,
+Answer,100,hospitals; manufacturers,,
+Answer,100,healthcare; manufacturing,,
+Answer,100,hospital; factory,,
+Hint,Think about organizations where system failures could impact safety,,,
+Feedback,The chapter mentions hospitals (patient care) and manufacturers (industrial control systems) as examples where failures could be life-threatening.,,,
+
+//Question 20 - Multiple Choice
+NewQuestion,MC,,,
+ID,ISRM101-020,,,
+Title,First Line of Defense,,,
+QuestionText,According to the chapter, who often serves as the "first line of defense" against threats to information systems?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,External security consultants,,Consultants are not the first line
+Option,0,Board of directors,,The board provides oversight, not first-line defense
+Option,100,IT department personnel,,Correct! They detect and respond to incidents first
+Option,0,Insurance providers,,Insurance helps with recovery, not defense
+Hint,Think about who monitors systems and responds to incidents daily,,,
+Feedback,IT department personnel (system administrators, security analysts, etc.) serve as the first line of defense, detecting and responding to incidents.,,,

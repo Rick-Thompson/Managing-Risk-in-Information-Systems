@@ -1,0 +1,77 @@
+//Mountain State Medical Supply Case Study Quiz
+//Total Points: 5
+//5 Questions analyzing the ransomware incident and risk management challenges
+
+//Question 1 - Multiple Choice
+NewQuestion,MC,,,
+ID,ISRM101-CS001,,,
+Title,Root Cause Analysis,,,
+QuestionText,"Based on the case study, which combination of factors MOST directly enabled the ransomware attack to cause catastrophic damage to Mountain State Medical Supply?",,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Limited internet infrastructure and geographic isolation in West Virginia,,These are challenges but not direct enablers of the attack's success
+Option,0,Aging computer hardware and use of Windows Server 2019,,Old hardware is a concern but Server 2019 is relatively recent
+Option,100,Encrypted backup files and lack of network segmentation,,Correct! These allowed the ransomware to spread and prevented recovery
+Option,0,Small IT budget and reliance on family member for IT support,,These are constraints but not the direct technical enablers
+Hint,Consider what technical failures allowed the ransomware to spread and prevented recovery,,,
+Feedback,The encrypted backup files eliminated the primary recovery method, while lack of network segmentation allowed the ransomware to spread from one computer to the entire network, creating catastrophic damage.,,,
+
+//Question 2 - Multi-Select
+NewQuestion,MS,,,
+ID,ISRM101-CS002,,,
+Title,Cascading Business Impacts,,,
+QuestionText,"Select ALL the cascading impacts that resulted from the ransomware attack on Mountain State Medical Supply's information systems:",,,
+Points,1,,,
+Difficulty,3,,,
+Scoring,RightAnswers,,,
+Option,1,Insurance claims worth $285,000 were delayed due to billing system outage,,This is explicitly mentioned as an impact
+Option,1,VOIP phone systems became non-functional at all locations,,The case states phone systems were VOIP-based and went down
+Option,0,The company's satellite internet connection failed,,Internet connectivity wasn't mentioned as failing
+Option,1,150+ patients experienced delays receiving critical medical supplies,,This is stated as a customer impact
+Option,1,Delivery routes were disrupted due to lack of customer information access,,This operational impact is specifically mentioned
+Hint,Focus on what systems failed as a direct result of the ransomware encryption,,,
+Feedback,"The ransomware's encryption of systems caused billing delays, phone outages (VOIP), delivery disruptions, and patient supply delays. Internet connectivity remained but was ineffective without functioning systems.",,,
+
+//Question 3 - Multiple Choice
+NewQuestion,MC,,,
+ID,ISRM101-CS003,,,
+Title,Risk Prioritization Strategy,,,
+QuestionText,"Given Mountain State Medical Supply's limited budget and regional constraints, which risk management approach would provide the BEST return on investment?",,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Invest primarily in cutting-edge security technologies like AI-based threat detection,,Too expensive and complex for their situation
+Option,0,Focus exclusively on achieving full HIPAA compliance through documentation,,Compliance alone won't prevent incidents
+Option,100,Implement employee security training combined with automated patching and cloud backups,,Correct! Cost-effective with high impact
+Option,0,Relocate IT infrastructure to urban areas with better internet connectivity,,Not practical and doesn't address core vulnerabilities
+Hint,Consider solutions that address human factors and technical vulnerabilities within budget constraints,,,
+Feedback,"Employee training addresses the human factor (like clicking phishing emails), while automated patching and cloud backups provide technical protection—all achievable on a limited budget with high impact.",,,
+
+//Question 4 - Matching
+NewQuestion,M,,,
+ID,ISRM101-CS004,,,
+Title,Vulnerability Categories,,,
+QuestionText,Match each specific vulnerability from the case study to its appropriate risk category:,,,
+Points,1,,,
+Difficulty,3,,,
+Scoring,EquallyWeighted,,,
+Choice,1,Technical Vulnerability,,
+Choice,2,Human Factor,,
+Choice,3,Environmental Factor,,
+Choice,4,Third-Party Risk,,
+Match,1,Weekly backups stored on-site with no air-gapped copies,,
+Match,2,Employee clicked on fake Medicare email attachment,,
+Match,3,Satellite internet required at Princeton due to infrastructure limits,,
+Match,4,Shared credentials with external billing service,,
+Hint,Consider the primary nature of each vulnerability,,,
+Feedback,"On-site only backups are a technical vulnerability, clicking phishing emails is human error, limited internet infrastructure is environmental, and shared vendor credentials create third-party risk.",,,
+
+//Question 5 - True/False
+NewQuestion,TF,,,
+ID,ISRM101-CS005,,,
+Title,Recovery Strategy Effectiveness,,,
+QuestionText,"Mountain State Medical Supply's ability to implement manual processes for urgent orders during the ransomware attack demonstrates that technological solutions alone are insufficient for business continuity in small rural businesses.",,,
+Points,1,,,
+Difficulty,3,,,
+TRUE,100,Correct! Manual processes saved critical operations when technology failed,,
+FALSE,0,The case clearly shows manual processes were crucial during the outage,,
+Feedback,"The case explicitly states that 'the ability to operate manually saved the business,' highlighting that business continuity requires both technological and non-technological (manual process) preparations, especially for small businesses with limited resources.",,,

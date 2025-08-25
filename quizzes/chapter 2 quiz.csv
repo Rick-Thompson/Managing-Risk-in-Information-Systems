@@ -1,0 +1,299 @@
+//(Note: The 'images' folder is assumed to be in the "/content/<course path>/" directory),,,,
+//Question Text is always a required field,,,,
+// An ID will be generated using the (Course code)-(Question number) if an ID is not specified for a question,,,,
+,,,,
+// Please ensure that the CSV file is saved as "CSV UTF-8" encoded to ensure that non-ASCII characters like à, ø, é and other are able to be correctly imported,,,,
+,,,,
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 1,,,,
+NewQuestion,MC,,,
+ID,RISK-001,,,
+Title,Understanding Risk Components,,,
+QuestionText,According to the risk management framework, which formula best represents the relationship between risk components?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,100,Risk = Threat × Vulnerability × Impact,,This is correct. Risk is determined by the intersection of threats, vulnerabilities, and potential impact.
+Option,0,Risk = Threat + Vulnerability + Impact,,Incorrect. Risk components multiply rather than add together.
+Option,0,Risk = Threat - Vulnerability,,Incorrect. This formula doesn't account for impact and uses subtraction incorrectly.
+Option,0,Risk = Impact / Threat,,Incorrect. This formula suggests an inverse relationship which is not accurate.
+Hint,Think about how these components interact to create risk,,,
+Feedback,Understanding the risk formula is fundamental to effective risk management,,,
+,,,,
+//Question 2,,,,
+NewQuestion,MC,,,
+ID,RISK-002,,,
+Title,Risk Management Lifecycle Phases,,,
+QuestionText,What are the four main phases of the risk management lifecycle in their correct order?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,100,"Identification, Assessment, Mitigation, Monitoring",,Correct! This is the standard risk management lifecycle sequence.
+Option,0,"Assessment, Identification, Monitoring, Mitigation",,Incorrect. You must identify risks before you can assess them.
+Option,0,"Mitigation, Assessment, Identification, Monitoring",,Incorrect. This order doesn't follow the logical flow of risk management.
+Option,0,"Monitoring, Identification, Assessment, Mitigation",,Incorrect. Monitoring comes after implementing controls, not before.
+Hint,Consider the logical flow - you must know what exists before you can evaluate it,,,
+Feedback,The risk management lifecycle is a continuous process that starts with identification,,,
+,,,,
+//Question 3,,,,
+NewQuestion,MC,,,
+ID,RISK-003,,,
+Title,STRIDE Threat Categories,,,
+QuestionText,In the STRIDE threat modeling methodology, what does the 'R' stand for?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,Risk,,Incorrect. STRIDE doesn't include Risk as a category.
+Option,100,Repudiation,,Correct! Repudiation refers to denying actions without proof.
+Option,0,Redundancy,,Incorrect. Redundancy is not part of STRIDE.
+Option,0,Recovery,,Incorrect. Recovery is not a STRIDE category.
+Hint,This threat involves users denying they performed certain actions,,,
+Feedback,Repudiation threats occur when users can deny actions without the system having proof,,,
+,,,,
+//Question 4,,,,
+NewQuestion,MC,,,
+ID,RISK-004,,,
+Title,Asset Classification Factors,,,
+QuestionText,Which of the following is NOT typically considered when classifying information assets?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Sensitivity of the data,,This IS considered - sensitivity is a key classification factor.
+Option,0,Regulatory requirements,,This IS considered - compliance requirements affect classification.
+Option,0,Potential impact of unauthorized disclosure,,This IS considered - impact assessment is crucial for classification.
+Option,100,Physical location of the storage device,,Correct! While location matters for security, it's not a primary classification factor.
+Hint,Classification focuses on the nature and importance of information rather than physical attributes,,,
+Feedback,Asset classification is based on sensitivity, criticality, and regulatory requirements, not physical location,,,
+,,,,
+//Question 5,,,,
+NewQuestion,MC,,,
+ID,RISK-005,,,
+Title,DREAD Methodology Components,,,
+QuestionText,In the DREAD risk assessment methodology, which factor measures how consistently a threat can be exploited?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Damage potential,,Incorrect. This measures severity of consequences.
+Option,100,Reproducibility,,Correct! Reproducibility assesses how reliably the threat can be triggered.
+Option,0,Exploitability,,Incorrect. This measures effort and expertise required.
+Option,0,Discoverability,,Incorrect. This measures how likely the vulnerability is to be found.
+Hint,This factor considers whether an attack works every time or only occasionally,,,
+Feedback,Reproducibility helps prioritize threats that can be consistently exploited over those requiring specific conditions,,,
+,,,,
+//MULTISELECT QUESTION TYPE,,,,
+//Question 6,,,,
+NewQuestion,MS,,,
+ID,RISK-006,,,
+Title,Vulnerability Assessment Techniques,,,
+QuestionText,Which of the following are recognized vulnerability assessment techniques? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Automated scanning using tools like Nessus,,Correct. Automated scanning is a primary vulnerability assessment technique.
+Option,100,Manual penetration testing,,Correct. Manual testing discovers vulnerabilities automated tools might miss.
+Option,100,Configuration reviews against security baselines,,Correct. Configuration reviews identify security misconfigurations.
+Option,0,Annual budget planning,,Incorrect. Budget planning is not a vulnerability assessment technique.
+Option,100,Social engineering assessments,,Correct. Testing human vulnerabilities is part of comprehensive assessment.
+Hint,Think about different ways to discover security weaknesses in systems,,,
+Feedback,Effective vulnerability assessment combines multiple techniques for comprehensive coverage,,,
+,,,,
+//Question 7,,,,
+NewQuestion,MS,,,
+ID,RISK-007,,,
+Title,Information Disclosure Prevention,,,
+QuestionText,Which security controls help prevent information disclosure threats? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Encryption of sensitive data,,Correct. Encryption protects data confidentiality.
+Option,100,Access control lists,,Correct. Access controls limit who can view information.
+Option,0,Digital signatures,,Incorrect. Digital signatures provide integrity and non-repudiation, not confidentiality.
+Option,100,Data minimization practices,,Correct. Reducing data collection limits exposure risk.
+Option,0,Load balancing,,Incorrect. Load balancing addresses availability, not confidentiality.
+Hint,Focus on controls that protect confidentiality,,,
+Feedback,Information disclosure is prevented through confidentiality controls like encryption and access management,,,
+,,,,
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 8,,,,
+NewQuestion,MC,,,
+ID,RISK-008,,,
+Title,Risk Response Strategies,,,
+QuestionText,An organization decides to purchase cyber insurance to address the risk of data breaches. Which risk response strategy does this represent?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Risk acceptance,,Incorrect. Acceptance means taking no action to address the risk.
+Option,0,Risk avoidance,,Incorrect. Avoidance means eliminating the risk entirely.
+Option,100,Risk transfer,,Correct! Insurance transfers financial risk to another party.
+Option,0,Risk reduction,,Incorrect. Reduction involves implementing controls to lower risk.
+Hint,Consider who bears the financial burden if the risk materializes,,,
+Feedback,Risk transfer shifts the financial impact to another party, typically through insurance or contracts,,,
+,,,,
+//Question 9,,,,
+NewQuestion,MC,,,
+ID,RISK-009,,,
+Title,Threat vs Vulnerability,,,
+QuestionText,"A company's web server is running outdated software with known security flaws. In risk management terms, what does this represent?",,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,A threat,,Incorrect. A threat is what might exploit the weakness.
+Option,100,A vulnerability,,Correct! Vulnerabilities are weaknesses that can be exploited.
+Option,0,An impact,,Incorrect. Impact is the consequence if exploited.
+Option,0,A risk,,Incorrect. Risk combines threat, vulnerability, and impact.
+Hint,This is a weakness in the system that could be exploited,,,
+Feedback,Vulnerabilities are weaknesses in systems that threats can exploit to cause impact,,,
+,,,,
+//Question 10,,,,
+NewQuestion,MC,,,
+ID,RISK-010,,,
+Title,Asset Valuation Considerations,,,
+QuestionText,When valuing a customer relationship management (CRM) system, which factor would typically NOT be included in the valuation?,,,
+Points,1,,,
+Difficulty,5,,,
+Option,0,Software licensing costs,,This WOULD be included as a tangible cost.
+Option,0,Revenue impact during downtime,,This WOULD be included as operational impact.
+Option,0,Customer attrition if service degrades,,This WOULD be included as business impact.
+Option,100,Employee personal preferences for the interface,,Correct! Personal preferences don't affect asset value.
+Hint,Asset valuation focuses on business impact and costs,,,
+Feedback,Asset valuation considers tangible and intangible business factors, not personal preferences,,,
+,,,,
+//MULTISELECT QUESTION TYPE,,,,
+//Question 11,,,,
+NewQuestion,MS,,,
+ID,RISK-011,,,
+Title,STRIDE Threat Examples,,,
+QuestionText,Which of the following scenarios represent examples of "Tampering" in the STRIDE model? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Modifying transaction amounts in a financial database,,Correct. This is unauthorized data modification.
+Option,0,Creating a fake login page to steal credentials,,Incorrect. This is Spoofing, not Tampering.
+Option,100,Changing application code to add backdoor access,,Correct. Code modification is a form of tampering.
+Option,0,Flooding a server with traffic to make it unavailable,,Incorrect. This is Denial of Service, not Tampering.
+Option,100,Altering audit logs to hide malicious activity,,Correct. Log modification is tampering with data integrity.
+Hint,Tampering involves unauthorized modification of data or code,,,
+Feedback,Tampering threats involve any unauthorized changes to data or system components,,,
+,,,,
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 12,,,,
+NewQuestion,MC,,,
+ID,RISK-012,,,
+Title,Risk Register Purpose,,,
+QuestionText,What is the primary purpose of maintaining a risk register throughout the risk management lifecycle?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,To comply with regulatory requirements,,Incorrect. While it may help with compliance, this isn't the primary purpose.
+Option,0,To assign blame when incidents occur,,Incorrect. Risk registers are not for blame assignment.
+Option,100,To track identified risks and their treatment status,,Correct! Risk registers provide centralized tracking of all risk information.
+Option,0,To calculate insurance premiums,,Incorrect. Insurance calculations are not the primary purpose.
+Hint,Think about the ongoing management and tracking needs,,,
+Feedback,Risk registers serve as the central repository for tracking all aspects of risk management,,,
+,,,,
+//Question 13,,,,
+NewQuestion,MC,,,
+ID,RISK-013,,,
+Title,Elevation of Privilege Prevention,,,
+QuestionText,Which security principle is MOST effective at preventing elevation of privilege attacks?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Defense in depth,,Incorrect. While helpful, this is a general strategy.
+Option,100,Principle of least privilege,,Correct! Limiting privileges reduces elevation opportunities.
+Option,0,Separation of duties,,Incorrect. This prevents fraud but not necessarily privilege escalation.
+Option,0,Security through obscurity,,Incorrect. This is not a recommended security principle.
+Hint,This principle ensures users only have the minimum access needed,,,
+Feedback,Least privilege ensures compromised accounts have limited potential for damage,,,
+,,,,
+//Question 14,,,,
+NewQuestion,MC,,,
+ID,RISK-014,,,
+Title,Manual Testing Advantages,,,
+QuestionText,What is the primary advantage of manual security testing over automated scanning?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,It's faster and more efficient,,Incorrect. Manual testing is slower than automated scanning.
+Option,0,It requires less expertise,,Incorrect. Manual testing requires significant expertise.
+Option,100,It can discover complex business logic flaws,,Correct! Humans can understand context that tools miss.
+Option,0,It provides more consistent results,,Incorrect. Automated tools are more consistent.
+Hint,Consider what human intelligence brings that tools cannot replicate,,,
+Feedback,Manual testing excels at finding complex vulnerabilities that require understanding business context,,,
+,,,,
+//MULTISELECT QUESTION TYPE,,,,
+//Question 15,,,,
+NewQuestion,MS,,,
+ID,RISK-015,,,
+Title,Risk Monitoring Activities,,,
+QuestionText,Which activities are typically part of the risk monitoring phase? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Regular reassessment of identified risks,,Correct. Risks change over time and need reassessment.
+Option,100,Compliance verification of implemented controls,,Correct. Ensuring controls work as intended is crucial.
+Option,0,Initial asset identification,,Incorrect. This happens in the identification phase.
+Option,100,Control effectiveness testing,,Correct. Testing ensures controls actually reduce risk.
+Option,100,Tracking emerging threats,,Correct. New threats require continuous monitoring.
+Hint,Monitoring focuses on ongoing activities after controls are implemented,,,
+Feedback,Risk monitoring ensures controls remain effective and risks stay within acceptable levels,,,
+,,,,
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 16,,,,
+NewQuestion,MC,,,
+ID,RISK-016,,,
+Title,Qualitative vs Quantitative Assessment,,,
+QuestionText,"When a risk assessment uses categories like ""High,"" ""Medium,"" and ""Low"" to rate risks, what type of assessment is this?",,,
+Points,1,,,
+Difficulty,2,,,
+Option,100,Qualitative assessment,,Correct! Qualitative uses descriptive categories.
+Option,0,Quantitative assessment,,Incorrect. Quantitative uses numerical values.
+Option,0,Hybrid assessment,,Incorrect. This isn't using both approaches.
+Option,0,Impact assessment,,Incorrect. This is about the method, not what's being assessed.
+Hint,This type uses descriptive categories rather than numbers,,,
+Feedback,Qualitative assessments use categories and expert judgment rather than numerical calculations,,,
+,,,,
+//Question 17,,,,
+NewQuestion,MC,,,
+ID,RISK-017,,,
+Title,Configuration Review Findings,,,
+QuestionText,During a configuration review, which finding would represent the HIGHEST security risk?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Unnecessary services are disabled,,Incorrect. This is actually a good security practice.
+Option,0,Strong password policies are enforced,,Incorrect. This enhances security.
+Option,100,Default administrative credentials are still active,,Correct! Default credentials are easily exploited.
+Option,0,Encryption is enabled for data at rest,,Incorrect. This improves security.
+Hint,Look for the configuration that attackers could easily exploit,,,
+Feedback,Default credentials are well-known and represent an easily exploitable vulnerability,,,
+,,,,
+//MULTISELECT QUESTION TYPE,,,,
+//Question 18,,,,
+NewQuestion,MS,,,
+ID,RISK-018,,,
+Title,Denial of Service Mitigation,,,
+QuestionText,Which controls can help mitigate Denial of Service threats? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Redundant systems and load balancing,,Correct. Redundancy maintains availability under attack.
+Option,100,Rate limiting on incoming requests,,Correct. This prevents resource exhaustion.
+Option,0,Strong password policies,,Incorrect. Passwords don't prevent DoS attacks.
+Option,100,DDoS protection services,,Correct. Specialized services filter malicious traffic.
+Option,100,Adequate bandwidth and server capacity,,Correct. Over-provisioning helps absorb attacks.
+Hint,Focus on controls that maintain availability under stress,,,
+Feedback,DoS mitigation requires multiple layers including capacity, filtering, and redundancy,,,
+,,,,
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 19,,,,
+NewQuestion,MC,,,
+ID,RISK-019,,,
+Title,Social Engineering Assessment Purpose,,,
+QuestionText,What is the primary goal of conducting social engineering assessments?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,To embarrass employees who fail,,Incorrect. This is counterproductive to security culture.
+Option,0,To prove technical controls are insufficient,,Incorrect. It's not about proving anything.
+Option,100,To identify security awareness gaps for training,,Correct! Results inform security training programs.
+Option,0,To test email filtering effectiveness,,Incorrect. This is too narrow a focus.
+Hint,These assessments aim to improve overall security posture,,,
+Feedback,Social engineering assessments identify human vulnerabilities to improve security awareness training,,,
+,,,,
+//Question 20,,,,
+NewQuestion,MC,,,
+ID,RISK-020,,,
+Title,Risk Assessment Prioritization,,,
+QuestionText,"Using the DREAD methodology, a threat scores: Damage=9, Reproducibility=8, Exploitability=7, Affected users=9, Discoverability=2. What is the average DREAD score?",,,
+Points,2,,,
+Difficulty,2,,,
+Option,0,9.0,,Incorrect. This is just the highest score.
+Option,0,6.5,,Incorrect. Check your calculation.
+Option,100,7.0,,Correct! (9+8+7+9+2)/5 = 35/5 = 7.0
+Option,0,8.0,,Incorrect. This overestimates the average.
+Hint,Add all five scores and divide by 5,,,
+Feedback,DREAD scores are typically averaged to provide an overall risk rating for prioritization,,,

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="manifest_958a1715dfe4404d8d259609254e71b2" xmlns="http://www.imsglobal.org/xsd/imsccv1p1/imscp_v1p1">
+  <metadata>
+    <schema>IMS Common Cartridge</schema>
+    <schemaversion>1.1.0</schemaversion>
+  </metadata>
+  <organizations>
+    <organization identifier="org_e269cd39e9f8462b98454d4dfa6fd2af">
+      <item identifier="root">
+        <title>Managing Risk in Information Systems
+---
+null</title>
+        <item identifier="item_1" identifierref="resource_9f1c5229ccfa49678970f1aeb5c310ee">
+          <title>Chapter 4: Backup Strategy Design</title>
+        </item>
+        <item identifier="item_2" identifierref="resource_cfa61d64005f44a3b309e8a0c5b07a70">
+          <title>Chapter 5: Implementing Advanced Backup Systems</title>
+        </item>
+        <item identifier="item_3" identifierref="resource_843d169c53454ad7b59b9b0b02e1416f">
+          <title>Chapter 6: Backup Restoration and Testing</title>
+        </item>
+        <item identifier="item_4" identifierref="resource_f8631b2844cd44afb461d63ebbca39ee">
+          <title>Chapter 7: Business Impact Analysis and Continuity Planning</title>
+        </item>
+        <item identifier="item_5" identifierref="resource_9c3063649c1048a095e1cedf36fdf48d">
+          <title>Chapter 8: Disaster Recovery Fundamentals</title>
+        </item>
+        <item identifier="item_6" identifierref="resource_2a1b50a9dac44f9c8fb1e7d45e01e444">
+          <title>Chapter 9: Real-World Disaster Recovery Scenarios</title>
+        </item>
+        <item identifier="item_7" identifierref="resource_894fdbb10c7f4b4b8b2108b110b1aee3">
+          <title>Chapter 10: Incident Response Management</title>
+        </item>
+        <item identifier="item_8" identifierref="resource_b15b57b3889546249a19a64d642ca0f8">
+          <title>Chapter 11: Learning from Failure: Major Breach Case Studies</title>
+        </item>
+        <item identifier="item_9" identifierref="resource_a5ab0df977c44c19b918a0cf4011db5d">
+          <title>Chapter 12: Advanced Incident Analysis</title>
+        </item>
+        <item identifier="item_10" identifierref="resource_12c0133fe3054a838e1dfce9569bdd2f">
+          <title>Chapter 13: Building a Risk Management Program</title>
+        </item>
+        <item identifier="item_11" identifierref="resource_4661380a00f6403d9f840cf0e2c4729e">
+          <title>PART I: FOUNDATIONS OF INFORMATION RISK MANAGEMENT</title>
+        </item>
+        <item identifier="item_12" identifierref="resource_3be28844ae6940ada8c5963b6eabbb43">
+          <title>Chapter 14: The Future of Information Risk Management</title>
+        </item>
+        <item identifier="item_13" identifierref="resource_b63d8ea09dcb4378a44426254b81c85a">
+          <title>Appendix A: Risk Assessment Templates and Tools</title>
+        </item>
+        <item identifier="item_14" identifierref="resource_2b61e67c8cf248caaa25d8ad9a4bc7bb">
+          <title>Risk Priority Matrix</title>
+        </item>
+        <item identifier="item_15" identifierref="resource_47a8d550fe024c688d99b733c99386a6">
+          <title>Appendix B: Sample Plans and Policies</title>
+        </item>
+        <item identifier="item_16" identifierref="resource_1af0916e60ea4b10bb654e8b61a25da9">
+          <title>Appendix C: Regulatory and Compliance References</title>
+        </item>
+        <item identifier="item_17" identifierref="resource_da1a40650dd44f61be75cb341347779b">
+          <title>Appendix D: Glossary of Terms and Acronyms</title>
+        </item>
+        <item identifier="item_18" identifierref="resource_35f1a1ad04d749dca30cfc682cc8c596">
+          <title>The End</title>
+        </item>
+        <item identifier="item_19" identifierref="resource_3aac63441f6242b49098004f7002339a">
+          <title>PART II: BUILDING RESILIENCE: BACKUP STRATEGIES AND VALIDATION</title>
+        </item>
+        <item identifier="item_20" identifierref="resource_c51c9e0fe71249c5900ad36ff767f8e4">
+          <title>PART III: BUSINESS CONTINUITY AND DISASTER RECOVERY</title>
+        </item>
+        <item identifier="item_21" identifierref="resource_a025a9ff74d0401fa99116f4e655e2f4">
+          <title>PART IV: INCIDENT RESPONSE AND CASE STUDIES</title>
+        </item>
+        <item identifier="item_22" identifierref="resource_a5c2a68fd9d34439836dfa94d576938d">
+          <title>PART V: IMPLEMENTING AND EVOLVING YOUR RISK MANAGEMENT PROGRAM</title>
+        </item>
+        <item identifier="item_23" identifierref="resource_7561d0e7470944648f8fcccc9dbdd6a5">
+          <title>Appendices</title>
+        </item>
+        <item identifier="item_24" identifierref="resource_e210345a56f14ef39134750d3a1cbb79">
+          <title>Chapter 1: Introduction to Information Systems Risk Management</title>
+        </item>
+        <item identifier="item_25" identifierref="resource_d90b34788c4f430591722c2a22d76794">
+          <title>Chapter 2: Risk Management Fundamentals</title>
+        </item>
+        <item identifier="item_26" identifierref="resource_5926f9cf76bb4784b30863bf8f802668">
+          <title>Chapter 3: Risk Assessment and Quantification</title>
+        </item>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="resource_eac5ef45bf6645feaf796952eb297269" type="webcontent" href="chapter_10.html">
+      <file href="chapter_10.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_fedc8955d5d243ad85646f06f6430c31" type="webcontent" href="chapter_11.html">
+      <file href="chapter_11.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_35d55a98a1434616b8e6e590b2474cc0" type="webcontent" href="chapter_12.html">
+      <file href="chapter_12.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_31c2081fb2614de395bdaa174d95f511" type="webcontent" href="chapter_13.html">
+      <file href="chapter_13.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_db52b397ed1047fea9d2fecb189f2b20" type="webcontent" href="chapter_14.html">
+      <file href="chapter_14.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_dc21578eca7f492f91a120638c945015" type="webcontent" href="chapter_15.html">
+      <file href="chapter_15.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_968d5228009b477d9342e33bec21347e" type="webcontent" href="chapter_16.html">
+      <file href="chapter_16.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_96482961d744440abf9c25f092417f27" type="webcontent" href="chapter_17.html">
+      <file href="chapter_17.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_287c22d8592f4ff3b62253b85dc7cf52" type="webcontent" href="chapter_18.html">
+      <file href="chapter_18.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_b56b83b380b34770aa70f89befb04007" type="webcontent" href="chapter_19.html">
+      <file href="chapter_19.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_be174898d4c9414ea7174fe4b5fe54e8" type="webcontent" href="chapter_1.html">
+      <file href="chapter_1.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_90325949c5d24aeab605c8cf4e814c44" type="webcontent" href="chapter_20.html">
+      <file href="chapter_20.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_0008210087dc4189a62b64b7cfc32d12" type="webcontent" href="chapter_21.html">
+      <file href="chapter_21.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_26155988c61e437f9ea8346647a0e8c5" type="webcontent" href="chapter_22.html">
+      <file href="chapter_22.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_1b8075ee3318475bb020132a11c2c84c" type="webcontent" href="chapter_23.html">
+      <file href="chapter_23.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_eb6689c7e89f44528c6e86f67bc60d24" type="webcontent" href="chapter_24.html">
+      <file href="chapter_24.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_c6722748309a47d8ba2df1bdbcc73e29" type="webcontent" href="chapter_25.html">
+      <file href="chapter_25.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_8c761628758c427790aadfd448fd7b9b" type="webcontent" href="chapter_26.html">
+      <file href="chapter_26.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_19b77564cc784327aa4afb720868a3c8" type="webcontent" href="chapter_2.html">
+      <file href="chapter_2.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_6e7ae85736044f548f2b5254a62a026b" type="webcontent" href="chapter_3.html">
+      <file href="chapter_3.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_e8fffa8c4755494bb8191cf2be6c1e9b" type="webcontent" href="chapter_4.html">
+      <file href="chapter_4.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_6eef2b4cc112427fbf3a4beeff7fc5f7" type="webcontent" href="chapter_5.html">
+      <file href="chapter_5.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_3e33ab9a14a34fada7579126fca9fe9a" type="webcontent" href="chapter_6.html">
+      <file href="chapter_6.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_ed910781751a47b6b239f4d0d597215b" type="webcontent" href="chapter_7.html">
+      <file href="chapter_7.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_529844d0652d40358a93aa5c7ba5b235" type="webcontent" href="chapter_8.html">
+      <file href="chapter_8.html"/>
+      <file href="styles.css"/>
+    </resource>
+    <resource identifier="resource_231e4667ab8d431aab4dba1b95977eb2" type="webcontent" href="chapter_9.html">
+      <file href="chapter_9.html"/>
+      <file href="styles.css"/>
+    </resource>
+  </resources>
+</manifest>

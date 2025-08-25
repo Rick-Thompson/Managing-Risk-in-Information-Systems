@@ -1,0 +1,31 @@
+---
+title: Managing Risk in Information Systems
+author: Rick Thompson
+rights: AGPL License
+lang: en-US
+mainlang: english
+otherlang: english
+tags: [pandoc, book, my-book, etc]
+abstract: |
+  Book for the class IT 171 Managing Risk in Information Systems
+mainfont: DejaVu Sans
+# Filter preferences:
+# - pandoc-crossref
+linkReferences: true
+---
+pagebreak:
+  break-on:
+    # Treat paragraphs that contain just a form feed
+    # character as pagebreak markers.
+    form-feed: true
+    # Allow plaintext commands, i.e., respect LaTeX newpage
+    # commands even if they are not in a raw TeX block.
+    plaintext-command: true
+
+  # Use a div with this class instead of hard-coded CSS
+  html-class: 'page-break'
+
+  # ODT style used for pagebreak paragraphs
+  odt-style: 'Pagebreak'
+header-includes:
+  - \usepackage{array}

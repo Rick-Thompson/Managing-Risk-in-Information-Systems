@@ -1,0 +1,84 @@
+//(Note: The 'images' folder is assumed to be in the "/content/<course path>/" directory),,,,
+//Question Text is always a required field,,,,
+// An ID will be generated using the (Course code)-(Question number) if an ID is not specified for a question,,,,
+,,,,
+// Please ensure that the CSV file is saved as "CSV UTF-8" encoded to ensure that non-ASCII characters like à, ø, é and other are able to be correctly imported,,,,
+,,,,
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 1,,,,
+NewQuestion,MC,,,
+ID,TECHRETAIL-001,,,
+Title,Cascading Risk Analysis,,,
+QuestionText,"In the TechRetail case, which factor MOST significantly amplified the overall impact of the security crisis beyond what either threat would have caused independently?",,,
+Points,2,,,
+Difficulty,5,,,
+Option,0,The SQL injection vulnerability existed for six months,,Incorrect. While this shows poor patch management, it didn't amplify the combined impact.
+Option,0,The backup facility was located in Atlanta rather than Miami,,Incorrect. Geographic separation was actually beneficial, though implementation was poor.
+Option,100,The incident response plan assumed normal staffing and communication capabilities,,Correct! This assumption made the plan useless when the hurricane reduced staff by 60% and disrupted communications.
+Option,0,The company used informal risk classification methods,,Incorrect. While problematic, this didn't specifically amplify the combined crisis impact.
+Hint,Consider what made the combined threats worse than either would have been alone,,,
+Feedback,The incident response plan's failure to account for degraded conditions meant TechRetail couldn't effectively respond to the cyber attack when discovered during hurricane recovery,,,
+,,,,
+//MULTISELECT QUESTION TYPE,,,,
+//Question 2,,,,
+NewQuestion,MS,,,
+ID,TECHRETAIL-002,,,
+Title,Pre-Crisis Risk Management Gaps,,,
+QuestionText,Which risk management deficiencies at TechRetail directly contributed to the failure to detect or prevent the cyber attack BEFORE the hurricane? (Select all that apply),,,
+Points,3,,,
+Difficulty,4,,,
+Option,100,Lack of real-time security monitoring capabilities,,Correct. This prevented early detection of the ongoing attack.
+Option,100,200+ vulnerability backlog with no formal prioritization,,Correct. The exploited vulnerability was known but not prioritized for remediation.
+Option,0,Ground-level backup power systems at the data center,,Incorrect. This was an environmental issue, not related to cyber attack detection.
+Option,100,Poorly configured logging systems,,Correct. Inadequate logging prevented detection of the initial compromise.
+Option,0,Limited hurricane-specific business continuity planning,,Incorrect. This affected recovery but not cyber attack detection/prevention.
+Option,100,Service account with unnecessary database administrative rights,,Correct. This misconfiguration enabled privilege escalation after initial compromise.
+Hint,Focus on deficiencies that existed before the hurricane and related to cybersecurity,,,
+Feedback,Multiple cybersecurity gaps allowed the attack to succeed and remain undetected for a week before the hurricane struck,,,
+,,,,
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 3,,,,
+NewQuestion,MC,,,
+ID,TECHRETAIL-003,,,
+Title,Risk Interaction Analysis,,,
+QuestionText,Based on the case study, what type of risk relationship best describes how the cyber attack and hurricane interacted to create the crisis?,,,
+Points,2,,,
+Difficulty,5,,,
+Option,0,Risk transfer - one risk shifted consequences to another,,Incorrect. Neither risk transferred consequences; they compounded them.
+Option,0,Risk correlation - both risks shared the same root cause,,Incorrect. The cyber attack and hurricane had completely independent causes.
+Option,100,Risk amplification - concurrent risks multiplied overall impact,,Correct! The simultaneous occurrence created impacts far exceeding the sum of individual risks.
+Option,0,Risk substitution - one risk replaced another,,Incorrect. Both risks remained active and problematic throughout.
+Hint,Think about how the timing and interaction of the two events affected the outcome,,,
+Feedback,"Risk amplification occurs when multiple risks interact to create cascading failures, as seen when hurricane recovery hampered cyber incident response",,,
+,,,,
+//MULTISELECT QUESTION TYPE,,,,
+//Question 4,,,,
+NewQuestion,MS,,,
+ID,TECHRETAIL-004,,,
+Title,Business Impact Categories,,,
+QuestionText,"Analyzing TechRetail's total losses of approximately $8.9 million, which impact categories demonstrate how integrated risk events create costs beyond traditional single-threat planning? (Select all that apply)",,,
+Points,3,,,
+Difficulty,5,,,
+Option,100,Insurance coverage disputes between cyber and property policies,,Correct. The integrated nature of the crisis created coverage ambiguity.
+Option,0,Direct hurricane damage to retail locations,,Incorrect. This is a traditional single-threat impact.
+Option,100,Extended e-commerce outages due to combined recovery challenges,,Correct. The cyber incident complicated hurricane recovery, extending downtime.
+Option,100,Regulatory penalties triggered by breach discovery during disaster response,,Correct. Poor disaster response capability affected regulatory compliance obligations.
+Option,0,Customer notification costs for the data breach,,Incorrect. This is a standard cyber incident cost.
+Option,100,30% revenue decline from compounded reputational damage,,Correct. The simultaneous crises created worse reputational impact than either alone.
+Hint,Look for costs that arose specifically from the interaction of multiple threats,,,
+Feedback,Integrated risk events create unique costs through coverage gaps, extended recovery times, compliance complications, and amplified reputational damage,,,
+,,,,
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 5,,,,
+NewQuestion,MC,,,
+ID,TECHRETAIL-005,,,
+Title,Strategic Risk Management Lessons,,,
+QuestionText,"If TechRetail had implemented comprehensive integrated threat modeling before the crisis, which preparedness measure would have provided the MOST value in reducing the combined impact of both threats?",,,
+Points,3,,,
+Difficulty,4,,,
+Option,0,Moving the primary data center out of the hurricane zone entirely,,Incorrect. This addresses only environmental risk and ignores cyber threats.
+Option,0,Implementing automated patch management for all systems,,Incorrect. This addresses only the specific vulnerability but not broader resilience.
+Option,100,Establishing a crisis management framework assuming degraded operational conditions,,Correct! This would enable effective response even with reduced staff and failed communications.
+Option,0,Purchasing separate insurance policies for each threat type,,Incorrect. This might help with recovery costs but wouldn't reduce operational impact.
+Hint,Consider what would help the organization respond effectively when multiple crises occur simultaneously,,,
+Feedback,Integrated threat modeling reveals the need for crisis management that remains functional under degraded conditions—the key gap in TechRetail's response,,,

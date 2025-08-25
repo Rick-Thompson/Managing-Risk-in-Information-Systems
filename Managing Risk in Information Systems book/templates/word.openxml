@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing">
+<w:body>
+$if(title)$
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="$title-style-id$" />
+      </w:pPr>
+      $title$
+    </w:p>
+$endif$
+$if(subtitle)$
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="$subtitle-style-id$" />
+      </w:pPr>
+      $subtitle$
+    </w:p>
+$endif$
+$for(author)$
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="$author-style-id$" />
+      </w:pPr>
+      $author$
+    </w:p>
+$endfor$
+$if(date)$
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="$date-style-id$" />
+      </w:pPr>
+      $date$
+    </w:p>
+$endif$
+
+<!-- Add page break here -->
+<w:p>
+  <w:r>
+    <w:br w:type="page"/>
+  </w:r>
+</w:p>
+<!-- End of page break -->
+
+<!-- Copyright notice page -->
+<w:p>
+  <w:pPr>
+    <w:jc w:val="center"/>
+  </w:pPr>
+  <w:r>
+    <w:t xml:space="preserve">Copyright © 2025 by Rick Thompson</w:t>
+  </w:r>
+</w:p>
+<w:p>
+  <w:pPr>
+    <w:jc w:val="center"/>
+  </w:pPr>
+  <w:r>
+    <w:t xml:space="preserve">This work is licensed under the GNU Affero General Public License (AGPL), Version 3 or later.</w:t>
+  </w:r>
+</w:p>
+<w:p>
+  <w:pPr>
+    <w:jc w:val="center"/>
+  </w:pPr>
+  <w:r>
+    <w:t xml:space="preserve">You are free to copy, distribute, and modify this work under the terms of the AGPL.</w:t>
+  </w:r>
+</w:p>
+<w:p>
+  <w:pPr>
+    <w:jc w:val="center"/>
+  </w:pPr>
+  <w:r>
+    <w:t xml:space="preserve">A copy of the license is available at </w:t>
+  </w:r>
+  <w:r>
+    <w:fldChar w:fldCharType="begin"/>
+  </w:r>
+  <w:r>
+    <w:instrText xml:space="preserve">HYPERLINK "https://www.gnu.org/licenses/agpl-3.0.html"</w:instrText>
+  </w:r>
+  <w:r>
+    <w:fldChar w:fldCharType="separate"/>
+  </w:r>
+  <w:r>
+    <w:t>https://www.gnu.org/licenses/agpl-3.0.html</w:t>
+  </w:r>
+  <w:r>
+    <w:fldChar w:fldCharType="end"/>
+  </w:r>
+  <w:r>
+    <w:t xml:space="preserve">.</w:t>
+  </w:r>
+</w:p>
+<w:p>
+  <w:pPr>
+    <w:jc w:val="center"/>
+  </w:pPr>
+  <w:r>
+    <w:t xml:space="preserve">This book is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the AGPL for more details.</w:t>
+  </w:r>
+</w:p>
+<w:p>
+  <w:pPr>
+    <w:jc w:val="center"/>
+  </w:pPr>
+  <w:r>
+    <w:t xml:space="preserve">All rights reserved under applicable law.</w:t>
+  </w:r>
+</w:p>
+
+<!-- Second page break -->
+<w:p>
+  <w:r>
+    <w:br w:type="page"/>
+  </w:r>
+</w:p>
+<!-- End of second page break -->
+
+$if(abstract)$
+$if(abstract-title)$
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="$abstract-title-style-id$" />
+      </w:pPr>
+      <w:r><w:t xml:space="preserve">$abstract-title$</w:t></w:r>
+    </w:p>
+$endif$
+    $abstract$
+$endif$
+$for(include-before)$
+    $include-before$
+$endfor$
+$if(toc)$
+    $toc$
+$endif$
+$if(lof)$
+    $lof$
+$endif$
+$if(lot)$
+    $lot$
+$endif$
+    $body$
+$for(include-after)$
+    $include-after$
+$endfor$
+    $sectpr$
+  </w:body>
+</w:document>
