@@ -1,0 +1,303 @@
+//(Note: The 'images' folder is assumed to be in the "/content/<course path>/" directory),,,,
+//Question Text is always a required field,,,,
+// An ID will be generated using the (Course code)-(Question number) if an ID is not specified for a question,,,,
+,,,, 
+// Please ensure that the CSV file is saved as "CSV UTF-8" encoded to ensure that non-ASCII characters like à, ø, é and other are able to be correctly imported,,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 1,,,,
+NewQuestion,MC,,,
+ID,RISK-061,,,
+Title,Backup Scheduling Importance,,,
+QuestionText,Why is automation important for backup systems?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,It makes backups more expensive,,Incorrect. Automation typically reduces costs.
+Option,100,It ensures backups occur reliably according to predefined schedules,,Correct! Automation solves issues with human error and inconsistency.
+Option,0,It eliminates the need for backup storage,,Incorrect. Automation doesn't eliminate storage needs.
+Option,0,It makes backups run slower,,Incorrect. Automation typically improves efficiency.
+Hint,Think about what problems manual backups introduce,,,
+Feedback,Automation ensures backups occur reliably according to predefined schedules, eliminating human error and inconsistency,,,
+,,,, 
+//Question 2,,,,
+NewQuestion,MC,,,
+ID,RISK-062,,,
+Title,Full Backup Timing,,,
+QuestionText,When are full backups typically scheduled for optimal performance?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,During peak business hours,,Incorrect. This would impact operations.
+Option,100,During periods of low system activity,,Correct! Full backups require significant resources.
+Option,0,Randomly throughout the week,,Incorrect. This wouldn't be efficient.
+Option,0,Only on weekends regardless of system load,,Incorrect. Timing should consider system activity.
+Hint,Think about when system resources are most available,,,
+Feedback,Full backups are typically scheduled during periods of low system activity, such as weekends or after business hours,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 3,,,,
+NewQuestion,MS,,,
+ID,RISK-063,,,
+Title,Backup Automation Features,,,
+QuestionText,Which features are typically part of advanced backup automation? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Dependency checks to verify prerequisite conditions,,Correct. These ensure conditions are met before backup.
+Option,100,Notification systems for backup status,,Correct. These alert administrators to completion or failures.
+Option,100,Policy-based management for cloud backups,,Correct. This automates based on defined policies.
+Option,0,Manual initiation for every backup,,Incorrect. This would defeat the purpose of automation.
+Option,0,Random backup scheduling,,Incorrect. Automation uses predefined schedules.
+Hint,Think about what makes backup automation sophisticated,,,
+Feedback,Advanced backup automation includes dependency checks, notification systems, and policy-based management,,,
+,,,, 
+//Question 4,,,,
+NewQuestion,MC,,,
+ID,RISK-064,,,
+Title,Retention Policy Purpose,,,
+QuestionText,What is the primary purpose of backup retention policies?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,To increase storage costs,,Incorrect. Good retention policies optimize costs.
+Option,100,To balance storage costs against potential need for historical data,,Correct! This is the key purpose.
+Option,0,To eliminate all historical backups,,Incorrect. This would reduce recovery options.
+Option,0,To keep every backup forever,,Incorrect. This would be cost-prohibitive.
+Hint,Think about the balance between cost and recovery needs,,,
+Feedback,Retention policies balance storage costs against the potential need to recover historical data,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 5,,,,
+NewQuestion,MS,,,
+ID,RISK-065,,,
+Title,Retention Policy Factors,,,
+QuestionText,Which factors should be considered when designing retention policies? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Data criticality and regulatory requirements,,Correct. These determine how long data must be kept.
+Option,100,Geographic distribution of backup data,,Correct. This protects against regional disasters.
+Option,100,Tiered retention strategies based on data age,,Correct. This optimizes storage costs.
+Option,0,Employee preferences for data storage,,Incorrect. This is not a relevant factor.
+Option,0,The color scheme of storage devices,,Incorrect. This has no bearing on retention policies.
+Hint,Think about what determines how long to keep backups,,,
+Feedback,Retention policies should consider data criticality, geographic distribution, and tiered strategies,,,
+,,,, 
+//Question 6,,,,
+NewQuestion,MC,,,
+ID,RISK-066,,,
+Title,Compliance Challenges,,,
+QuestionText,"According to the GDPR ""right to be forgotten,"" what challenge does this create for backup systems?",,, 
+Points,1,,,
+Difficulty,4,,,
+Option,0,It makes backups unnecessary,,Incorrect. Backups are still needed for other purposes.
+Option,100,It requires processes to identify and remove specific personal data from backups,,Correct! This is particularly challenging with traditional backups.
+Option,0,It eliminates the need for encryption,,Incorrect. Encryption is still important.
+Option,0,It simplifies backup management,,Incorrect. GDPR actually complicates backup management.
+Hint,Think about how to handle deletion requests for data in backups,,,
+Feedback,The GDPR right to be forgotten requires processes to identify and remove specific personal data from backups,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 7,,,,
+NewQuestion,MS,,,
+ID,RISK-067,,,
+Title,Healthcare Compliance,,,
+QuestionText,Which requirements are associated with HIPAA compliance for backup systems? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Encryption for backup data,,Correct. HIPAA mandates encryption for protected health information.
+Option,100,Comprehensive access controls,,Correct. HIPAA requires strict access controls.
+Option,100,Detailed audit trails documenting access,,Correct. HIPAA requires detailed audit capabilities.
+Option,0,Public access to backup data,,Incorrect. HIPAA requires restricting access.
+Option,0,Weekly backup schedules only,,Incorrect. HIPAA doesn't specify backup frequency.
+Hint,Think about what HIPAA requires for protecting health information,,,
+Feedback,HIPAA compliance requires encryption, access controls, and detailed audit trails for backup data,,,
+,,,, 
+//Question 8,,,,
+NewQuestion,MC,,,
+ID,RISK-068,,,
+Title,Financial Services Compliance,,,
+QuestionText,What do regulations like Sarbanes-Oxley Act (SOX) and Gramm-Leach-Bliley Act (GLBA) typically require for financial records in backups?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Weekly backups only,,Incorrect. These regulations require more comprehensive protection.
+Option,100,Immutable backups that prevent unauthorized modification,,Correct! These regulations mandate specific protections.
+Option,0,Public access to financial backups,,Incorrect. These regulations require restricting access.
+Option,0,Unencrypted storage of financial data,,Incorrect. These regulations require protecting data.
+Hint,Think about what protection these regulations mandate for financial records,,,
+Feedback,Financial regulations often mandate immutable backups that prevent unauthorized modification of financial records,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 9,,,,
+NewQuestion,MS,,,
+ID,RISK-069,,,
+Title,Compliance Implementation,,,
+QuestionText,Which elements are critical for implementing compliant backup systems? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Proper documentation of backup architectures,,Correct. Documentation is critical for compliance.
+Option,100,Appropriate encryption methodologies,,Correct. Encryption is often mandated.
+Option,100,Access management processes,,Correct. Access controls are frequently required.
+Option,100,Validation processes,,Correct. Regular validation ensures continued compliance.
+Option,0,Minimal security controls,,Incorrect. Compliance typically requires robust security.
+Hint,Think about what compliance auditors would examine,,,
+Feedback,Compliant backup systems require documentation, encryption, access management, and validation processes,,,
+,,,, 
+//Question 10,,,,
+NewQuestion,MC,,,
+ID,RISK-070,,,
+Title,Validation Timing,,,
+QuestionText,When should checksums be verified to validate backup integrity?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Only after restoration,,Incorrect. This is too late to detect corruption.
+Option,100,At multiple points throughout the backup lifecycle,,Correct! This includes after creation, during storage, and before restoration.
+Option,0,Only once a year,,Incorrect. This is insufficient for reliable validation.
+Option,0,Only when requested by management,,Incorrect. This is too infrequent.
+Hint,Think about when corruption could occur in the backup process,,,
+Feedback,Checksum verification should occur at multiple points: after creation, during storage transitions, and before restoration,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 11,,,,
+NewQuestion,MC,,,
+ID,RISK-071,,,
+Title,Consistency Checks,,,
+QuestionText,What do consistency checks verify in backup validation?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,That backups are stored in color-coded containers,,Incorrect. This is not a technical validation.
+Option,100,Logical relationships within structured data,,Correct! This includes referential integrity and transaction completeness.
+Option,0,That backup administrators have proper certifications,,Incorrect. This is personnel-related, not data validation.
+Option,0,That backups are stored in alphabetical order,,Incorrect. This is not a meaningful validation.
+Hint,Think about what could be wrong with data beyond simple file presence,,,
+Feedback,Consistency checks verify logical relationships within structured data, such as referential integrity and transaction completeness,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 12,,,,
+NewQuestion,MS,,,
+ID,RISK-072,,,
+Title,Version Verification,,,
+QuestionText,Why is version verification important in backup validation? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,To confirm that restored data represents the expected time period,,Correct. This ensures you're restoring the right point in time.
+Option,100,To verify content matches expected values for the chosen recovery point,,Correct. This confirms data accuracy.
+Option,100,To prevent accidentally applying incorrect data versions,,Correct. This avoids introducing problems during recovery.
+Option,0,To make backups more colorful,,Incorrect. Color has no bearing on backup validation.
+Option,0,To reduce the number of backup administrators,,Incorrect. This is not related to version verification.
+Hint,Think about what could go wrong without version verification,,,
+Feedback,Version verification confirms that restored data represents the expected time period and content version,,,
+,,,, 
+//Question 13,,,,
+NewQuestion,MC,,,
+ID,RISK-073,,,
+Title,Authentication Verification,,,
+QuestionText,What does authentication verification confirm in restored data?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,That the backup administrator has a valid driver's license,,Incorrect. This is unrelated to data restoration.
+Option,100,That security mechanisms function correctly in restored data,,Correct! This includes user accounts, access controls, and encryption keys.
+Option,0,That the restoration was completed during business hours,,Incorrect. Timing is not part of authentication verification.
+Option,0,That the backup software has a good user interface,,Incorrect. UI quality is not part of verification.
+Hint,Think about what security elements need to work after restoration,,,
+Feedback,Authentication verification confirms that security mechanisms like user accounts and access controls function correctly after restoration,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 14,,,,
+NewQuestion,MS,,,
+ID,RISK-074,,,
+Title,Completeness Validation,,,
+QuestionText,What does completeness validation verify in backup restoration? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,That all expected components are present in the restored data,,Correct. This compares file counts and system inventories.
+Option,100,That missing components might impact dependent systems,,Correct. This identifies potential functionality issues.
+Option,0,That the restoration was completed quickly,,Incorrect. Speed is not part of completeness validation.
+Option,0,That the restoration team wore matching uniforms,,Incorrect. This is irrelevant to validation.
+Option,0,That the backup software has a pleasant color scheme,,Incorrect. Aesthetics are not part of validation.
+Hint,Think about what it means for a restoration to be complete,,,
+Feedback,Completeness validation verifies that all expected components are present and considers impacts on dependent systems,,,
+,,,, 
+//Question 15,,,,
+NewQuestion,MC,,,
+ID,RISK-075,,,
+Title,Tabletop Exercises,,,
+QuestionText,What is the primary focus of tabletop exercises in backup testing?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Technical restoration of actual systems,,Incorrect. This describes functional testing.
+Option,100,Procedural elements and decision-making processes,,Correct! These exercises focus on processes without system manipulation.
+Option,0,Physical endurance of team members,,Incorrect. This is not related to backup testing.
+Option,0,Speed of backup creation,,Incorrect. This is not what tabletop exercises test.
+Hint,Think about what distinguishes tabletop exercises from technical testing,,,
+Feedback,Tabletop exercises focus on procedural elements and decision-making processes without actual system manipulation,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 16,,,,
+NewQuestion,MS,,,
+ID,RISK-076,,,
+Title,Functional Testing,,,
+QuestionText,What characterizes functional testing of backup systems? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Restoring selected systems to isolated environments,,Correct. This tests both procedures and technical capabilities.
+Option,100,Building upon tabletop foundations,,Correct. Functional testing extends tabletop exercises.
+Option,100,Balancing comprehensive verification with resource constraints,,Correct. This approach is more efficient than full-scale simulations.
+Option,0,Completely avoiding technical components,,Incorrect. Functional testing includes technical elements.
+Option,0,Testing only during lunch breaks,,Incorrect. This is not a characteristic of functional testing.
+Hint,Think about how functional testing combines elements of different approaches,,,
+Feedback,Functional testing restores selected systems to isolated environments, building on tabletop foundations while balancing verification with resources,,,
+,,,, 
+//Question 17,,,,
+NewQuestion,MC,,,
+ID,RISK-077,,,
+Title,Full-Scale Simulations,,,
+QuestionText,What is a key characteristic of full-scale simulation exercises?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,They only test documentation,,Incorrect. They're more comprehensive than documentation review.
+Option,100,They attempt to recover complete environments under realistic conditions,,Correct! This provides the most realistic testing.
+Option,0,They are conducted only on paper,,Incorrect. This describes tabletop exercises.
+Option,0,They avoid testing technical components,,Incorrect. They test all components.
+Hint,Think about what makes full-scale simulations different from other testing approaches,,,
+Feedback,Full-scale simulations attempt to recover complete environments under conditions closely mimicking actual disasters,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 18,,,,
+NewQuestion,MS,,,
+ID,RISK-078,,,
+Title,GitLab Incident Failures,,,
+QuestionText,Which backup system failures contributed to data loss in the GitLab 2017 incident? (Select all that apply),,,
+Points,2,,,
+Difficulty,5,,,
+Option,100,Database dumps took too long to restore,,Correct. This made them impractical for emergency recovery.
+Option,100,Filesystem backups hadn't been verified,,Correct. Testing revealed they were incomplete.
+Option,100,LVM snapshots had been disabled without documentation,,Correct. This created a false sense of protection.
+Option,100,Cloud backups had failed silently for months,,Correct. Notifications went to unmonitored email addresses.
+Option,0,The backup administrator had quit without notice,,Incorrect. While personnel issues can be problems, this wasn't mentioned.
+Hint,Think about what went wrong with each backup method GitLab maintained,,,
+Feedback,The GitLab incident revealed failures in database restoration time, unverified filesystem backups, disabled LVM snapshots, and silent cloud backup failures,,,
+,,,, 
+//Question 19,,,,
+NewQuestion,MC,,,
+ID,RISK-079,,,
+Title,GitLab Documentation Failures,,,
+QuestionText,What documentation weakness contributed to the GitLab incident response challenges?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,The documentation was in the wrong language,,Incorrect. Language wasn't the issue.
+Option,100,The LVM snapshot deactivation lacked documentation,,Correct! This led responders to waste time on nonexistent backups.
+Option,0,There was too much documentation,,Incorrect. The issue was missing documentation.
+Option,0,The documentation was stored on paper,,Incorrect. Storage medium wasn't the problem.
+Hint,Think about what information was missing that would have helped responders,,,
+Feedback,The LVM snapshot deactivation lacked documentation, causing responders to waste valuable time attempting to use nonexistent backups,,,
+,,,, 
+//Question 20,,,,
+NewQuestion,MC,,,
+ID,RISK-080,,,
+Title,GitLab Key Lesson,,,
+QuestionText,What was the most important lesson from the GitLab 2017 data loss incident?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Backups are unnecessary with good security,,Incorrect. The incident actually proved backups are essential.
+Option,100,Backup redundancy without validation creates merely an illusion of protection,,Correct! This was the key lesson.
+Option,0,Incidents should never be made public,,Incorrect. GitLab's transparency was actually praised.
+Option,0,Only one backup method is needed,,Incorrect. The incident showed multiple methods are important.
+Hint,Think about what the incident revealed about having backups that don't work,,,
+Feedback,The GitLab incident demonstrated that backup redundancy without validation creates merely an illusion of protection,,,

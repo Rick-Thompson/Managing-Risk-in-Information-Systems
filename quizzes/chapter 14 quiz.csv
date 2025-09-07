@@ -1,0 +1,303 @@
+//(Note: The 'images' folder is assumed to be in the "/content/<course path>/" directory),,,,
+//Question Text is always a required field,,,,
+// An ID will be generated using the (Course code)-(Question number) if an ID is not specified for a question,,,,
+,,,, 
+// Please ensure that the CSV file is saved as "CSV UTF-8" encoded to ensure that non-ASCII characters like à, ø, é and other are able to be correctly imported,,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 1,,,,
+NewQuestion,MC,,,
+ID,RISK-241,,,
+Title,IoT Security Challenges,,,
+QuestionText,What is a primary security challenge with Internet of Things (IoT) devices?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,They have too much processing power,,Incorrect. Processing power is typically limited.
+Option,100,They often prioritize functionality over security,,Correct! This creates widespread vulnerabilities.
+Option,0,They are too expensive for most organizations,,Incorrect. Cost is not the primary security challenge.
+Option,0,They cannot connect to networks,,Incorrect. Network connectivity is their purpose.
+Hint,Think about what makes IoT devices particularly vulnerable,,,
+Feedback,IoT devices often prioritize functionality over security, creating widespread vulnerabilities with default credentials, outdated software, or insecure communication protocols,,,
+,,,, 
+//Question 2,,,,
+NewQuestion,MC,,,
+ID,RISK-242,,,
+Title,Cloud Security Responsibility,,,
+QuestionText,In cloud computing, who is responsible for protecting data and applications according to the shared responsibility model?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Only the cloud provider,,Incorrect. Responsibility is shared.
+Option,100,The customer,,Correct! Customers remain responsible for their data and applications.
+Option,0,Neither party,,Incorrect. Both have responsibilities.
+Option,0,Only third-party auditors,,Incorrect. Auditors assess but don't protect.
+Hint,Think about what the shared responsibility model means,,,
+Feedback,In the cloud shared responsibility model, providers secure the infrastructure while customers remain responsible for protecting their data, applications, and access controls,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 3,,,,
+NewQuestion,MS,,,
+ID,RISK-243,,,
+Title,Emerging Threat Vectors,,,
+QuestionText,Which are identified as emerging threat vectors in the evolving digital landscape? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Supply chain attacks,,Correct. These exploit trusted vendor relationships.
+Option,100,Cyber-physical attacks on operational technology,,Correct. These can have real-world consequences.
+Option,100,AI-powered social engineering,,Correct. This includes deepfakes and sophisticated phishing.
+Option,100,Mobile device security challenges,,Correct. BYOD creates new attack surfaces.
+Option,0,Traditional perimeter-based attacks only,,Incorrect. The chapter discusses new vectors beyond traditional ones.
+Hint,Think about what new types of attacks are becoming more prominent,,,
+Feedback,Emerging threat vectors include supply chain attacks, cyber-physical attacks on operational technology, AI-powered social engineering, and mobile device security challenges,,,
+,,,, 
+//Question 4,,,,
+NewQuestion,MC,,,
+ID,RISK-244,,,
+Title,AI in Cybersecurity,,,
+QuestionText,How can AI be used both offensively and defensively in cybersecurity?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Only for defensive purposes,,Incorrect. AI can be used offensively as well.
+Option,100,Offensively to create sophisticated attacks and defensively to detect threats,,Correct! AI benefits both attackers and defenders.
+Option,0,Only for offensive purposes,,Incorrect. AI can be used defensively as well.
+Option,0,Neither offensively nor defensively,,Incorrect. AI has clear applications in both areas.
+Hint,Think about how both attackers and defenders might use AI,,,
+Feedback,AI can be used offensively to create sophisticated attacks (like convincing phishing emails) and defensively to detect threats through pattern recognition,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 5,,,,
+NewQuestion,MS,,,
+ID,RISK-245,,,
+Title,Quantum Computing Threats,,,
+QuestionText,Which cryptographic systems are vulnerable to quantum computing attacks? (Select all that apply),,,
+Points,2,,,
+Difficulty,5,,,
+Option,100,RSA encryption,,Correct. RSA is vulnerable to Shor's algorithm.
+Option,100,ECC (Elliptic Curve Cryptography),,Correct. ECC is also vulnerable to Shor's algorithm.
+Option,100,Symmetric encryption like AES,,Correct. AES security is reduced by Grover's algorithm.
+Option,0,Quantum key distribution,,Incorrect. This is a quantum-resistant approach.
+Option,0,Post-quantum cryptography,,Incorrect. This is designed to resist quantum attacks.
+Hint,Think about which current encryption methods quantum computers could break,,,
+Feedback,Asymmetric encryption like RSA and ECC are vulnerable to quantum attacks via Shor's algorithm, while symmetric encryption like AES faces reduced security margins from Grover's algorithm,,,
+,,,, 
+//Question 6,,,,
+NewQuestion,MC,,,
+ID,RISK-246,,,
+Title,Zero Trust Principle,,,
+QuestionText,What is the core principle of Zero Trust Architecture?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Trust but verify,,Incorrect. This is the traditional model.
+Option,100,Never trust, always verify,,Correct! This is the Zero Trust principle.
+Option,0,Trust insiders completely,,Incorrect. Zero Trust doesn't trust anyone.
+Option,0,Verify only external connections,,Incorrect. Zero Trust applies to all connections.
+Hint,Think about how Zero Trust differs from traditional security models,,,
+Feedback,Zero Trust Architecture operates on the principle of "never trust, always verify," applying consistent security controls to all users and resources regardless of location,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 7,,,,
+NewQuestion,MS,,,
+ID,RISK-247,,,
+Title,DevSecOps Practices,,,
+QuestionText,Which practices are key components of DevSecOps implementation? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Threat modeling during design phases,,Correct. This identifies vulnerabilities early.
+Option,100,Automated security testing in CI/CD pipelines,,Correct. This provides immediate feedback.
+Option,100,Infrastructure-as-code security scanning,,Correct. This ensures deployment environments meet requirements.
+Option,100,Security champions within development teams,,Correct. These liaisons help integrate security.
+Option,0,Security testing only at the end of development,,Incorrect. This is traditional, not DevSecOps.
+Hint,Think about how security is integrated throughout the development lifecycle,,,
+Feedback,DevSecOps includes threat modeling during design, automated security testing in CI/CD pipelines, infrastructure-as-code scanning, and security champions in development teams,,,
+,,,, 
+//Question 8,,,,
+NewQuestion,MC,,,
+ID,RISK-248,,,
+Title,Security Automation Benefits,,,
+QuestionText,What is a primary benefit of security automation and SOAR platforms?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Eliminating the need for security staff,,Incorrect. Human oversight remains important.
+Option,100,Faster response times and consistent execution of security procedures,,Correct! This is a key benefit.
+Option,0,Increasing the complexity of security operations,,Incorrect. Automation should reduce complexity.
+Option,0,Reducing the need for security policies,,Incorrect. Policies remain essential.
+Hint,Think about what automation accomplishes in security operations,,,
+Feedback,Security automation provides faster response times, consistent execution of procedures, reduced alert fatigue, and more efficient use of security resources,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 9,,,,
+NewQuestion,MS,,,
+ID,RISK-249,,,
+Title,Balancing Innovation and Security,,,
+QuestionText,Which approaches help organizations balance innovation with security requirements? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Establishing security guardrails rather than security gates,,Correct. This provides guidance while enabling speed.
+Option,100,Shifting security considerations left in the technology lifecycle,,Correct. This integrates security early.
+Option,100,Using risk-based approaches to allocate security resources,,Correct. This prioritizes efforts effectively.
+Option,100,Positioning security as an enabler of safe innovation,,Correct. This changes the mindset from barrier to enabler.
+Option,0,Prohibiting all new technology adoption,,Incorrect. This prevents innovation entirely.
+Hint,Think about how to enable innovation while maintaining appropriate security,,,
+Feedback,Effective approaches include establishing security guardrails, shifting left to integrate security early, using risk-based resource allocation, and positioning security as an enabler rather than barrier,,,
+,,,, 
+//Question 10,,,,
+NewQuestion,MC,,,
+ID,RISK-250,,,
+Title,Sustainable Risk Management,,,
+QuestionText,What is a key element of sustainable risk management strategies?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Focusing exclusively on preventing all incidents,,Incorrect. This is unrealistic and unsustainable.
+Option,100,Identifying and protecting organizational crown jewels,,Correct! This focuses resources on what matters most.
+Option,0,Implementing generic controls for all systems equally,,Incorrect. This doesn't prioritize effectively.
+Option,0,Avoiding any security assessments,,Incorrect. Assessments are essential for improvement.
+Hint,Think about how to prioritize security efforts for long-term sustainability,,,
+Feedback,Sustainable risk management focuses on identifying and protecting organizational crown jewels—the data, systems, and processes most critical to business operations,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 11,,,,
+NewQuestion,MC,,,
+ID,RISK-251,,,
+Title,Post-Quantum Cryptography,,,
+QuestionText,What is post-quantum cryptography (PQC)?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Encryption that only works on quantum computers,,Incorrect. PQC runs on classical computers.
+Option,100,Encryption algorithms designed to resist quantum attacks while running on classical computers,,Correct! This is the definition of PQC.
+Option,0,A method for breaking current encryption,,Incorrect. This describes quantum attacks, not PQC.
+Option,0,A way to eliminate the need for encryption,,Incorrect. Encryption remains essential.
+Hint,Think about what "post-quantum" means in cryptographic terms,,,
+Feedback,Post-quantum cryptography (PQC) refers to encryption algorithms designed to resist quantum attacks while running on classical computers,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 12,,,,
+NewQuestion,MS,,,
+ID,RISK-252,,,
+Title,Zero Trust Implementation,,,
+QuestionText,Which are core pillars of Zero Trust Architecture implementation? (Select all that apply),,,
+Points,2,,,
+Difficulty,5,,,
+Option,100,Strong identity verification for all users and devices,,Correct. This is a fundamental pillar.
+Option,100,Least privilege access to minimize potential damage,,Correct. This limits what compromised accounts can access.
+Option,100,Microsegmentation to limit lateral movement,,Correct. This prevents attackers from moving freely.
+Option,100,Continuous monitoring to detect anomalous behavior,,Correct. This provides ongoing validation.
+Option,0,Trusting network location for access decisions,,Incorrect. Zero Trust doesn't trust network location.
+Hint,Think about what Zero Trust requires to verify and limit access,,,
+Feedback,Zero Trust core pillars include strong identity verification, least privilege access, microsegmentation, and continuous monitoring,,,
+,,,, 
+//Question 13,,,,
+NewQuestion,MC,,,
+ID,RISK-253,,,
+Title,Threat Intelligence,,,
+QuestionText,How does threat intelligence-driven security improve risk management?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,By ignoring actual threat activity,,Incorrect. Threat intelligence focuses on real threats.
+Option,100,By focusing defensive efforts on actual adversary tactics and techniques,,Correct! This optimizes resource allocation.
+Option,0,By implementing generic controls based only on compliance,,Incorrect. This is not threat intelligence-driven.
+Option,0,By eliminating the need for risk assessments,,Incorrect. Risk assessments remain important.
+Hint,Think about how understanding real threats helps security efforts,,,
+Feedback,Threat intelligence-driven security aligns investments with actual threat activity by understanding adversary tactics, techniques, and procedures,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 14,,,,
+NewQuestion,MS,,,
+ID,RISK-254,,,
+Title,Security Talent Development,,,
+QuestionText,Which approaches help organizations develop sustainable security talent? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Developing clear career pathways for security personnel,,Correct. This retains talent.
+Option,100,Cross-training between security specialties,,Correct. This builds versatility.
+Option,100,Creating relationships with educational institutions,,Correct. This builds talent pipelines.
+Option,100,Providing supportive work environments that reduce burnout,,Correct. This maintains team effectiveness.
+Option,0,Overworking staff to maximize productivity,,Incorrect. This leads to burnout and turnover.
+Hint,Think about what helps retain and grow security professionals,,,
+Feedback,Sustainable security talent development includes clear career pathways, cross-training, educational partnerships, and supportive work environments,,,
+,,,, 
+//Question 15,,,,
+NewQuestion,MC,,,
+ID,RISK-255,,,
+Title,Resilience Engineering,,,
+QuestionText,What does resilience engineering focus on in cybersecurity contexts?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Preventing all possible incidents,,Incorrect. This is impossible in complex systems.
+Option,100,Maintaining critical functions despite system disruptions,,Correct! This is the resilience focus.
+Option,0,Eliminating all security controls,,Incorrect. Controls remain essential.
+Option,0,Accepting all security risks,,Incorrect. Resilience doesn't mean accepting all risks.
+Hint,Think about what resilience means compared to pure prevention,,,
+Feedback,Resilience engineering focuses on maintaining critical functions despite disruptions, emphasizing graceful degradation, rapid recovery, and adaptation,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 16,,,,
+NewQuestion,MS,,,
+ID,RISK-256,,,
+Title,Security Frameworks,,,
+QuestionText,Which frameworks or models are mentioned as valuable for sustainable risk management? (Select all that apply),,,
+Points,2,,,
+Difficulty,5,,,
+Option,100,NIST Cybersecurity Framework,,Correct. This provides a flexible structure.
+Option,100,ISO 27001,,Correct. This offers comprehensive information security management.
+Option,100,FAIR (Factor Analysis of Information Risk),,Correct. This enables quantitative risk analysis.
+Option,100,Threat intelligence-driven approaches,,Correct. These focus on actual adversary activities.
+Option,0,Compliance-only frameworks,,Incorrect. The chapter emphasizes going beyond compliance.
+Hint,Think about which established frameworks the chapter discusses,,,
+Feedback,Valuable frameworks include NIST Cybersecurity Framework, ISO 27001, FAIR for quantitative analysis, and threat intelligence-driven approaches,,,
+,,,, 
+//Question 17,,,,
+NewQuestion,MC,,,
+ID,RISK-257,,,
+Title,Continuous Improvement,,,
+QuestionText,What is essential for continuous improvement in security programs?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Avoiding all assessments and feedback,,Incorrect. This prevents improvement.
+Option,100,Regular assessment, adaptation, and evolution,,Correct! This creates a virtuous cycle.
+Option,0,Implementing controls once and never changing them,,Incorrect. This doesn't allow for improvement.
+Option,0,Eliminating all security metrics,,Incorrect. Metrics inform improvement.
+Hint,Think about what enables ongoing enhancement of security programs,,,
+Feedback,Continuous improvement requires regular assessment, adaptation, and evolution through feedback mechanisms like assessments, incident response, and exercises,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 18,,,,
+NewQuestion,MS,,,
+ID,RISK-258,,,
+Title,Security Integration,,,
+QuestionText,How should security be integrated with broader organizational processes for sustainability? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Embedding security considerations in technology planning,,Correct. This addresses security proactively.
+Option,100,Integrating security into vendor management,,Correct. This extends security oversight.
+Option,100,Including security in product development processes,,Correct. This builds security in from the start.
+Option,100,Considering security in merger and acquisition activities,,Correct. This prevents security gaps.
+Option,0,Keeping security completely separate from business decisions,,Incorrect. This creates misalignment.
+Hint,Think about how to make security part of normal business operations,,,
+Feedback,Sustainable integration requires embedding security in technology planning, vendor management, product development, and merger/acquisition activities,,,
+,,,, 
+//Question 19,,,,
+NewQuestion,MC,,,
+ID,RISK-259,,,
+Title,Quantum Risk Assessment,,,
+QuestionText,What should organizations consider when developing a quantum risk assessment?,,,
+Points,1,,,
+Difficulty,5,,,
+Option,0,Only the color of quantum computers,,Incorrect. This is irrelevant to risk assessment.
+Option,100,Systems using vulnerable cryptographic algorithms and data longevity requirements,,Correct! This addresses core quantum risks.
+Option,0,Eliminating all encryption immediately,,Incorrect. This would break systems.
+Option,0,Ignoring quantum developments entirely,,Incorrect. Proactive preparation is essential.
+Hint,Think about what makes data vulnerable to future quantum attacks,,,
+Feedback,Quantum risk assessment should identify systems using vulnerable cryptographic algorithms and prioritize them based on the sensitivity and longevity of protected data,,,
+,,,, 
+//Question 20,,,,
+NewQuestion,MC,,,
+ID,RISK-260,,,
+Title,Future of Risk Management,,,
+QuestionText,What is the main theme of the future of information risk management as discussed in this chapter?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Eliminating all technology to reduce risk,,Incorrect. This would eliminate business value.
+Option,100,Adapting to evolving threats and technologies while maintaining fundamental risk principles,,Correct! This is the main theme.
+Option,0,Reverting to paper-based systems for security,,Incorrect. This ignores modern realities.
+Option,0,Focusing only on current threats and ignoring future developments,,Incorrect. The chapter emphasizes future awareness.
+Hint,Think about how the chapter balances change with foundational principles,,,
+Feedback,The main theme is adapting to evolving threats and technologies while maintaining fundamental risk management principles,,,

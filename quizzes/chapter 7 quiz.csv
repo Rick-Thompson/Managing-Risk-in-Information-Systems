@@ -1,0 +1,301 @@
+//(Note: The 'images' folder is assumed to be in the "/content/<course path>/" directory),,,,
+//Question Text is always a required field,,,,
+// An ID will be generated using the (Course code)-(Question number) if an ID is not specified for a question,,,,
+,,,, 
+// Please ensure that the CSV file is saved as "CSV UTF-8" encoded to ensure that non-ASCII characters like à, ø, é and other are able to be correctly imported,,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 1,,,,
+NewQuestion,MC,,,
+ID,RISK-101,,,
+Title,BIA vs BCP,,,
+QuestionText,What is the primary difference between Business Impact Analysis (BIA) and Business Continuity Planning (BCP)?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,BCP is only for IT systems while BIA is for business functions,,Incorrect. Both address business functions.
+Option,100,BIA identifies critical functions and impacts while BCP develops strategies to maintain them,,Correct! This is the key distinction.
+Option,0,BIA is more technical while BCP is more business-focused,,Incorrect. Both have business and technical elements.
+Option,0,BIA is conducted annually while BCP is continuous,,Incorrect. Both should be ongoing activities.
+Hint,Think about the purpose of each activity in the continuity planning process,,,
+Feedback,BIA identifies critical functions and their impacts, while BCP develops strategies to maintain those functions during disruptions,,,
+,,,, 
+//Question 2,,,,
+NewQuestion,MC,,,
+ID,RISK-102,,,
+Title,BIA Process,,,
+QuestionText,What is typically the first step in the Business Impact Analysis process?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,Quantifying financial impacts,,Incorrect. This comes later in the process.
+Option,100,Comprehensive function identification,,Correct! This catalogs all significant organizational activities.
+Option,0,Establishing recovery objectives,,Incorrect. This comes after impact analysis.
+Option,0,Developing continuity strategies,,Incorrect. This is part of BCP, not the initial BIA step.
+Hint,Think about what you need to do before analyzing impacts,,,
+Feedback,The BIA process begins with comprehensive function identification—cataloging all significant activities the organization performs,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 3,,,,
+NewQuestion,MS,,,
+ID,RISK-103,,,
+Title,BIA Impact Categories,,,
+QuestionText,Which categories of impact are typically assessed in a Business Impact Analysis? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Financial impact,,Correct. This examines direct monetary losses.
+Option,100,Operational impact,,Correct. This assesses effects on internal capabilities.
+Option,100,Reputational impact,,Correct. This evaluates potential damage to organizational standing.
+Option,100,Regulatory and compliance impact,,Correct. This examines legal consequences.
+Option,0,Employee lunch preferences,,Incorrect. This is not a standard BIA impact category.
+Hint,Think about the different ways a disruption could affect an organization,,,
+Feedback,BIA typically assesses financial, operational, reputational, and regulatory/compliance impacts,,,
+,,,, 
+//Question 4,,,,
+NewQuestion,MC,,,
+ID,RISK-104,,,
+Title,RTO Definition,,,
+QuestionText,What does Recovery Time Objective (RTO) specify?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,The maximum acceptable data loss measured in time,,Incorrect. This describes RPO.
+Option,100,The maximum acceptable time between function disruption and restoration,,Correct! This is the definition of RTO.
+Option,0,The time needed to create a backup,,Incorrect. This is backup window planning.
+Option,0,The time between security incidents,,Incorrect. This is unrelated to RTO.
+Hint,Think about what "time" objective RTO refers to,,,
+Feedback,RTO specifies the maximum acceptable time between function disruption and restoration,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 5,,,,
+NewQuestion,MS,,,
+ID,RISK-105,,,
+Title,RPO Definition,,,
+QuestionText,Which statements accurately describe Recovery Point Objective (RPO)? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,It specifies the maximum acceptable data loss measured in time,,Correct. This is the key definition.
+Option,100,It represents how much data recreation or reentry the organization can tolerate,,Correct. This explains the practical implication.
+Option,100,It directly influences backup frequency for transaction-processing systems,,Correct. More frequent backups are needed for shorter RPOs.
+Option,0,It measures how quickly a function must be restored,,Incorrect. This describes RTO, not RPO.
+Option,0,It determines the color scheme for backup media,,Incorrect. This is unrelated to RPO.
+Hint,Think about what "point" in time RPO refers to,,,
+Feedback,RPO specifies maximum acceptable data loss measured in time and directly influences backup frequency,,,
+,,,, 
+//Question 6,,,,
+NewQuestion,MC,,,
+ID,RISK-106,,,
+Title,Tiered Recovery Objectives,,,
+QuestionText,What is the primary benefit of implementing tiered recovery objectives?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,It makes all systems equally important,,Incorrect. Tiering distinguishes different importance levels.
+Option,100,It enables more efficient resource allocation by focusing on truly time-sensitive components,,Correct! This is the key benefit.
+Option,0,It eliminates the need for backups,,Incorrect. Tiering complements backup strategies.
+Option,0,It makes recovery planning more complex,,Incorrect. It should simplify resource allocation.
+Hint,Think about how tiering helps with resource allocation,,,
+Feedback,Tiered recovery objectives enable more efficient resource allocation by focusing immediate recovery efforts on time-sensitive components,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 7,,,,
+NewQuestion,MS,,,
+ID,RISK-107,,,
+Title,BCP Framework Elements,,,
+QuestionText,Which elements are typically included in a Business Continuity Planning framework? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Strategy development for meeting recovery objectives,,Correct. This is a core element.
+Option,100,Procedure development for implementation during disruptions,,Correct. This transforms strategies into actionable steps.
+Option,100,Resource requirement documentation,,Correct. This identifies elements needed for strategy execution.
+Option,100,Plan documentation in accessible formats,,Correct. This compiles strategies and procedures for use.
+Option,0,Employee birthday tracking,,Incorrect. This is not part of BCP.
+Hint,Think about what's needed to implement a continuity plan,,,
+Feedback,BCP frameworks include strategy development, procedure development, resource documentation, and plan documentation,,,
+,,,, 
+//Question 8,,,,
+NewQuestion,MC,,,
+ID,RISK-108,,,
+Title,Hot Site Characteristics,,,
+QuestionText,What is a key characteristic of hot sites in alternate site strategies?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,They require substantial setup time during activation,,Incorrect. This describes cold sites.
+Option,100,They maintain fully configured environments ready for immediate operation,,Correct! This is the defining characteristic.
+Option,0,They provide only basic infrastructure capacity,,Incorrect. This describes cold sites.
+Option,0,They are the least expensive alternate site option,,Incorrect. Hot sites are the most expensive.
+Hint,Think about what makes a site "hot" for immediate use,,,
+Feedback,Hot sites maintain fully configured environments with current data and applications, ready for immediate operation,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 9,,,,
+NewQuestion,MS,,,
+ID,RISK-109,,,
+Title,Warm Site Characteristics,,,
+QuestionText,Which characteristics describe warm sites in alternate site strategies? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,They maintain partial infrastructure ready for activation,,Correct. This is a key characteristic.
+Option,100,They typically include core technology components and network connectivity,,Correct. This describes their technical setup.
+Option,100,They offer more economical protection than hot sites for functions with moderate time sensitivity,,Correct. This explains their value proposition.
+Option,0,They provide fully configured environments ready for immediate operation,,Incorrect. This describes hot sites.
+Option,0,They require no setup time during activation,,Incorrect. They require some configuration.
+Hint,Think about how warm sites balance cost and readiness,,,
+Feedback,Warm sites maintain partial infrastructure with core components and connectivity, offering economical protection for moderately time-sensitive functions,,,
+,,,, 
+//Question 10,,,,
+NewQuestion,MC,,,
+ID,RISK-110,,,
+Title,Cold Site Characteristics,,,
+QuestionText,What is a primary disadvantage of cold sites compared to hot and warm sites?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,They are the most expensive option,,Incorrect. They're the least expensive.
+Option,100,They require substantial implementation effort during disruptions,,Correct! This results in longer recovery times.
+Option,0,They provide too much infrastructure,,Incorrect. They provide minimal infrastructure.
+Option,0,They are too secure,,Incorrect. Security is not their distinguishing factor.
+Hint,Think about what makes cold sites less ready for immediate use,,,
+Feedback,Cold sites require substantial implementation effort during disruptions, resulting in recovery times typically measured in weeks,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 11,,,,
+NewQuestion,MC,,,
+ID,RISK-111,,,
+Title,Hybrid Site Approaches,,,
+QuestionText,What is a common approach in hybrid alternate site strategies?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Using only cold sites for all functions,,Incorrect. This wouldn't be hybrid.
+Option,100,Using tiered recovery where critical systems use hot sites while less critical elements use warm or cold strategies,,Correct! This optimizes resource allocation.
+Option,0,Using only hot sites for everything,,Incorrect. This would be expensive and not hybrid.
+Option,0,Using no alternate sites at all,,Incorrect. This would eliminate the strategy entirely.
+Hint,Think about how hybrid approaches optimize different strategies,,,
+Feedback,Hybrid approaches often use tiered recovery, matching protection levels to specific recovery requirements,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 12,,,,
+NewQuestion,MS,,,
+ID,RISK-112,,,
+Title,Communication Stakeholders,,,
+QuestionText,Which groups should typically be included in stakeholder identification for communication during disruptions? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Internal executives requiring strategic impact information,,Correct. Executives need high-level information.
+Option,100,Technical staff implementing recovery procedures,,Correct. Technical staff need detailed operational information.
+Option,100,Customers concerned about service availability,,Correct. Customers are important external stakeholders.
+Option,100,Regulators expecting compliance updates,,Correct. Regulatory communication is often required.
+Option,0,Local pizza delivery services,,Incorrect. These are not typically stakeholders in disruption communication.
+Hint,Think about who needs to know about disruptions and why,,,
+Feedback,Stakeholder identification includes internal executives, technical staff, customers, and regulators,,,
+,,,, 
+//Question 13,,,,
+NewQuestion,MC,,,
+ID,RISK-113,,,
+Title,Message Development,,,
+QuestionText,What is an important characteristic of effective message templates for disruption communication?,,,
+Option,0,They should be as brief as possible,,Incorrect. They need sufficient detail.
+Option,100,They should include placeholder sections for event-specific details,,Correct! This allows rapid customization.
+Option,0,They should be created during the disruption,,Incorrect. They should be pre-approved.
+Option,0,They should only be in technical language,,Incorrect. They should be appropriate for audience.
+Hint,Think about what makes templates useful during actual events,,,
+Feedback,Effective message templates include placeholder sections for event-specific details while maintaining consistent structure and tone,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 14,,,,
+NewQuestion,MS,,,
+ID,RISK-114,,,
+Title,Channel Strategy,,,
+QuestionText,Which considerations are important for communication channel strategy during disruptions? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Accounting for potential unavailability of normal communication systems,,Correct. This is a key consideration.
+Option,100,Establishing primary and alternate channels for each stakeholder group,,Correct. This ensures communication resilience.
+Option,100,Maintaining externally hosted notification systems outside primary infrastructure,,Correct. This enables communication even when internal systems fail.
+Option,0,Using only the most expensive communication methods,,Incorrect. Cost should not be the primary factor.
+Option,0,Requiring all communication to go through a single person,,Incorrect. This creates a bottleneck.
+Hint,Think about how to ensure communication works even when normal systems fail,,,
+Feedback,Channel strategy should account for system unavailability, establish primary and alternate channels, and maintain external notification systems,,,
+,,,, 
+//Question 15,,,,
+NewQuestion,MC,,,
+ID,RISK-115,,,
+Title,Spokesperson Identification,,,
+QuestionText,Why is it important to designate alternate spokespersons for communication during disruptions?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,To reduce the workload of primary spokespersons,,Incorrect. The main reason is different.
+Option,100,To ensure communication capability even if primary spokespersons are unavailable,,Correct! This ensures continuity of communication.
+Option,0,To provide more opinions during communication,,Incorrect. Consistency is more important.
+Option,0,To save money on communication costs,,Incorrect. This is not the primary reason.
+Hint,Think about what could prevent primary spokespersons from communicating,,,
+Feedback,Alternate spokespersons ensure communication capability even if primary spokespersons are unavailable during disruptions,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 16,,,,
+NewQuestion,MS,,,
+ID,RISK-116,,,
+Title,BIA Documentation,,,
+QuestionText,Which sections are typically included in integrated BIA/BCP documentation? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Executive Summary with criticality overview,,Correct. This provides high-level understanding.
+Option,100,Critical Function Inventory with recovery objectives,,Correct. This catalogs essential functions.
+Option,100,Impact Analysis with detailed assessment of potential consequences,,Correct. This documents disruption effects.
+Option,100,Recovery Procedures with actionable instructions,,Correct. This provides detailed response steps.
+Option,0,Employee lunch menu preferences,,Incorrect. This is not part of BIA/BCP documentation.
+Hint,Think about what information is needed for both analysis and planning,,,
+Feedback,Integrated BIA/BCP documentation includes executive summary, function inventory, impact analysis, and recovery procedures,,,
+,,,, 
+//Question 17,,,,
+NewQuestion,MC,,,
+ID,RISK-117,,,
+Title,Maintenance and Exercise Program,,,
+QuestionText,What is a key component of the maintenance and exercise program section in BIA/BCP documentation?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Eliminating all testing to reduce costs,,Incorrect. Testing is essential.
+Option,100,Exercise program details with different testing methodologies and schedules,,Correct! This ensures continued effectiveness.
+Option,0,Requiring annual documentation updates only,,Incorrect. More frequent reviews may be needed.
+Option,0,Assigning documentation maintenance to a single person,,Incorrect. This creates a single point of failure.
+Hint,Think about what keeps documentation current and plans effective,,,
+Feedback,The maintenance and exercise program includes exercise details with different methodologies and schedules to ensure continued effectiveness,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 18,,,,
+NewQuestion,MS,,,
+ID,RISK-118,,,
+Title,Appendices Content,,,
+QuestionText,Which types of information are typically included in the appendices section of BIA/BCP documentation? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Contact directories with emergency information,,Correct. This provides essential communication details.
+Option,100,Technical configuration details for recovery systems,,Correct. This offers detailed implementation information.
+Option,100,Alternate site facility information,,Correct. This includes activation procedures and access instructions.
+Option,100,External dependency documentation,,Correct. This details critical vendor relationships.
+Option,0,Employee personal social media accounts,,Incorrect. This is not appropriate for BIA/BCP documentation.
+Hint,Think about what detailed information supports implementation but isn't part of main procedures,,,
+Feedback,Appendices typically include contact directories, technical configurations, alternate site information, and external dependency documentation,,,
+,,,, 
+//Question 19,,,,
+NewQuestion,MC,,,
+ID,RISK-119,,,
+Title,Process Mapping,,,
+QuestionText,What is the primary benefit of creating process maps during BIA?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,To make documentation more colorful,,Incorrect. Visual appeal is not the benefit.
+Option,100,To identify potentially overlooked dependencies and single points of failure,,Correct! This is a key analytical benefit.
+Option,0,To reduce the number of critical functions,,Incorrect. Process mapping doesn't change function criticality.
+Option,0,To eliminate the need for detailed analysis,,Incorrect. Process mapping is part of detailed analysis.
+Hint,Think about what visual mapping reveals about business processes,,,
+Feedback,Process maps help identify potentially overlooked dependencies and single points of failure in business functions,,,
+,,,, 
+//Question 20,,,,
+NewQuestion,MC,,,
+ID,RISK-120,,,
+Title,Resource Requirement Documentation,,,
+QuestionText,Why is it important to document resource requirements for critical functions during BIA?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,To reduce the number of required resources,,Incorrect. Documentation doesn't reduce requirements.
+Option,100,To guide resource allocation and acquisition during actual disruptions,,Correct! This ensures recovery efforts address all necessary components.
+Option,0,To eliminate the need for backups,,Incorrect. Resource documentation complements backups.
+Option,0,To make the documentation longer,,Incorrect. Length is not the goal.
+Hint,Think about how resource documentation helps during actual recovery,,,
+Feedback,Resource requirement documentation guides resource allocation and acquisition during disruptions, ensuring all necessary components are addressed,,,

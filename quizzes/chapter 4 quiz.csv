@@ -1,0 +1,303 @@
+//(Note: The 'images' folder is assumed to be in the "/content/<course path>/" directory),,,,
+//Question Text is always a required field,,,,
+// An ID will be generated using the (Course code)-(Question number) if an ID is not specified for a question,,,,
+,,,, 
+// Please ensure that the CSV file is saved as "CSV UTF-8" encoded to ensure that non-ASCII characters like à, ø, é and other are able to be correctly imported,,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 1,,,,
+NewQuestion,MC,,,
+ID,RISK-041,,,
+Title,Importance of Backups,,,
+QuestionText,Which of the following represents one of the most serious threats to any organization, regardless of its size or industry?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,Outdated software,,Incorrect. While a concern, not the most serious threat.
+Option,100,Data loss,,Correct! Data loss is one of the most serious threats to organizations.
+Option,0,Slow internet connection,,Incorrect. This is an inconvenience, not a serious threat.
+Option,0,Unattractive office decor,,Incorrect. This is not a threat to organizations.
+Hint,Think about what could halt operations and potentially threaten business survival,,,
+Feedback,Data loss represents one of the most serious threats to any organization, regardless of size or industry,,,
+,,,, 
+//Question 2,,,,
+NewQuestion,MC,,,
+ID,RISK-042,,,
+Title,3-2-1 Rule Components,,,
+QuestionText,In the 3-2-1 backup rule, what does the "2" represent?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,Two copies of your data,,Incorrect. This relates to the first number.
+Option,100,Two different types of storage media,,Correct! The "2" refers to two different storage media types.
+Option,0,Two offsite copies,,Incorrect. This relates to the third number.
+Option,0,Two backup administrators,,Incorrect. This is not part of the 3-2-1 rule.
+Hint,Think about diversifying storage to protect against media-specific failures,,,
+Feedback,The "2" in the 3-2-1 rule represents using two different types of storage media,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 3,,,,
+NewQuestion,MS,,,
+ID,RISK-043,,,
+Title,Backup Methodologies,,,
+QuestionText,Which of the following are traditional backup methodologies? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Full backups,,Correct. These capture complete copies of all selected data.
+Option,100,Incremental backups,,Correct. These capture data that has changed since the previous backup.
+Option,100,Differential backups,,Correct. These capture all changes since the last full backup.
+Option,0,Random backups,,Incorrect. This is not a recognized backup methodology.
+Option,0,Selective backups,,Incorrect. While partial recovery exists, this is not a standard methodology name.
+Hint,Think about the main approaches to creating backups based on what data they capture,,,
+Feedback,Traditional backup methodologies include full, incremental, and differential backups,,,
+,,,, 
+//Question 4,,,,
+NewQuestion,MC,,,
+ID,RISK-044,,,
+Title,Incremental Backup Characteristics,,,
+QuestionText,What is a key characteristic of incremental backups?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,They capture all data every time,,Incorrect. This describes full backups.
+Option,100,They only capture data that has changed since the previous backup,,Correct! This dramatically reduces storage space and backup window.
+Option,0,They capture all changes since the last full backup,,Incorrect. This describes differential backups.
+Option,0,They create a complete system image,,Incorrect. This describes full backups or system images.
+Hint,Think about what makes incremental backups efficient in terms of storage and time,,,
+Feedback,Incremental backups only capture data that has changed since the previous backup, reducing storage space and backup window,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 5,,,,
+NewQuestion,MS,,,
+ID,RISK-045,,,
+Title,Modern Backup Technologies,,,
+QuestionText,Which of the following are modern backup technologies or innovations? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Continuous data protection (CDP),,Correct. This captures every change to protected data in real-time.
+Option,100,Synthetic full backups,,Correct. These create a new full backup by combining existing backups.
+Option,100,Snapshot-based backups,,Correct. These capture point-in-time images of data.
+Option,0,Manual tape backups,,Incorrect. This is a traditional, not modern technology.
+Option,0,Floppy disk backups,,Incorrect. This is an outdated technology.
+Hint,Think about recent innovations that improve backup efficiency or capabilities,,,
+Feedback,Modern backup technologies include CDP, synthetic full backups, and snapshot-based backups,,,
+,,,, 
+//Question 6,,,,
+NewQuestion,MC,,,
+ID,RISK-046,,,
+Title,Hard Disk Drive Advantages,,,
+QuestionText,What is a key advantage of hard disk drives (HDDs) for backup storage compared to tape?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Lower cost per terabyte,,Incorrect. Tape typically offers better cost efficiency for long-term storage.
+Option,100,Random access to data,,Correct! Unlike sequential-access tape, disks provide random access.
+Option,0,Better longevity,,Incorrect. Tape can have excellent longevity when properly stored.
+Option,0,Higher portability,,Incorrect. Tape cartridges are generally more portable.
+Hint,Think about how you access data on disks versus tape,,,
+Feedback,HDDs provide random access to data, significantly accelerating the location and restoration of specific files compared to tape,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 7,,,,
+NewQuestion,MS,,,
+ID,RISK-047,,,
+Title,Backup Media Types,,,
+QuestionText,Which storage media types are commonly used for backup systems? (Select all that apply),,,
+Points,2,,,
+Difficulty,2,,,
+Option,100,Hard disk drives (HDDs),,Correct. These are commonly used for primary backup storage.
+Option,100,Magnetic tape,,Correct. Tape continues to play an important role in enterprise backup strategies.
+Option,100,Cloud storage,,Correct. Cloud has revolutionized backup practices.
+Option,100,Solid-state drives (SSDs),,Correct. These offer superior performance for certain backup needs.
+Option,0,Paper storage,,Incorrect. While used for some archival purposes, not common for backups.
+Hint,Think about the different physical media used for storing backup data,,,
+Feedback,Common backup storage media include HDDs, magnetic tape, cloud storage, and SSDs,,,
+,,,, 
+//Question 8,,,,
+NewQuestion,MC,,,
+ID,RISK-048,,,
+Title,Cloud Storage Benefits,,,
+QuestionText,Which of the following is a key benefit of using cloud storage for backups?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,Higher upfront capital investment,,Incorrect. Cloud typically reduces capital investment.
+Option,0,Reduced geographic redundancy,,Incorrect. Cloud typically increases geographic redundancy.
+Option,100,Inherent satisfaction of the offsite requirement,,Correct! Cloud storage inherently satisfies the offsite requirement.
+Option,0,More complex management,,Incorrect. Cloud often simplifies management.
+Hint,Think about what the 3-2-1 rule requires for offsite storage,,,
+Feedback,Cloud storage inherently satisfies the offsite requirement of the 3-2-1 rule,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 9,,,,
+NewQuestion,MS,,,
+ID,RISK-049,,,
+Title,Backup Encryption,,,
+QuestionText,Which of the following are important aspects of backup encryption? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Encrypting data in transit,,Correct. Secure protocols like TLS should encrypt network communications.
+Option,100,Encrypting data at rest,,Correct. Both file-level and full-disk encryption options exist.
+Option,100,Secure management of encryption keys,,Correct. Without proper key management, encryption can create false security.
+Option,0,Using the same password for all backups,,Incorrect. This would be a security risk.
+Option,0,Writing passwords on sticky notes,,Incorrect. This would compromise security.
+Hint,Think about where data needs protection and how keys should be managed,,,
+Feedback,Backup encryption should protect data in transit and at rest, with secure key management,,,
+,,,, 
+//Question 10,,,,
+NewQuestion,MC,,,
+ID,RISK-050,,,
+Title,Access Control Principle,,,
+QuestionText,What security principle should be implemented for access controls to backup systems?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,Maximum privilege,,Incorrect. This would give users more access than needed.
+Option,100,Least privilege,,Correct! Users should only have the minimum permissions necessary.
+Option,0,Random access,,Incorrect. This is not a security principle.
+Option,0,Unlimited access,,Incorrect. This would be a major security vulnerability.
+Hint,Think about how much access users should have to perform their jobs,,,
+Feedback,Access controls for backup systems should implement the principle of least privilege,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 11,,,,
+NewQuestion,MC,,,
+ID,RISK-051,,,
+Title,Vulnerability Management,,,
+QuestionText,How should backup systems be treated in terms of vulnerability management?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,They should be deprioritized for patches,,Incorrect. This creates security gaps.
+Option,100,They should be included in regular patching cycles,,Correct! Backup systems require the same attention as other critical infrastructure.
+Option,0,They should be patched only during major upgrades,,Incorrect. This leaves vulnerabilities unaddressed.
+Option,0,They don't need patching since they're not connected to networks,,Incorrect. Most backup systems are network-connected.
+Hint,Think about how backup systems compare to other critical infrastructure,,,
+Feedback,Backup systems should be included in regular patching cycles to address security vulnerabilities,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 12,,,,
+NewQuestion,MS,,,
+ID,RISK-052,,,
+Title,Audit Logging Benefits,,,
+QuestionText,Which of the following are benefits of audit logging for backup systems? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Detecting unauthorized access attempts,,Correct. Logs help identify potential security incidents.
+Option,100,Providing visibility into backup system activities,,Correct. Logs show what's happening with backup operations.
+Option,100,Helping with potential insider threat detection,,Correct. Logs can reveal suspicious internal activities.
+Option,0,Eliminating the need for backups,,Incorrect. Logging doesn't replace backups.
+Option,0,Reducing storage requirements,,Incorrect. Logging actually increases storage needs.
+Hint,Think about what security events logs can help detect,,,
+Feedback,Audit logging provides visibility into backup activities and helps detect unauthorized access or insider threats,,,
+,,,, 
+//Question 13,,,,
+NewQuestion,MC,,,
+ID,RISK-053,,,
+Title,Ransomware Protection,,,
+QuestionText,Which approach provides a critical defense against ransomware attacks on backup systems?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Using the same passwords as production systems,,Incorrect. This would make backups equally vulnerable.
+Option,0,Keeping backups on the same network as production,,Incorrect. This allows ransomware to spread to backups.
+Option,100,Implementing immutable backups,,Correct! This prevents backups from being modified or deleted.
+Option,0,Disabling all backup systems,,Incorrect. This eliminates protection entirely.
+Hint,Think about how to ensure backups can't be modified by attackers,,,
+Feedback,Immutable backups provide a critical defense by preventing modification or deletion even by attackers,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 14,,,,
+NewQuestion,MS,,,
+ID,RISK-054,,,
+Title,Physical Security,,,
+QuestionText,Which of the following are important for physical security of onsite backup media? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Appropriate facility security,,Correct. Backup media should receive the same physical protection as other critical assets.
+Option,100,Environmental controls,,Correct. Proper temperature and humidity are important for media longevity.
+Option,100,Chain-of-custody tracking for transported media,,Correct. This ensures accountability when media is moved.
+Option,0,Leaving tapes in unsecured areas,,Incorrect. This would compromise physical security.
+Option,0,Using the same courier for all deliveries,,Incorrect. This creates a single point of failure.
+Hint,Think about what protects physical backup media from damage or theft,,,
+Feedback,Physical security for backup media includes facility security, environmental controls, and chain-of-custody tracking,,,
+,,,, 
+//Question 15,,,,
+NewQuestion,MC,,,
+ID,RISK-055,,,
+Title,Backup Security Importance,,,
+QuestionText,Why are backups particularly attractive targets for attackers?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Because they're easy to steal,,Incorrect. Physical security should protect backups.
+Option,0,Because they're not monitored,,Incorrect. Properly managed backups should be monitored.
+Option,100,Because they contain complete collections of an organization's most sensitive information,,Correct! This makes them particularly attractive targets.
+Option,0,Because they're stored in the cloud,,Incorrect. Cloud storage can be secure with proper controls.
+Hint,Think about what makes backups valuable to attackers,,,
+Feedback,Backups contain complete collections of sensitive information, making them particularly attractive targets,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 16,,,,
+NewQuestion,MS,,,
+ID,RISK-056,,,
+Title,Backup System Security,,,
+QuestionText,Which of the following are essential security measures for backup systems? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Encryption for data in transit and at rest,,Correct. This protects data even if media is compromised.
+Option,100,Strict access controls with multi-factor authentication,,Correct. This limits who can access backup systems.
+Option,100,Regular vulnerability management and patching,,Correct. This addresses security vulnerabilities in backup infrastructure.
+Option,100,Comprehensive audit logging,,Correct. This provides visibility into backup activities.
+Option,0,Disabling all security to improve backup speed,,Incorrect. This would create major vulnerabilities.
+Hint,Think about the same security measures used for other critical systems,,,
+Feedback,Essential backup security measures include encryption, access controls, vulnerability management, and audit logging,,,
+,,,, 
+//Question 17,,,,
+NewQuestion,MC,,,
+ID,RISK-057,,,
+Title,Security Misconceptions,,,
+QuestionText,What is a common security mistake organizations make regarding backup systems?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Implementing too much security,,Incorrect. It's hard to have too much security.
+Option,100,Focusing extensively on production system security while leaving backup systems inadequately protected,,Correct! This creates a major security gap.
+Option,0,Using different security tools for backups,,Incorrect. This can actually be beneficial.
+Option,0,Testing backup security regularly,,Incorrect. Regular testing is a good practice.
+Hint,Think about where security attention is typically focused,,,
+Feedback,Organizations often focus on production security while leaving backup systems inadequately protected,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 18,,,,
+NewQuestion,MS,,,
+ID,RISK-058,,,
+Title,Security Testing,,,
+QuestionText,Which security testing procedures should be applied to backup infrastructure? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Vulnerability scanning,,Correct. This identifies security vulnerabilities in backup systems.
+Option,100,Penetration testing,,Correct. This tests the effectiveness of backup security measures.
+Option,100,Regular security assessments,,Correct. These evaluate overall backup security posture.
+Option,0,Ignoring security testing,,Incorrect. This would leave vulnerabilities undetected.
+Option,0,Testing only during business hours,,Incorrect. Security testing should be comprehensive.
+Hint,Think about the same testing applied to other critical infrastructure,,,
+Feedback,Backup systems should undergo vulnerability scanning, penetration testing, and regular security assessments,,,
+,,,, 
+//Question 19,,,,
+NewQuestion,MC,,,
+ID,RISK-059,,,
+Title,Immutable Backups,,,
+QuestionText,Which method can be used to achieve immutable backups?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Deleting backups regularly,,Incorrect. This doesn't make backups immutable.
+Option,100,Write-once-read-many (WORM) technologies,,Correct! This prevents modification of backups after creation.
+Option,0,Storing backups on slow media,,Incorrect. Speed doesn't affect immutability.
+Option,0,Using consumer-grade storage,,Incorrect. This doesn't provide immutability.
+Hint,Think about technologies that prevent data from being modified after writing,,,
+Feedback,Immutable backups can be achieved through WORM technologies, air-gapped systems, or cloud services with versioning,,,
+,,,, 
+//Question 20,,,,
+NewQuestion,MC,,,
+ID,RISK-060,,,
+Title,3-2-1-1-0 Approach,,,
+QuestionText,"In the 3-2-1-1-0 approach, what do the additional ""1"" and ""0"" represent beyond the standard 3-2-1 rule?",,, 
+Points,1,,,
+Difficulty,5,,,
+Option,0,One additional copy and zero recovery errors,,Incorrect. The numbers have specific meanings.
+Option,100,One immutable copy and zero recovery errors,,Correct! The "1" represents an immutable copy and "0" ensures zero recovery errors through testing.
+Option,0,One additional location and zero cost,,Incorrect. Cost is not part of this approach.
+Option,0,One extra administrator and zero vulnerabilities,,Incorrect. This is not what the numbers represent.
+Hint,Think about enhanced protection and verification beyond the basic 3-2-1 rule,,,
+Feedback,The 3-2-1-1-0 approach adds one immutable copy and ensures zero recovery errors through testing,,,

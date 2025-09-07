@@ -1,0 +1,303 @@
+//(Note: The 'images' folder is assumed to be in the "/content/<course path>/" directory),,,,
+//Question Text is always a required field,,,,
+// An ID will be generated using the (Course code)-(Question number) if an ID is not specified for a question,,,,
+,,,, 
+// Please ensure that the CSV file is saved as "CSV UTF-8" encoded to ensure that non-ASCII characters like à, ø, é and other are able to be correctly imported,,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 1,,,,
+NewQuestion,MC,,,
+ID,RISK-201,,,
+Title,NotPetya Attack Vector,,,
+QuestionText,How did the NotPetya attack initially spread to organizations in Ukraine?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Through phishing emails with malicious attachments,,Incorrect. This was not the initial infection vector.
+Option,100,Through a poisoned update to M.E.Doc accounting software,,Correct! This supply chain compromise provided the initial foothold.
+Option,0,Through direct hacking of government networks,,Incorrect. The attack started with a software update.
+Option,0,Through infected USB drives,,Incorrect. This was not the initial infection method.
+Hint,Think about what type of supply chain attack was used in this incident,,,
+Feedback,NotPetya began its spread through a poisoned update to M.E.Doc, a popular Ukrainian accounting software used by approximately 80% of Ukrainian businesses,,,
+,,,, 
+//Question 2,,,,
+NewQuestion,MC,,,
+ID,RISK-202,,,
+Title,Colonial Pipeline Access,,,
+QuestionText,How did attackers initially gain access to Colonial Pipeline's network?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,By physically accessing their facilities,,Incorrect. This was a remote attack.
+Option,100,Through a compromised VPN account without multi-factor authentication,,Correct! This was the initial access vector.
+Option,0,By bribing an employee,,Incorrect. The breach was technical, not through bribery.
+Option,0,Through a zero-day vulnerability in their firewall,,Incorrect. The access was through a compromised credential.
+Hint,Think about what authentication weakness allowed this attack to succeed,,,
+Feedback,Attackers gained access through a compromised virtual private network (VPN) account that lacked multi-factor authentication,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 3,,,,
+NewQuestion,MS,,,
+ID,RISK-203,,,
+Title,Log4j Vulnerability,,,
+QuestionText,Which factors made the Log4j vulnerability (Log4Shell) particularly dangerous? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,It had a CVSS severity score of 10 out of 10,,Correct. This indicated maximum severity.
+Option,100,It was easy to exploit with minimal technical skill,,Correct. Attackers just needed to send a crafted string.
+Option,100,It was present in thousands of different software packages,,Correct. This created widespread exposure.
+Option,100,It allowed arbitrary code execution on vulnerable systems,,Correct. This was the core dangerous capability.
+Option,0,It only affected mobile applications,,Incorrect. It affected a wide range of applications.
+Hint,Think about what made this vulnerability so widespread and easy to exploit,,,
+Feedback,Log4Shell was particularly dangerous because of its maximum severity score, ease of exploitation, widespread presence in software packages, and ability to execute arbitrary code,,,
+,,,, 
+//Question 4,,,,
+NewQuestion,MC,,,
+ID,RISK-204,,,
+Title,NotPetya True Nature,,,
+QuestionText,What revealed that NotPetya was actually a destructive cyberweapon rather than typical ransomware?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,It demanded an unusually high ransom,,Incorrect. The ransom aspect was misleading.
+Option,100,Its encryption routine was designed to be irreversible,,Correct! This indicated destructive intent.
+Option,0,It only affected small businesses,,Incorrect. It affected major global corporations.
+Option,0,It spread through social media,,Incorrect. It spread through other means.
+Hint,Think about what technical aspect indicated this wasn't really about ransom,,,
+Feedback,NotPetya's encryption routine was designed to be irreversible, and the attackers' email account was quickly shut down, making it impossible for victims to communicate with them,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 5,,,,
+NewQuestion,MS,,,
+ID,RISK-205,,,
+Title,Colonial Pipeline Impact,,,
+QuestionText,What were significant consequences of the Colonial Pipeline ransomware attack? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Fuel shortages and panic buying across the southeastern United States,,Correct. This was a major public impact.
+Option,100,Increase in national average gasoline prices,,Correct. Economic impacts were significant.
+Option,100,First mandatory cybersecurity directive for the pipeline sector,,Correct. This led to regulatory changes.
+Option,100,Recovery primarily through backups rather than ransom payment,,Correct. The decryption tool was too slow.
+Option,0,Complete elimination of ransomware attacks,,Incorrect. This attack didn't stop future ransomware.
+Hint,Think about the broader impacts beyond just the immediate technical breach,,,
+Feedback,The attack caused fuel shortages, price increases, regulatory changes, and highlighted the limitations of paying ransoms,,,
+,,,, 
+//Question 6,,,,
+NewQuestion,MC,,,
+ID,RISK-206,,,
+Title,Log4j Response Challenge,,,
+QuestionText,What was a major challenge organizations faced when responding to the Log4j vulnerability?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,The vulnerability was not serious,,Incorrect. It was extremely serious.
+Option,100,Many organizations lacked visibility into where Log4j was used as a dependency,,Correct! This made assessment difficult.
+Option,0,There were no patches available,,Incorrect. Patches were released quickly.
+Option,0,Attackers didn't exploit the vulnerability,,Incorrect. It was widely exploited.
+Hint,Think about what made it hard for organizations to know if they were affected,,,
+Feedback,Many organizations struggled to identify where Log4j was used in their environments, as it was often bundled as a dependency within other software rather than installed directly,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 7,,,,
+NewQuestion,MS,,,
+ID,RISK-207,,,
+Title,Zero-Day Response,,,
+QuestionText,Which factors complicate effective response to zero-day vulnerabilities like Log4j? (Select all that apply),,,
+Points,2,,,
+Difficulty,5,,,
+Option,100,Dependency blindness in software supply chains,,Correct. Organizations often don't know all their dependencies.
+Option,100,Need for immediate action conflicting with thorough patch testing,,Correct. This creates a tension between speed and safety.
+Option,100,Attacker adaptation to bypass initial mitigations,,Correct. Attackers quickly found ways around early patches.
+Option,100,Resource constraints during emergency response,,Correct. Major vulnerabilities require all-hands efforts.
+Option,0,Simplicity of patching processes,,Incorrect. Zero-day responses are typically complex.
+Hint,Think about what makes responding to previously unknown vulnerabilities particularly difficult,,,
+Feedback,Zero-day responses are complicated by dependency blindness, the tension between immediate action and thorough testing, attacker adaptation, and resource constraints,,,
+,,,, 
+//Question 8,,,,
+NewQuestion,MC,,,
+ID,RISK-208,,,
+Title,IT/OT Integration Risk,,,
+QuestionText,What did the Colonial Pipeline incident reveal about IT/OT integration in critical infrastructure?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,IT and OT systems should never be connected,,Incorrect. Some integration is often necessary.
+Option,100,Connections between business and operational systems can enable cascading failures,,Correct! This was a key lesson.
+Option,0,OT systems are immune to cyberattacks,,Incorrect. OT systems can be attacked directly.
+Option,0,IT systems are more important than OT systems,,Incorrect. Both are important in different ways.
+Hint,Think about how the attack on business systems affected operational systems,,,
+Feedback,The incident highlighted how connections between business systems (IT) and operational systems (OT) can create cascading failures, where attacks on one affect the other,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 9,,,,
+NewQuestion,MS,,,
+ID,RISK-209,,,
+Title,Supply Chain Security,,,
+QuestionText,Which lessons emerged from the supply chain attacks discussed in the chapter? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Trust in legitimate software providers can be exploited by attackers,,Correct. This was demonstrated in both NotPetya and SolarWinds.
+Option,100,Organizations need to verify the integrity of software updates,,Correct. This helps prevent compromise.
+Option,100,Supply chain compromises can have far-reaching impacts beyond initial targets,,Correct. This was evident in all three major incidents.
+Option,100,Defensive measures must account for trusted system exploitation,,Correct. Traditional perimeter defenses are insufficient.
+Option,0,Supply chain attacks are easily prevented with antivirus software,,Incorrect. These attacks are more sophisticated.
+Hint,Think about what these incidents revealed about trust in software suppliers,,,
+Feedback,Supply chain attacks revealed the importance of verifying software integrity, the risks of exploiting trust, far-reaching impacts, and the need for defenses beyond traditional perimeter security,,,
+,,,, 
+//Question 10,,,,
+NewQuestion,MC,,,
+ID,RISK-210,,,
+Title,Scenario Planning Benefit,,,
+QuestionText,What is a key benefit of scenario planning for cybersecurity preparedness?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,It eliminates the need for incident response teams,,Incorrect. Incident response teams remain essential.
+Option,100,It helps organizations prepare for a range of possible futures rather than specific predictions,,Correct! This builds adaptive resilience.
+Option,0,It guarantees prevention of all security incidents,,Incorrect. No approach can prevent all incidents.
+Option,0,It reduces the need for security investments,,Incorrect. It may actually identify areas needing investment.
+Hint,Think about what scenario planning helps organizations prepare for,,,
+Feedback,Scenario planning helps organizations prepare for a range of possible futures rather than trying to predict specific threats, building more adaptive resilience,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 11,,,,
+NewQuestion,MC,,,
+ID,RISK-211,,,
+Title,NotPetya Attribution,,,
+QuestionText,Which nation-state actor was attributed to the NotPetya attack?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,China,,Incorrect. China was not attributed to this attack.
+Option,100,Russia,,Correct! Specifically, the GRU's Unit 74455 (Sandworm).
+Option,0,North Korea,,Incorrect. North Korea was not attributed to this attack.
+Option,0,Iran,,Incorrect. Iran was not attributed to this attack.
+Hint,Think about the geopolitical context of this attack on Ukraine,,,
+Feedback,The NotPetya attack was attributed to the Russian military intelligence agency GRU, specifically its Unit 74455 (Sandworm),,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 12,,,,
+NewQuestion,MS,,,
+ID,RISK-212,,,
+Title,Cross-Disciplinary Analysis,,,
+QuestionText,Which perspectives are important for comprehensive incident analysis? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Technical and tactical analysis,,Correct. This examines attack methods and vulnerabilities.
+Option,100,Operational impact assessment,,Correct. This looks at business effects.
+Option,100,Strategic and geopolitical context,,Correct. This considers broader motivations.
+Option,100,Economic and game theory analysis,,Correct. This examines incentives and behaviors.
+Option,100,Psychological and human factors,,Correct. This considers human elements in security.
+Hint,Think about what different disciplines can contribute to understanding incidents,,,
+Feedback,Comprehensive incident analysis requires integrating technical, operational, strategic, economic, and psychological perspectives,,,
+,,,, 
+//Question 13,,,,
+NewQuestion,MC,,,
+ID,RISK-213,,,
+Title,Log4j Exploitation Method,,,
+QuestionText,How could attackers exploit the Log4j vulnerability?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,By physically accessing servers,,Incorrect. This was a remote vulnerability.
+Option,100,By sending specially crafted strings to any system input that might be logged,,Correct! This was the simple exploitation method.
+Option,0,By launching DDoS attacks,,Incorrect. This was not how Log4j was exploited.
+Option,0,By stealing physical hardware,,Incorrect. This was not a physical attack.
+Hint,Think about what made this vulnerability so easy to exploit,,,
+Feedback,Attackers could exploit Log4j by sending a specially crafted string containing a JNDI reference to any system input that might be logged,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 14,,,,
+NewQuestion,MS,,,
+ID,RISK-214,,,
+Title,Backup Strategy Lessons,,,
+QuestionText,What backup strategy lessons emerged from these major incidents? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Air-gapped backups proved critical for recovery from destructive attacks,,Correct. Connected backups were often compromised.
+Option,100,Backup systems should be tested for actual recovery effectiveness,,Correct. Colonial relied on backups rather than the slow decryption tool.
+Option,100,Backups must be protected from the same threats as primary systems,,Correct. This prevents compromise of backup systems.
+Option,0,Backups are unnecessary if you never get attacked,,Incorrect. This ignores the reality of cyber threats.
+Option,0,All backups should be constantly connected for easy access,,Incorrect. This increases compromise risk.
+Hint,Think about what these incidents revealed about effective backup strategies,,,
+Feedback,These incidents highlighted the importance of air-gapped backups, testing recovery effectiveness, and protecting backup systems from compromise,,,
+,,,, 
+//Question 15,,,,
+NewQuestion,MC,,,
+ID,RISK-215,,,
+Title,Ransomware Economics,,,
+QuestionText,Why are critical infrastructure operators particularly vulnerable to ransomware attacks?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,They have the best security teams,,Incorrect. This would reduce vulnerability.
+Option,100,They face immediate pressure to restore services due to public safety implications,,Correct! This can make them more likely to pay ransoms.
+Option,0,They are not connected to the internet,,Incorrect. Most critical infrastructure has internet connectivity.
+Option,0,They don't have any valuable data,,Incorrect. Critical infrastructure often has very valuable data.
+Hint,Think about what makes these organizations more likely to pay ransoms,,,
+Feedback,Critical infrastructure operators face immediate pressure to restore services due to public safety implications, making them more likely to pay ransoms despite FBI recommendations against it,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 16,,,,
+NewQuestion,MS,,,
+ID,RISK-216,,,
+Title,Administrative Tool Misuse,,,
+QuestionText,Which legitimate administrative tools were misused in the NotPetya attack? (Select all that apply),,,
+Points,2,,,
+Difficulty,5,,,
+Option,100,PsExec,,Correct. This was used for lateral movement.
+Option,100,WMI (Windows Management Instrumentation),,Correct. This was also used for propagation.
+Option,0,Microsoft Word,,Incorrect. This was not used for propagation.
+Option,0,Google Chrome,,Incorrect. This was not used for propagation.
+Option,0,Adobe Reader,,Incorrect. This was not used for propagation.
+Hint,Think about what Windows administrative tools could be misused for malware propagation,,,
+Feedback,NotPetya used legitimate administrative tools like PsExec and WMI to distribute itself across networks, demonstrating the "living off the land" technique,,,
+,,,, 
+//Question 17,,,,
+NewQuestion,MC,,,
+ID,RISK-217,,,
+Title,Software Bills of Materials,,,
+QuestionText,What is a Software Bill of Materials (SBOM) and why did it gain traction after the Log4j incident?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,A list of software prices for budgeting,,Incorrect. This is not what an SBOM is.
+Option,100,A formal, machine-readable inventory of software components,,Correct! This helps identify dependencies and vulnerabilities.
+Option,0,A list of software user manuals,,Incorrect. This is not what an SBOM is.
+Option,0,A list of software sales figures,,Incorrect. This is not what an SBOM is.
+Hint,Think about what would help organizations track their software dependencies,,,
+Feedback,An SBOM is a formal, machine-readable inventory of software components that gained traction after Log4j as a way to improve dependency visibility,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 18,,,,
+NewQuestion,MS,,,
+ID,RISK-218,,,
+Title,Defense in Depth,,,
+QuestionText,Which elements are part of a defense-in-depth strategy as illustrated by these incidents? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Network filtering and application firewalls,,Correct. These provide layers of protection.
+Option,100,Endpoint protection platforms,,Correct. These protect individual systems.
+Option,100,Robust logging and monitoring,,Correct. These enable detection of exploitation attempts.
+Option,100,Air-gapped backups,,Correct. These provide recovery capabilities.
+Option,0,Single security tool for all protection,,Incorrect. This contradicts defense in depth.
+Hint,Think about what multiple layers of security would look like,,,
+Feedback,Defense in depth includes multiple layers of security controls such as network filtering, endpoint protection, monitoring, and air-gapped backups,,,
+,,,, 
+//Question 19,,,,
+NewQuestion,MC,,,
+ID,RISK-219,,,
+Title,Geopolitical Awareness,,,
+QuestionText,Why is geopolitical awareness important for cybersecurity planning?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,It eliminates the need for technical security controls,,Incorrect. Technical controls remain essential.
+Option,100,Organizations in regions with geopolitical tensions face elevated cybersecurity risks,,Correct! This affects threat exposure.
+Option,0,It makes attacks more likely to target specific software,,Incorrect. This is not the main concern.
+Option,0,It reduces the number of potential attackers,,Incorrect. Geopolitical tensions can increase threats.
+Hint,Think about how world events might affect cybersecurity risks,,,
+Feedback,Organizations with operations in regions experiencing geopolitical tensions face elevated cybersecurity risks, as demonstrated by NotPetya's targeting of Ukraine,,,
+,,,, 
+//Question 20,,,,
+NewQuestion,MC,,,
+ID,RISK-220,,,
+Title,Role-Playing Exercise Benefit,,,
+QuestionText,What is a key benefit of role-playing exercises for incident response preparation?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,They eliminate the need for actual incident response,,Incorrect. Real incidents still need to be handled.
+Option,100,They develop both technical skills and human dimensions like communication and decision-making under pressure,,Correct! This prepares teams for real incidents.
+Option,0,They guarantee perfect performance during actual incidents,,Incorrect. No exercise can ensure perfection.
+Option,0,They reduce the need for incident response documentation,,Incorrect. Documentation remains important.
+Hint,Think about what aspects of incident response these exercises help develop,,,
+Feedback,Role-playing exercises develop both technical skills and human dimensions like communication, decision-making under pressure, and team coordination,,,

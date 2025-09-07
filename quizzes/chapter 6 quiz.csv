@@ -1,0 +1,303 @@
+//(Note: The 'images' folder is assumed to be in the "/content/<course path>/" directory),,,,
+//Question Text is always a required field,,,,
+// An ID will be generated using the (Course code)-(Question number) if an ID is not specified for a question,,,,
+,,,, 
+// Please ensure that the CSV file is saved as "CSV UTF-8" encoded to ensure that non-ASCII characters like à, ø, é and other are able to be correctly imported,,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 1,,,,
+NewQuestion,MC,,,
+ID,RISK-081,,,
+Title,Full System Restoration,,,
+QuestionText,What is a key characteristic of full system restoration?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,It only restores individual files,,Incorrect. This describes file-level restoration.
+Option,100,It reconstructs an entire system including operating system, applications, and data,,Correct! This is the defining characteristic.
+Option,0,It's only used for testing,,Incorrect. Full restoration is used for actual recovery.
+Option,0,It's faster than partial restoration,,Incorrect. Full restoration typically takes longer.
+Hint,Think about what "full" system restoration would include,,,
+Feedback,Full system restoration reconstructs an entire system including operating system, applications, configurations, and data,,,
+,,,, 
+//Question 2,,,,
+NewQuestion,MC,,,
+ID,RISK-082,,,
+Title,Partial Restoration,,,
+QuestionText,What is the main advantage of partial or selective recovery over full system restoration?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,It requires more time and resources,,Incorrect. This is a disadvantage.
+Option,100,It minimizes restoration time and system disruption,,Correct! This is the primary advantage.
+Option,0,It's more complex to implement,,Incorrect. Partial restoration is typically simpler.
+Option,0,It requires more storage space,,Incorrect. It actually uses less storage for the restore process.
+Hint,Think about when you might want to restore only part of a system,,,
+Feedback,Partial restoration targets specific components, minimizing restoration time and system disruption,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 3,,,,
+NewQuestion,MS,,,
+ID,RISK-083,,,
+Title,Restoration Methodologies,,,
+QuestionText,Which of the following are restoration methodologies discussed in the chapter? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Point-in-time restoration,,Correct. This enables recovery to specific moments in time.
+Option,100,Prioritized restoration,,Correct. This recognizes that not all components share equal importance.
+Option,100,Cross-platform restoration,,Correct. This involves recovering to different environments.
+Option,0,Random restoration,,Incorrect. This is not a recognized methodology.
+Option,0,Emotional restoration,,Incorrect. This is not related to backup restoration.
+Hint,Think about different approaches to restoring backup data,,,
+Feedback,Restoration methodologies include point-in-time, prioritized, and cross-platform restoration approaches,,,
+,,,, 
+//Question 4,,,,
+NewQuestion,MC,,,
+ID,RISK-084,,,
+Title,File-level Testing,,,
+QuestionText,What is the primary focus of file-level testing in backup validation?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,Testing the physical backup media,,Incorrect. This is media testing, not file-level.
+Option,100,Confirming that individual files can be successfully restored with content integrity,,Correct! This is the main focus.
+Option,0,Testing network connectivity to backup servers,,Incorrect. This is network testing.
+Option,0,Testing the backup software user interface,,Incorrect. This is UI testing.
+Hint,Think about what "file-level" testing would verify,,,
+Feedback,File-level testing confirms that individual files can be successfully restored with content integrity intact,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 5,,,,
+NewQuestion,MS,,,
+ID,RISK-085,,,
+Title,System-level Testing,,,
+QuestionText,Which aspects are verified during system-level testing of backups? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Operating system restoration,,Correct. This includes restoring the entire OS.
+Option,100,Application installation and configuration,,Correct. This verifies applications function correctly.
+Option,100,Network connectivity,,Correct. This ensures network functionality after restoration.
+Option,100,Security implementations,,Correct. This confirms security measures are properly restored.
+Option,0,Employee satisfaction with restored systems,,Incorrect. This is not a technical verification.
+Hint,Think about what's needed for a complete system to function properly,,,
+Feedback,System-level testing verifies operating system restoration, application functionality, network connectivity, and security implementations,,,
+,,,, 
+//Question 6,,,,
+NewQuestion,MC,,,
+ID,RISK-086,,,
+Title,Integration Testing,,,
+QuestionText,What does integration testing of restored systems verify?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,That the backup software has a good user interface,,Incorrect. UI quality is not part of integration testing.
+Option,100,That interdependent systems function correctly together after restoration,,Correct! This is the key focus.
+Option,0,That backup administrators have proper certifications,,Incorrect. Personnel qualifications are not tested here.
+Option,0,That the restoration was completed quickly,,Incorrect. Speed is not the focus of integration testing.
+Hint,Think about what "integration" implies in system testing,,,
+Feedback,Integration testing verifies that interdependent systems function correctly together after restoration,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 7,,,,
+NewQuestion,MS,,,
+ID,RISK-087,,,
+Title,Checksum Validation,,,
+QuestionText,Which statements about checksums in backup validation are correct? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,They mathematically verify data integrity throughout the backup lifecycle,,Correct. This is their primary function.
+Option,100,They should be verified at multiple points: after creation, during storage, and before restoration,,Correct. This ensures ongoing integrity.
+Option,100,Modern backup systems often perform checksum validation automatically,,Correct. Automation is common in modern systems.
+Option,0,They can only be verified by human administrators,,Incorrect. Automated verification is standard.
+Option,0,They are only useful for text files,,Incorrect. Checksums work for all file types.
+Hint,Think about how checksums work and when they should be checked,,,
+Feedback,Checksums mathematically verify data integrity and should be checked at multiple points, often automatically,,,
+,,,, 
+//Question 8,,,,
+NewQuestion,MC,,,
+ID,RISK-088,,,
+Title,Consistency Checks,,,
+QuestionText,For database backups, what do consistency checks typically verify?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,That database administrators have proper training,,Incorrect. Personnel qualifications are not part of consistency checks.
+Option,100,Referential integrity, transaction completeness, and index consistency,,Correct! These are key database consistency elements.
+Option,0,That database servers are physically clean,,Incorrect. Physical cleanliness is not part of consistency checks.
+Option,0,That database documentation is up to date,,Incorrect. Documentation is not verified through consistency checks.
+Hint,Think about what makes a database internally consistent,,,
+Feedback,Database consistency checks verify referential integrity, transaction completeness, and index consistency,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 9,,,,
+NewQuestion,MS,,,
+ID,RISK-089,,,
+Title,Version Verification,,,
+QuestionText,Which aspects are important in version verification of restored data? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Comparing timestamps against expected values,,Correct. This confirms the correct time period.
+Option,100,Verifying content markers for the chosen recovery point,,Correct. This ensures content accuracy.
+Option,100,Confirming that restored data represents the expected operational state,,Correct. This ensures functional accuracy.
+Option,0,Ensuring the restoration team wore matching uniforms,,Incorrect. This is irrelevant to version verification.
+Option,0,Checking that backup software has a pleasant color scheme,,Incorrect. Aesthetics are not part of verification.
+Hint,Think about what determines if you've restored the right version,,,
+Feedback,Version verification compares timestamps, content markers, and operational states against expected values,,,
+,,,, 
+//Question 10,,,,
+NewQuestion,MC,,,
+ID,RISK-090,,,
+Title,Authentication Verification,,,
+QuestionText,What is the primary goal of authentication verification in restored data?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,To verify that backup administrators have proper certifications,,Incorrect. This is about personnel, not data.
+Option,100,To confirm that security mechanisms function correctly in restored data,,Correct! This includes user accounts and access controls.
+Option,0,To ensure the restoration was completed during business hours,,Incorrect. Timing is not part of authentication verification.
+Option,0,To check that the backup software has a good user interface,,Incorrect. UI quality is not part of verification.
+Hint,Think about what "authentication" refers to in a security context,,,
+Feedback,Authentication verification confirms that security mechanisms like user accounts and access controls function correctly after restoration,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 11,,,,
+NewQuestion,MC,,,
+ID,RISK-091,,,
+Title,Tabletop Exercises,,,
+QuestionText,What is the main advantage of tabletop exercises in disaster recovery testing?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,They provide the most realistic technical testing,,Incorrect. They don't involve technical system manipulation.
+Option,100,They identify procedural gaps and coordination weaknesses with minimal resource requirements,,Correct! This is their primary advantage.
+Option,0,They require extensive technical setup,,Incorrect. They're low-resource exercises.
+Option,0,They test actual system restoration capabilities,,Incorrect. They focus on procedures, not technical restoration.
+Hint,Think about what makes tabletop exercises different from other testing methods,,,
+Feedback,Tabletop exercises identify procedural gaps and coordination weaknesses with minimal resource requirements,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 12,,,,
+NewQuestion,MS,,,
+ID,RISK-092,,,
+Title,Functional Testing,,,
+QuestionText,Which characteristics describe functional testing of backup systems? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Restoring selected systems to isolated environments,,Correct. This tests both procedures and technical capabilities.
+Option,100,Building upon tabletop foundations,,Correct. Functional testing extends tabletop exercises.
+Option,100,Testing critical system recovery while simulating less critical components,,Correct. This balances verification with resource constraints.
+Option,0,Avoiding all technical components,,Incorrect. Functional testing includes technical elements.
+Option,0,Testing only during lunch breaks,,Incorrect. This is not a characteristic of functional testing.
+Hint,Think about how functional testing combines procedural and technical elements,,,
+Feedback,Functional testing restores selected systems to isolated environments, building on tabletop foundations with balanced resource usage,,,
+,,,, 
+//Question 13,,,,
+NewQuestion,MC,,,
+ID,RISK-093,,,
+Title,Full-Scale Simulations,,,
+QuestionText,What distinguishes full-scale simulations from other testing approaches?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,They only test documentation,,Incorrect. They're more comprehensive than documentation review.
+Option,100,They attempt to recover complete environments under conditions mimicking actual disasters,,Correct! This provides the most realistic testing.
+Option,0,They avoid technical testing,,Incorrect. They include extensive technical testing.
+Option,0,They require minimal resources,,Incorrect. They're resource-intensive.
+Hint,Think about what makes full-scale simulations comprehensive,,,
+Feedback,Full-scale simulations attempt to recover complete environments under conditions closely mimicking actual disasters,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 14,,,,
+NewQuestion,MS,,,
+ID,RISK-094,,,
+Title,Unannounced Testing,,,
+QuestionText,What are characteristics of unannounced testing exercises? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,They test organizational readiness and personnel availability,,Correct. This is a key benefit.
+Option,100,They should be implemented carefully, starting with limited scope,,Correct. This prevents unnecessary business disruption.
+Option,100,They test not only technical capabilities but organizational response,,Correct. This provides realistic assessment.
+Option,0,They should always be conducted at maximum scope,,Incorrect. Starting with limited scope is recommended.
+Option,0,They eliminate the need for scheduled testing,,Incorrect. Both approaches have value.
+Hint,Think about what "unannounced" implies and how it should be implemented,,,
+Feedback,Unannounced testing evaluates readiness and availability, should start with limited scope, and tests both technical and organizational response,,,
+,,,, 
+//Question 15,,,,
+NewQuestion,MC,,,
+ID,RISK-095,,,
+Title,GitLab Backup Failures,,,
+QuestionText,Which of the following was NOT a backup system failure that contributed to the GitLab 2017 data loss?,,,
+Points,1,,,
+Difficulty,5,,,
+Option,0,Database dumps took too long to restore,,Incorrect. This was actually a failure that contributed to the incident.
+Option,0,Filesystem backups hadn't been verified,,Incorrect. This was actually a failure that contributed to the incident.
+Option,100,All backup systems were properly monitored and maintained,,Correct! This was NOT a failure - in fact, the opposite was true.
+Option,0,LVM snapshots had been disabled without documentation,,Incorrect. This was actually a failure that contributed to the incident.
+Hint,Think about which option describes a positive situation rather than a failure,,,
+Feedback,The GitLab incident was caused by multiple backup failures, not by proper monitoring and maintenance,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 16,,,,
+NewQuestion,MS,,,
+ID,RISK-096,,,
+Title,GitLab Lessons,,,
+QuestionText,Which lessons were revealed by the GitLab 2017 data loss incident? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Backup redundancy without validation creates merely an illusion of protection,,Correct. This was a key lesson.
+Option,100,Documentation weaknesses can compound technical failures,,Correct. Poor documentation was a significant issue.
+Option,100,Monitoring failures can allow backup system degradation to continue undetected,,Correct. Unmonitored failures were a major factor.
+Option,100,Complete recovery testing is necessary rather than basic backup validation,,Correct. The incident showed restoration testing was critical.
+Option,0,Incidents should never be made public,,Incorrect. GitLab's transparency was actually praised.
+Hint,Think about what went wrong beyond just the technical failures,,,
+Feedback,The GitLab incident revealed lessons about validation, documentation, monitoring, and complete recovery testing,,,
+,,,, 
+//Question 17,,,,
+NewQuestion,MC,,,
+ID,RISK-097,,,
+Title,Recovery Prioritization,,,
+QuestionText,What is the primary benefit of establishing prioritization frameworks for recovery?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,It makes all systems equally important,,Incorrect. Prioritization distinguishes importance levels.
+Option,100,It directs recovery efforts where they provide greatest business value,,Correct! This is the key benefit.
+Option,0,It eliminates the need for backups,,Incorrect. Prioritization doesn't eliminate backup needs.
+Option,0,It makes recovery processes more complex,,Incorrect. It should simplify decision-making.
+Hint,Think about what prioritization helps achieve in recovery situations,,,
+Feedback,Prioritization frameworks direct recovery efforts toward systems that provide greatest business value,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 18,,,,
+NewQuestion,MS,,,
+ID,RISK-098,,,
+Title,Parallel Restoration,,,
+QuestionText,What are advantages of parallel restoration approaches? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,They can dramatically reduce overall recovery time,,Correct. This is a key advantage.
+Option,100,They require sufficient resources to support multiple concurrent processes,,Correct. This is both a requirement and advantage when resources are available.
+Option,0,They eliminate the need for planning,,Incorrect. Planning becomes more important with parallel processes.
+Option,0,They always reduce costs,,Incorrect. They may increase resource costs.
+Option,0,They simplify coordination requirements,,Incorrect. They actually increase coordination complexity.
+Hint,Think about what happens when you restore multiple systems simultaneously,,,
+Feedback,Parallel restoration can reduce recovery time but requires sufficient resources to support concurrent processes,,,
+,,,, 
+//Question 19,,,,
+NewQuestion,MC,,,
+ID,RISK-099,,,
+Title,Infrastructure Preparation,,,
+QuestionText,Why is infrastructure preparation important for recovery time optimization?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,It makes backups more expensive,,Incorrect. Cost is not the primary concern.
+Option,100,It eliminates delays associated with acquiring and configuring restoration environments,,Correct! This is the key benefit.
+Option,0,It eliminates the need for backups,,Incorrect. Infrastructure preparation complements backups.
+Option,0,It makes recovery processes more complex,,Incorrect. It should simplify recovery.
+Hint,Think about what infrastructure preparation prevents during recovery,,,
+Feedback,Infrastructure preparation eliminates delays associated with acquiring and configuring restoration environments,,,
+,,,, 
+//Question 20,,,,
+NewQuestion,MC,,,
+ID,RISK-100,,,
+Title,Database Restoration Challenges,,,
+QuestionText,What makes database restoration particularly challenging compared to file restoration?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,It's simpler than file restoration,,Incorrect. Database restoration is more complex.
+Option,100,It requires verification of transaction consistency and application compatibility,,Correct! These are specific database challenges.
+Option,0,It doesn't require any special considerations,,Incorrect. Databases have unique requirements.
+Option,0,It's only challenging because of the database administrator's skills,,Incorrect. The challenges are technical, not personnel-related.
+Hint,Think about what's special about databases compared to regular files,,,
+Feedback,Database restoration requires verification of transaction consistency and application compatibility, making it more complex than file restoration,,,

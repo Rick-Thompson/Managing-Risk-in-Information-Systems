@@ -1,0 +1,303 @@
+//(Note: The 'images' folder is assumed to be in the "/content/<course path>/" directory),,,,
+//Question Text is always a required field,,,,
+// An ID will be generated using the (Course code)-(Question number) if an ID is not specified for a question,,,,
+,,,, 
+// Please ensure that the CSV file is saved as "CSV UTF-8" encoded to ensure that non-ASCII characters like à, ø, é and other are able to be correctly imported,,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 1,,,,
+NewQuestion,MC,,,
+ID,RISK-141,,,
+Title,Natural Disasters Impact,,,
+QuestionText,What was one of the key IT infrastructure challenges during the 2011 Tōhoku earthquake and tsunami?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Too many data centers were available,,Incorrect. The disaster caused widespread damage to data centers.
+Option,100,Simultaneous failure of both primary and backup facilities in the same geographic region,,Correct! This highlighted the importance of geographic distribution.
+Option,0,Lack of cloud services in Japan,,Incorrect. Cloud services were available but had their own challenges.
+Option,0,Overabundance of backup power,,Incorrect. Power infrastructure suffered catastrophic disruption.
+Hint,Think about what happened when organizations had both primary and backup facilities in the same area,,,
+Feedback,Many organizations discovered that maintaining primary and backup facilities within the same geographic region resulted in simultaneous loss when the disaster's massive geographic scope encompassed both locations,,,
+,,,, 
+//Question 2,,,,
+NewQuestion,MC,,,
+ID,RISK-142,,,
+Title,Cloud Provider Outages,,,
+QuestionText,What was a key lesson learned from the AWS US-East-1 outage in 2021?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Single-region architectures are sufficient for most organizations,,Incorrect. The outage showed limitations of single-region approaches.
+Option,100,Organizations with robust multi-region architectures generally maintained operational continuity,,Correct! This demonstrated the value of geographic distribution.
+Option,0,Cloud providers never experience outages,,Incorrect. The incident showed even major providers can have significant outages.
+Option,0,Manual intervention is not needed during cloud outages,,Incorrect. Some organizations needed manual intervention due to automation dependencies.
+Hint,Think about which organizations were better able to maintain operations during the outage,,,
+Feedback,Organizations implementing robust multi-region architectures generally maintained operational continuity by routing traffic to alternative regions unaffected by the outage,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 3,,,,
+NewQuestion,MS,,,
+ID,RISK-143,,,
+Title,Ransomware in Healthcare,,,
+QuestionText,Which of the following were significant impacts of the WannaCry ransomware attack on healthcare organizations? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Electronic health record systems became inaccessible,,Correct. This forced reversion to paper documentation.
+Option,100,Diagnostic equipment became inoperable when connected to infected networks,,Correct. This prevented essential diagnostic procedures.
+Option,100,Appointment scheduling systems failed,,Correct. This created care disruptions and subsequent backlogs.
+Option,0,Improved patient satisfaction scores,,Incorrect. The attack negatively impacted patient care.
+Option,0,Increased cybersecurity staffing without any challenges,,Incorrect. The attack revealed cybersecurity challenges.
+Hint,Think about how the attack affected actual patient care capabilities,,,
+Feedback,The WannaCry attack made EHR systems inaccessible, disabled diagnostic equipment, and caused appointment scheduling failures, directly affecting patient care,,,
+,,,, 
+//Question 4,,,,
+NewQuestion,MC,,,
+ID,RISK-144,,,
+Title,Post-Recovery Analysis,,,
+QuestionText,What is typically the first step in effective post-recovery analysis?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Immediately implementing improvements,,Incorrect. Analysis should come first.
+Option,100,Comprehensive timeline reconstruction capturing both technical events and organizational responses,,Correct! This establishes a factual foundation.
+Option,0,Assigning blame to specific individuals,,Incorrect. Effective analysis focuses on systemic issues.
+Option,0,Estimating financial costs only,,Incorrect. Analysis should be broader than just financial impacts.
+Hint,Think about what you need to do before interpreting or making recommendations,,,
+Feedback,Post-recovery analysis typically begins with comprehensive timeline reconstruction capturing both technical events and organizational responses throughout the incident lifecycle,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 5,,,,
+NewQuestion,MS,,,
+ID,RISK-145,,,
+Title,DR Testing Methodologies,,,
+QuestionText,Which of the following are recognized disaster recovery testing methodologies? (Select all that apply),,,
+Points,2,,,
+Difficulty,2,,,
+Option,100,Plan review,,Correct. This examines recovery documentation for completeness and accuracy.
+Option,100,Tabletop exercises,,Correct. These engage personnel in discussion-based simulations.
+Option,100,Full-scale simulations,,Correct. These attempt to recover complete environments under realistic conditions.
+Option,100,Component testing,,Correct. This verifies specific technical elements within the recovery framework.
+Option,0,Ignoring the plan until a real disaster,,Incorrect. This is not a testing methodology.
+Hint,Think about different ways to validate disaster recovery capabilities,,,
+Feedback,DR testing methodologies include plan review, tabletop exercises, component testing, functional exercises, and full-scale simulations,,,
+,,,, 
+//Question 6,,,,
+NewQuestion,MC,,,
+ID,RISK-146,,,
+Title,Root Cause Identification,,,
+QuestionText,Which dimension is NOT typically examined during root cause identification in post-recovery analysis?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Technical root causes,,Incorrect. These are commonly examined.
+Option,0,Process root causes,,Incorrect. These are commonly examined.
+Option,0,Organizational root causes,,Incorrect. These are commonly examined.
+Option,100,Personal root causes,,Correct! Effective analysis focuses on systemic issues rather than blaming individuals.
+Hint,Think about what types of causes contribute to major incidents,,,
+Feedback,Effective root cause analysis examines technical, process, and organizational dimensions rather than focusing on personal blame,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 7,,,,
+NewQuestion,MS,,,
+ID,RISK-147,,,
+Title,Disaster Recovery Metrics,,,
+QuestionText,Which factors should be considered when evaluating the success of disaster recovery testing? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Technical criteria such as recovery time and data integrity,,Correct. These measure technical recovery effectiveness.
+Option,100,Operational criteria such as procedure effectiveness and communication clarity,,Correct. These measure organizational response effectiveness.
+Option,100,Scenario realism and relevance to actual threats,,Correct. This affects the value of testing insights.
+Option,100,Participant feedback on process effectiveness,,Correct. This identifies improvement opportunities.
+Option,0,Number of participants who enjoyed the exercise,,Incorrect. Enjoyment is not a relevant success metric.
+Hint,Think about what demonstrates that testing was effective,,,
+Feedback,DR testing success should be evaluated through technical metrics, operational effectiveness, scenario relevance, and participant feedback,,,
+,,,, 
+//Question 8,,,,
+NewQuestion,MC,,,
+ID,RISK-148,,,
+Title,Financial Institutions Resilience,,,
+QuestionText,How did Japanese financial institutions generally perform during the 2011 Tōhoku disaster?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Poorly due to lack of planning,,Incorrect. Many had invested in disaster recovery capabilities.
+Option,100,Effectively due to long-term investment in comprehensive disaster recovery capabilities,,Correct! They had learned from previous earthquakes.
+Option,0,They all failed completely,,Incorrect. Many maintained operations throughout the crisis.
+Option,0,They relied solely on manual processes,,Incorrect. They utilized technical solutions like database replication.
+Hint,Think about what preparedness measures these institutions had taken,,,
+Feedback,Japanese financial institutions demonstrated effective disaster recovery capabilities due to long-term investment following earlier earthquake experiences in 1995 and 2004,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 9,,,,
+NewQuestion,MS,,,
+ID,RISK-149,,,
+Title,Cloud Service Resilience,,,
+QuestionText,Which factors contributed to the mixed resilience of cloud services during the Tōhoku disaster? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Geographical redundancy of major providers,,Correct. Major providers maintained service through geographic distribution.
+Option,100,Single-facility infrastructures of smaller regional providers,,Correct. These were more vulnerable to regional disasters.
+Option,100,Inadequate disaster recovery provisions in service agreements,,Correct. Many lacked guaranteed recovery objectives.
+Option,0,Perfect uptime guarantees from all providers,,Incorrect. No provider can guarantee perfect uptime.
+Option,0,Universal multi-region architectures,,Incorrect. Not all organizations implemented these approaches.
+Hint,Think about what determined which cloud services were more or less affected,,,
+Feedback,Cloud service resilience during the Tōhoku disaster varied based on geographical redundancy, infrastructure design, and service agreement provisions,,,
+,,,, 
+//Question 10,,,,
+NewQuestion,MC,,,
+ID,RISK-150,,,
+Title,Human Factors in DR,,,
+QuestionText,What human dimension of disaster recovery was highlighted during the Tōhoku disaster?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Technical skills were the only important factor,,Incorrect. Technical skills alone weren't sufficient.
+Option,100,Workforce continuity measures addressing transportation and family support,,Correct! This was critical for effective recovery.
+Option,0,Remote work was impossible during disasters,,Incorrect. Remote capabilities were actually important.
+Option,0,Personal comfort was the top priority,,Incorrect. Recovery effectiveness was the focus.
+Hint,Think about what happened when key personnel couldn't access facilities or were distracted by personal concerns,,,
+Feedback,The Tōhoku disaster highlighted human dimensions, with organizations achieving effective recovery having implemented workforce continuity measures like temporary housing and family assistance,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 11,,,,
+NewQuestion,MC,,,
+ID,RISK-151,,,
+Title,AWS Outage Dependencies,,,
+QuestionText,What unexpected dependencies were revealed during the AWS US-East-1 outage?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,All systems were completely independent,,Incorrect. The outage revealed hidden dependencies.
+Option,100,Singleton dependencies like configuration systems operating exclusively in the affected region,,Correct! These created blocking conditions despite distributed applications.
+Option,0,Cloud services were immune to regional failures,,Incorrect. The outage proved otherwise.
+Option,0,Manual processes were unnecessary,,Incorrect. Some manual intervention was needed.
+Hint,Think about what happened when organizations thought they were distributed but still had single points of failure,,,
+Feedback,Many organizations discovered singleton dependencies—configuration systems, authentication services, or monitoring platforms operating exclusively in the affected region—creating unexpected blocking conditions,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 12,,,,
+NewQuestion,MS,,,
+ID,RISK-152,,,
+Title,Healthcare Ransomware Recovery,,,
+QuestionText,Which factors contributed to more successful recovery from healthcare ransomware attacks? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Comprehensive backup strategies with independent, offline copies,,Correct. These were unaffected by encryption attacks.
+Option,100,Network segmentation limiting lateral movement,,Correct. This reduced the potential impact scope.
+Option,100,Enhanced email filtering targeting phishing attack vectors,,Correct. This addressed common initial infection methods.
+Option,0,Relying solely on paying ransoms,,Incorrect. This was not a reliable recovery approach.
+Option,0,Connecting all systems to increase convenience,,Incorrect. This would increase vulnerability.
+Hint,Think about what prepared organizations had done differently,,,
+Feedback,Successful healthcare ransomware recovery was associated with comprehensive backups, network segmentation, and enhanced email filtering,,,
+,,,, 
+//Question 13,,,,
+NewQuestion,MC,,,
+ID,RISK-153,,,
+Title,Clinical Impact of Ransomware,,,
+QuestionText,How did ransomware attacks distinguish healthcare from other industries in terms of impact?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,They had no impact on patient care,,Incorrect. Clinical impacts were significant.
+Option,100,They directly affected patient care capabilities and life-safety implications,,Correct! This distinguished healthcare from other industries.
+Option,0,They were easier to recover from in healthcare,,Incorrect. Healthcare recovery was often more complex.
+Option,0,They only affected financial operations,,Incorrect. Clinical operations were significantly affected.
+Hint,Think about what makes healthcare different from other sectors when systems are compromised,,,
+Feedback,Healthcare ransomware attacks distinguished themselves by directly affecting patient care capabilities, including inaccessible EHR systems, inoperable diagnostic equipment, and appointment scheduling failures,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 14,,,,
+NewQuestion,MS,,,
+ID,RISK-154,,,
+Title,Regulatory Consequences,,,
+QuestionText,Which regulatory consequences emerged following major disaster incidents? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Updated guidance on cloud dependency management,,Correct. AWS outage led to new regulatory expectations.
+Option,100,Ransomware encryption constituted reportable breaches,,Correct. This required notification to affected individuals and agencies.
+Option,100,Financial penalties for inadequate pre-incident security measures,,Correct. Organizations faced penalties for insufficient security.
+Option,0,Elimination of all cybersecurity requirements,,Incorrect. Requirements became more stringent.
+Option,0,Reduced regulatory oversight,,Incorrect. Oversight actually increased.
+Hint,Think about how regulators responded to these incidents,,,
+Feedback,Regulatory responses included updated cloud dependency guidance, requirements for reporting ransomware as breaches, and penalties for inadequate security measures,,,
+,,,, 
+//Question 15,,,,
+NewQuestion,MC,,,
+ID,RISK-155,,,
+Title,Post-Incident Modifications,,,
+QuestionText,What was a common focus of post-incident modifications following major disasters?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Reducing security investments,,Incorrect. Organizations typically increased security investments.
+Option,100,Rigorous dependency analysis identifying and remediating single points of failure,,Correct! This was a common improvement focus.
+Option,0,Eliminating all backup systems,,Incorrect. Backups became more important.
+Option,0,Increasing reliance on single providers,,Incorrect. Organizations typically diversified providers.
+Hint,Think about what organizations learned they needed to improve,,,
+Feedback,Common post-incident modifications included rigorous dependency analysis to identify and remediate single points of failure within distributed architectures,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 16,,,,
+NewQuestion,MS,,,
+ID,RISK-156,,,
+Title,DR Testing Scope,,,
+QuestionText,Which approaches are recommended for defining disaster recovery testing scope? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Risk-based scope selection allocating greater attention to critical systems,,Correct. This optimizes testing resources.
+Option,100,Rotation schedules ensuring all critical components receive periodic evaluation,,Correct. This maintains comprehensive coverage over time.
+Option,100,Scenario variations addressing different disaster types and severities,,Correct. This prevents dependency on single threat models.
+Option,0,Testing everything every time regardless of criticality,,Incorrect. This is not resource-efficient.
+Option,0,Testing only the easiest components,,Incorrect. This doesn't validate critical capabilities.
+Hint,Think about how to make the best use of limited testing resources,,,
+Feedback,Effective DR testing scope uses risk-based selection, rotation schedules, and scenario variations to optimize resource allocation while maintaining comprehensive coverage,,,
+,,,, 
+//Question 17,,,,
+NewQuestion,MC,,,
+ID,RISK-157,,,
+Title,Tabletop Exercises,,,
+QuestionText,What is a primary benefit of tabletop exercises in disaster recovery testing?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,They provide full technical validation,,Incorrect. They don't involve actual system manipulation.
+Option,100,They reveal procedural gaps and coordination challenges with minimal resource requirements,,Correct! This is their key advantage.
+Option,0,They are the most resource-intensive testing method,,Incorrect. Full-scale simulations are most resource-intensive.
+Option,0,They eliminate the need for documentation,,Incorrect. Documentation is still important.
+Hint,Think about what makes tabletop exercises different from other testing methods,,,
+Feedback,Tabletop exercises reveal procedural gaps, role confusion, and coordination challenges while requiring significantly fewer resources than technical testing,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 18,,,,
+NewQuestion,MS,,,
+ID,RISK-158,,,
+Title,Success Criteria,,,
+QuestionText,Which elements should be included in disaster recovery testing success criteria? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Technical criteria like recovery time and data integrity,,Correct. These measure technical effectiveness.
+Option,100,Operational criteria like procedure effectiveness and communication clarity,,Correct. These measure organizational response.
+Option,100,Objective measures defined before testing begins,,Correct. This prevents subjective interpretations.
+Option,0,Vague goals that can be interpreted flexibly,,Incorrect. Success criteria should be specific and objective.
+Option,0,Only financial metrics,,Incorrect. Success criteria should be broader than just financial measures.
+Hint,Think about what makes success criteria useful for evaluation,,,
+Feedback,Effective success criteria include technical and operational measures defined objectively before testing to prevent subjective interpretations,,,
+,,,, 
+//Question 19,,,,
+NewQuestion,MC,,,
+ID,RISK-159,,,
+Title,Knowledge Sharing,,,
+QuestionText,Why is knowledge sharing important in post-recovery analysis?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,To keep lessons isolated within affected teams,,Incorrect. Isolation limits organizational learning.
+Option,100,To expand organizational learning across broader operational scope,,Correct! This prevents learning from remaining isolated.
+Option,0,To reduce documentation requirements,,Incorrect. Knowledge sharing typically requires documentation.
+Option,0,To assign blame to specific individuals,,Incorrect. Effective sharing focuses on systemic improvements.
+Hint,Think about what happens when learning stays only with directly affected teams,,,
+Feedback,Knowledge sharing distributes insights beyond directly affected systems or teams, expanding organizational learning across broader operational scope,,,
+,,,, 
+//Question 20,,,,
+NewQuestion,MC,,,
+ID,RISK-160,,,
+Title,Continuous Improvement,,,
+QuestionText,What is a key element of effective continuous improvement following disaster recovery testing?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Ignoring identified weaknesses,,Incorrect. This defeats the purpose of testing.
+Option,100,Systematically addressing identified weaknesses before actual disasters occur,,Correct! This transforms testing into capability enhancement.
+Option,0,Repeating the same tests without changes,,Incorrect. This doesn't lead to improvement.
+Option,0,Focusing only on technical aspects,,Incorrect. Improvement should address both technical and organizational dimensions.
+Hint,Think about what makes testing valuable beyond just validation,,,
+Feedback,Effective continuous improvement systematically addresses identified weaknesses through root cause analysis, improvement action development, responsibility assignment, and follow-up verification,,,

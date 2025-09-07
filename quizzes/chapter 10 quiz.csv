@@ -1,0 +1,303 @@
+//(Note: The 'images' folder is assumed to be in the "/content/<course path>/" directory),,,,
+//Question Text is always a required field,,,,
+// An ID will be generated using the (Course code)-(Question number) if an ID is not specified for a question,,,,
+,,,, 
+// Please ensure that the CSV file is saved as "CSV UTF-8" encoded to ensure that non-ASCII characters like à, ø, é and other are able to be correctly imported,,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 1,,,,
+NewQuestion,MC,,,
+ID,RISK-161,,,
+Title,Incident Response Lifecycle,,,
+QuestionText,Which phase of the incident response lifecycle focuses on establishing the capabilities, procedures, and resources necessary before incidents occur?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,Detection and analysis,,Incorrect. This phase focuses on identifying potential security incidents.
+Option,100,Preparation,,Correct! This phase establishes capabilities before incidents occur.
+Option,0,Containment,,Incorrect. This phase limits incident spread during active incidents.
+Option,0,Recovery,,Incorrect. This phase returns systems to normal operations.
+Hint,Think about which phase happens before any incident occurs,,,
+Feedback,Preparation represents the foundation of effective incident response, establishing capabilities, procedures, and resources necessary before incidents occur,,,
+,,,, 
+//Question 2,,,,
+NewQuestion,MC,,,
+ID,RISK-162,,,
+Title,Incident Response Team Roles,,,
+QuestionText,Who typically provides overall leadership for both response preparation and actual incident management?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Technical Response Specialists,,Incorrect. These provide technical expertise.
+Option,100,Incident Response Manager,,Correct! This role provides overall leadership.
+Option,0,Executive Sponsors,,Incorrect. These provide strategic direction and resources.
+Option,0,External Support Partners,,Incorrect. These provide specialized expertise.
+Hint,Think about who coordinates the entire incident response effort,,,
+Feedback,The Incident Response Manager provides overall leadership for both response preparation and actual incident management,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 3,,,,
+NewQuestion,MS,,,
+ID,RISK-163,,,
+Title,IR Team Components,,,
+QuestionText,Which of the following are typically part of an effective incident response team? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Technical Response Specialists,,Correct. These provide core technical expertise.
+Option,100,Executive Sponsors,,Correct. These provide strategic direction and resources.
+Option,100,External Support Partners,,Correct. These provide specialized expertise.
+Option,100,Human Resources and Corporate Communications representatives,,Correct. These address non-technical aspects.
+Option,0,Janitorial staff,,Incorrect. While important, they're not typically part of the core IR team.
+Hint,Think about who needs to be involved in different aspects of incident response,,,
+Feedback,Effective IR teams include Technical Response Specialists, Executive Sponsors, External Support Partners, and HR/Corporate Communications representatives,,,
+,,,, 
+//Question 4,,,,
+NewQuestion,MC,,,
+ID,RISK-164,,,
+Title,SIEM Systems,,,
+QuestionText,What is the primary function of Security Information and Event Management (SIEM) systems in incident response?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Physical security monitoring,,Incorrect. SIEM focuses on information security.
+Option,100,Centralized collection, correlation, and analysis of security-relevant data,,Correct! This is the core function.
+Option,0,Network speed optimization,,Incorrect. This is not related to SIEM.
+Option,0,Employee productivity tracking,,Incorrect. This is not a SIEM function.
+Hint,Think about what "Security Information and Event Management" would manage,,,
+Feedback,SIEM systems provide centralized collection, correlation, and analysis capabilities for security-relevant data across the organization,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 5,,,,
+NewQuestion,MS,,,
+ID,RISK-165,,,
+Title,Incident Response Tools,,,
+QuestionText,Which tools are commonly used in incident response? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Endpoint Detection and Response (EDR) solutions,,Correct. These monitor workstations and servers.
+Option,100,Network Security Monitoring (NSM) tools,,Correct. These analyze network traffic patterns.
+Option,100,Forensic Analysis Tools,,Correct. These examine affected systems in detail.
+Option,100,Threat Intelligence Platforms,,Correct. These aggregate information about threat actors.
+Option,0,Social media marketing platforms,,Incorrect. These are not used for incident response.
+Hint,Think about what tools would help detect, investigate, and respond to security incidents,,,
+Feedback,Common incident response tools include EDR solutions, NSM tools, Forensic Analysis Tools, and Threat Intelligence Platforms,,,
+,,,, 
+//Question 6,,,,
+NewQuestion,MC,,,
+ID,RISK-166,,,
+Title,Evidence Handling,,,
+QuestionText,What is the primary purpose of maintaining a chain of custody for evidence during incident response?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,To make the investigation take longer,,Incorrect. This is not a goal.
+Option,100,To track possession of evidence and ensure it remains unaltered,,Correct! This maintains evidence integrity.
+Option,0,To give evidence to the first available person,,Incorrect. This would compromise evidence integrity.
+Option,0,To eliminate the need for documentation,,Incorrect. Chain of custody requires extensive documentation.
+Hint,Think about why you would want to track who has handled evidence,,,
+Feedback,Chain of custody establishes documented control over collected evidence, tracking possession from initial collection through analysis and storage,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 7,,,,
+NewQuestion,MS,,,
+ID,RISK-167,,,
+Title,Post-Incident Analysis,,,
+QuestionText,Which techniques are important for effective post-incident analysis? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Timeline reconstruction,,Correct. This creates a chronological documentation of events.
+Option,100,Root cause analysis,,Correct. This identifies underlying conditions enabling the incident.
+Option,100,Impact assessment,,Correct. This quantifies the actual consequences.
+Option,100,Response effectiveness evaluation,,Correct. This examines how well procedures functioned.
+Option,0,Ignoring the incident completely,,Incorrect. This would prevent learning from the incident.
+Hint,Think about what would help an organization learn from a security incident,,,
+Feedback,Effective post-incident analysis includes timeline reconstruction, root cause analysis, impact assessment, and response effectiveness evaluation,,,
+,,,, 
+//Question 8,,,,
+NewQuestion,MC,,,
+ID,RISK-168,,,
+Title,Colonial Pipeline Case Study,,,
+QuestionText,How did the Colonial Pipeline ransomware attack affect operational technology (OT) networks?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,They were directly encrypted by the ransomware,,Incorrect. The OT networks remained unaffected.
+Option,100,They remained technically unaffected but operations were shut down as a precaution,,Correct! This shows the indirect impact.
+Option,0,They were completely isolated from the IT network compromise,,Incorrect. There were functional dependencies.
+Option,0,They automatically defended against the attack,,Incorrect. No automatic defense is mentioned.
+Hint,Think about the relationship between IT systems and operational systems in critical infrastructure,,,
+Feedback,While the OT networks directly controlling pipeline operations remained unaffected by the encryption, Colonial shut down the entire pipeline operation as a precautionary measure,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 9,,,,
+NewQuestion,MS,,,
+ID,RISK-169,,,
+Title,Colonial Pipeline Lessons,,,
+QuestionText,Which security principles were demonstrated by the Colonial Pipeline incident? (Select all that apply),,,
+Points,2,,,
+Difficulty,5,,,
+Option,100,Legacy access management created vulnerability through abandoned but enabled accounts,,Correct. This was a key vulnerability.
+Option,100,Network segmentation proved valuable but was insufficient without documented dependencies,,Correct. This shows the complexity of security.
+Option,100,Backup systems provided essential recovery capabilities despite ransom payment,,Correct. This shows the importance of tested backups.
+Option,100,Cybersecurity has evolved to represent genuine business continuity dimensions,,Correct. This reflects the broader impact.
+Option,0,Paying ransoms always results in quick and complete recovery,,Incorrect. The decryption tools were only partially effective.
+Hint,Think about what the case study revealed about security vulnerabilities and responses,,,
+Feedback,The incident demonstrated lessons about legacy access management, network segmentation, backup importance, and cybersecurity as business continuity,,,
+,,,, 
+//Question 10,,,,
+NewQuestion,MC,,,
+ID,RISK-170,,,
+Title,Incident Classification,,,
+QuestionText,Why is incident classification important in incident response playbooks?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,To make all incidents seem equally important,,Incorrect. Classification distinguishes different levels.
+Option,100,To enable consistent triage and appropriate resource activation,,Correct! This ensures proper response levels.
+Option,0,To eliminate the need for response teams,,Incorrect. Classification helps determine team involvement.
+Option,0,To complicate the response process,,Incorrect. Classification should simplify response.
+Hint,Think about what classification helps determine about incident response,,,
+Feedback,Incident classification enables consistent triage across different initial responders, ensuring appropriate resource activation without unnecessary escalation,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 11,,,,
+NewQuestion,MC,,,
+ID,RISK-171,,,
+Title,Containment Strategies,,,
+QuestionText,What is a key challenge in implementing containment strategies during incident response?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Containment is always simple and requires no decision making,,Incorrect. Containment often involves complex decisions.
+Option,100,Balancing security benefits against operational impacts,,Correct! This is a key challenge.
+Option,0,There are no operational impacts from containment,,Incorrect. Containment affects operations.
+Option,0,All stakeholders always agree on containment approaches,,Incorrect. Different priorities may conflict.
+Hint,Think about what makes containment decisions difficult during incidents,,,
+Feedback,Containment strategies must balance security benefits against operational impacts—aggressive isolation prevents damage but may disrupt business operations,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 12,,,,
+NewQuestion,MS,,,
+ID,RISK-172,,,
+Title,Eradication Procedures,,,
+QuestionText,Which aspects are important in eradication procedures during incident response? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Removing malware and disabling compromised accounts,,Correct. These are core eradication activities.
+Option,100,Patching exploited vulnerabilities,,Correct. This addresses root causes.
+Option,100,Validating successful eradication before recovery,,Correct. This prevents reinfection.
+Option,100,Thoroughness over speed,,Correct. Incomplete eradication leads to reinfection.
+Option,0,Rushing to complete without verification,,Incorrect. This can lead to reinfection.
+Hint,Think about what eradication needs to accomplish to be effective,,,
+Feedback,Eradication procedures include malware removal, account management, vulnerability patching, validation, and thoroughness over speed,,,
+,,,, 
+//Question 13,,,,
+NewQuestion,MC,,,
+ID,RISK-173,,,
+Title,Recovery Guidelines,,,
+QuestionText,What is an important consideration in recovery guidelines after successful eradication?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Returning all systems to production immediately,,Incorrect. Validation is needed first.
+Option,100,Enhanced monitoring to detect potential recompromise during recovery,,Correct! This protects during the vulnerable period.
+Option,0,Eliminating all security measures to speed up recovery,,Incorrect. Security should be maintained.
+Option,0,Recovery should never involve backups,,Incorrect. Backups are often essential for recovery.
+Hint,Think about what risks exist during the recovery period,,,
+Feedback,Recovery guidelines should include enhanced monitoring to detect potential recompromise during the vulnerable recovery period,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 14,,,,
+NewQuestion,MS,,,
+ID,RISK-174,,,
+Title,Communication Templates,,,
+QuestionText,Which audiences should typically be addressed by communication templates in incident response? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Response team members,,Correct. These need technical details.
+Option,100,Executives,,Correct. These need business impact information.
+Option,100,Users,,Correct. These need operational impact and required actions.
+Option,100,External parties including regulators,,Correct. These may have legal disclosure requirements.
+Option,0,Competitors,,Incorrect. These are not appropriate recipients of incident details.
+Hint,Think about who needs to know about security incidents and why,,,
+Feedback,Communication templates should address response team members, executives, users, and external parties with different information needs,,,
+,,,, 
+//Question 15,,,,
+NewQuestion,MC,,,
+ID,RISK-175,,,
+Title,External Coordination,,,
+QuestionText,Why is it important to establish relationships with external entities before incidents occur?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,To avoid having to communicate during incidents,,Incorrect. Communication is necessary.
+Option,100,To prevent delays and ensure effective integration during actual incidents,,Correct! This enables seamless response.
+Option,0,To eliminate the need for internal response teams,,Incorrect. External coordination supplements internal teams.
+Option,0,To reduce the overall number of contacts,,Incorrect. Having appropriate contacts is important.
+Hint,Think about what happens when you try to establish new relationships during a crisis,,,
+Feedback,Establishing relationships with external entities before incidents occur prevents delays and ensures effective integration during actual response,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 16,,,,
+NewQuestion,MS,,,
+ID,RISK-176,,,
+Title,Post-Incident Activities,,,
+QuestionText,Which activities are important for transforming incident response experience into enhanced security capabilities? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Debriefing sessions capturing participant observations,,Correct. This preserves immediate insights.
+Option,100,Formal analysis examining technical and procedural aspects,,Correct. This identifies root causes.
+Option,100,Improvement identification developing specific enhancements,,Correct. This addresses weaknesses.
+Option,100,Validation confirming implemented improvements address vulnerabilities,,Correct. This ensures effectiveness.
+Option,0,Ignoring all lessons learned,,Incorrect. This prevents improvement.
+Hint,Think about what steps help an organization get better at incident response,,,
+Feedback,Post-incident activities include debriefing, formal analysis, improvement identification, and validation of implemented enhancements,,,
+,,,, 
+//Question 17,,,,
+NewQuestion,MC,,,
+ID,RISK-177,,,
+Title,IR Team Training,,,
+QuestionText,What types of training programs help transform theoretical response capabilities into practical skills?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Reading response procedures once,,Incorrect. This is insufficient for skill development.
+Option,100,Regular practice and simulation including tabletop exercises and functional drills,,Correct! This builds practical experience.
+Option,0,Watching videos of other incidents,,Incorrect. This is passive and limited.
+Option,0,Ignoring procedures until a real incident,,Incorrect. This is too late for preparation.
+Hint,Think about what type of training would best prepare someone for real incidents,,,
+Feedback,Training programs include tabletop exercises, functional drills, and comprehensive simulations to build practical skills through regular practice,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 18,,,,
+NewQuestion,MS,,,
+ID,RISK-178,,,
+Title,Documentation and Evidence,,,
+QuestionText,Which aspects are important for proper documentation and evidence handling during incidents? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Incident documentation throughout the response lifecycle,,Correct. This creates a comprehensive record.
+Option,100,Evidence collection with proper tools and procedures,,Correct. This preserves evidence integrity.
+Option,100,Storage security protecting evidence from modification or tampering,,Correct. This maintains evidence reliability.
+Option,100,Analysis documentation recording methodologies and findings,,Correct. This supports investigation conclusions.
+Option,0,Altering evidence to support preferred conclusions,,Incorrect. This compromises evidence integrity.
+Hint,Think about what makes evidence admissible and documentation useful,,,
+Feedback,Proper documentation and evidence handling include comprehensive incident documentation, proper evidence collection, secure storage, and detailed analysis records,,,
+,,,, 
+//Question 19,,,,
+NewQuestion,MC,,,
+ID,RISK-179,,,
+Title,Detection and Analysis,,,
+QuestionText,What is a key goal of the detection and analysis phase in incident response?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,To ignore potential security incidents,,Incorrect. This phase focuses on identifying incidents.
+Option,100,To determine the scope, impact, and appropriate response level for confirmed incidents,,Correct! This guides effective response.
+Option,0,To immediately start containment without investigation,,Incorrect. Initial investigation is important.
+Option,0,To eliminate the need for further response phases,,Incorrect. This is just one phase of many.
+Hint,Think about what needs to be understood before responding to an incident,,,
+Feedback,The detection and analysis phase determines basic characteristics including affected systems, potential data exposure, and likely attack vectors,,,
+,,,, 
+//Question 20,,,,
+NewQuestion,MC,,,
+ID,RISK-180,,,
+Title,IR Lifecycle Benefits,,,
+QuestionText,What is a key benefit of the cyclical nature of the incident response lifecycle?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,It eliminates the need for preparation,,Incorrect. Preparation remains essential.
+Option,100,It enables continuous improvement through lessons learned from each incident,,Correct! This strengthens future capabilities.
+Option,0,It makes incidents repeat more frequently,,Incorrect. The goal is to reduce incidents.
+Option,0,It eliminates the need for post-incident analysis,,Incorrect. Analysis is a key component.
+Hint,Think about how the cycle helps an organization get better at incident response over time,,,
+Feedback,The lifecycle's circular nature emphasizes continuous improvement, with lessons from post-incident analysis enhancing preparation for future incidents,,,

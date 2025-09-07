@@ -1,0 +1,303 @@
+//(Note: The 'images' folder is assumed to be in the "/content/<course path>/" directory),,,,
+//Question Text is always a required field,,,,
+// An ID will be generated using the (Course code)-(Question number) if an ID is not specified for a question,,,,
+,,,, 
+// Please ensure that the CSV file is saved as "CSV UTF-8" encoded to ensure that non-ASCII characters like à, ø, é and other are able to be correctly imported,,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 1,,,,
+NewQuestion,MC,,,
+ID,RISK-121,,,
+Title,Disaster Recovery vs Business Continuity,,,
+QuestionText,What is the primary distinction between Disaster Recovery Planning (DRP) and Business Continuity Planning (BCP)?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,DRP is only for natural disasters while BCP is for all disruptions,,Incorrect. DRP addresses various disasters, not just natural ones.
+Option,100,DRP focuses on restoring IT systems and technical infrastructure while BCP addresses the broader organization,,Correct! This is the key distinction.
+Option,0,DRP is more expensive than BCP,,Incorrect. Cost is not the distinguishing factor.
+Option,0,DRP is only used by large organizations,,Incorrect. Both can be used by organizations of all sizes.
+Hint,Think about the scope of each planning approach,,,
+Feedback,DRP focuses on restoring IT systems and technical infrastructure, while BCP addresses the broader organization including all critical functions,,,
+,,,, 
+//Question 2,,,,
+NewQuestion,MC,,,
+ID,RISK-122,,,
+Title,Disaster Declaration,,,
+QuestionText,Who typically has the authority to declare a disaster and activate the disaster recovery plan?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,Any employee who notices a problem,,Incorrect. This would lead to confusion.
+Option,100,Senior management or designated disaster recovery coordinator,,Correct! This ensures proper authority and coordination.
+Option,0,The IT department alone,,Incorrect. Disaster declaration requires broader organizational authority.
+Option,0,External regulators,,Incorrect. Regulators don't typically declare organizational disasters.
+Hint,Think about who has the organizational authority for such decisions,,,
+Feedback,Senior management or designated disaster recovery coordinators typically have the authority to declare disasters and activate recovery plans,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 3,,,,
+NewQuestion,MS,,,
+ID,RISK-123,,,
+Title,Disaster Recovery Team Roles,,,
+QuestionText,Which roles are typically part of a disaster recovery team? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Disaster recovery coordinator,,Correct. This person leads the recovery effort.
+Option,100,IT systems personnel,,Correct. These staff restore technical infrastructure.
+Option,100,Communications lead,,Correct. This person manages internal and external communications.
+Option,100,Human resources representative,,Correct. This person addresses personnel issues during recovery.
+Option,0,Janitorial staff,,Incorrect. While important, they're not typically part of the core DR team.
+Hint,Think about who needs to be involved in disaster recovery coordination,,,
+Feedback,Disaster recovery teams typically include coordinators, IT personnel, communications leads, and HR representatives,,,
+,,,, 
+//Question 4,,,,
+NewQuestion,MC,,,
+ID,RISK-124,,,
+Title,Recovery Time Objective,,,
+QuestionText,In disaster recovery planning, what does Recovery Time Objective (RTO) specifically measure?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,The time needed to create backups,,Incorrect. This is backup window planning.
+Option,100,The maximum acceptable downtime before recovery must be completed,,Correct! This is the definition of RTO.
+Option,0,The time between disasters,,Incorrect. This is not what RTO measures.
+Option,0,The duration of the disaster,,Incorrect. RTO is about recovery time, not disaster duration.
+Hint,Think about what "time" objective RTO refers to in recovery,,,
+Feedback,RTO measures the maximum acceptable downtime before recovery must be completed for a system or function,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 5,,,,
+NewQuestion,MS,,,
+ID,RISK-125,,,
+Title,Disaster Recovery Plan Elements,,,
+QuestionText,Which elements should a comprehensive disaster recovery plan include? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Emergency response procedures,,Correct. These guide initial actions during a disaster.
+Option,100,Backup and recovery procedures,,Correct. These detail how to restore systems and data.
+Option,100,Communication plans,,Correct. These specify how to communicate during recovery.
+Option,100,Resource contact information,,Correct. This provides essential contact details.
+Option,0,Employee vacation schedules,,Incorrect. This is not relevant to disaster recovery.
+Hint,Think about what information is critical during a disaster recovery situation,,,
+Feedback,Comprehensive DR plans include emergency response procedures, backup and recovery procedures, communication plans, and resource contact information,,,
+,,,, 
+//Question 6,,,,
+NewQuestion,MC,,,
+ID,RISK-126,,,
+Title,Offsite Data Storage,,,
+QuestionText,Why is offsite data storage critical in disaster recovery planning?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,It makes backups faster,,Incorrect. Distance typically slows access.
+Option,100,It protects against location-specific disasters that could destroy onsite backups,,Correct! This is the key benefit.
+Option,0,It reduces storage costs,,Incorrect. Offsite storage typically costs more.
+Option,0,It eliminates the need for backups,,Incorrect. Offsite storage is a type of backup.
+Hint,Think about what risk offsite storage protects against,,,
+Feedback,Offsite data storage protects against location-specific disasters like fires, floods, or earthquakes that could destroy onsite backups,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 7,,,,
+NewQuestion,MS,,,
+ID,RISK-127,,,
+Title,Disaster Recovery Testing,,,
+QuestionText,Which methods are commonly used for testing disaster recovery plans? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Checklist tests,,Correct. These verify plan completeness and accuracy.
+Option,100,Simulation tests,,Correct. These test plan effectiveness without full activation.
+Option,100,Parallel tests,,Correct. These run the recovery plan alongside normal operations.
+Option,100,Full-interruption tests,,Correct. These completely switch to backup systems for testing.
+Option,0,Ignoring the plan until a real disaster,,Incorrect. This is not a testing method.
+Hint,Think about different ways to validate that a DR plan works,,,
+Feedback,Common DR testing methods include checklist tests, simulation tests, parallel tests, and full-interruption tests,,,
+,,,, 
+//Question 8,,,,
+NewQuestion,MC,,,
+ID,RISK-128,,,
+Title,Recovery Point Objective,,,
+QuestionText,What does Recovery Point Objective (RPO) determine in disaster recovery planning?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,How quickly systems must be recovered,,Incorrect. This describes RTO.
+Option,100,The maximum acceptable data loss measured in time,,Correct! This is the definition of RPO.
+Option,0,The distance between primary and backup sites,,Incorrect. This is geographic separation.
+Option,0,The cost of recovery operations,,Incorrect. This is budget planning.
+Hint,Think about what "point" in time RPO refers to,,,
+Feedback,RPO determines the maximum acceptable data loss measured in time, influencing backup frequency requirements,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 9,,,,
+NewQuestion,MS,,,
+ID,RISK-129,,,
+Title,Backup Strategy Considerations,,,
+QuestionText,Which factors should influence backup strategy decisions for disaster recovery? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Recovery Time Objectives (RTOs),,Correct. RTOs determine how quickly backups must be available.
+Option,100,Recovery Point Objectives (RPOs),,Correct. RPOs determine how much data loss is acceptable.
+Option,100,Available budget for backup solutions,,Correct. Budget constraints affect backup options.
+Option,100,Criticality of data and systems,,Correct. More critical systems need more robust backup.
+Option,0,Color preferences for backup media,,Incorrect. Aesthetics don't affect backup effectiveness.
+Hint,Think about what determines how you should protect your data,,,
+Feedback,Backup strategy decisions should consider RTOs, RPOs, budget constraints, and data/system criticality,,,
+,,,, 
+//Question 10,,,,
+NewQuestion,MC,,,
+ID,RISK-130,,,
+Title,Disaster Recovery Communication,,,
+QuestionText,Why is establishing a dedicated communication system important in disaster recovery?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,To reduce employee social time,,Incorrect. This is not the purpose.
+Option,100,To ensure coordination and information flow when normal systems are disrupted,,Correct! This is the key reason.
+Option,0,To save money on phone bills,,Incorrect. Dedicated systems typically cost more.
+Option,0,To make the disaster more exciting,,Incorrect. Communication is for coordination, not entertainment.
+Hint,Think about what happens to normal communication during disasters,,,
+Feedback,Dedicated communication systems ensure coordination and information flow when normal communication systems are disrupted,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 11,,,,
+NewQuestion,MC,,,
+ID,RISK-131,,,
+Title,Alternate Site Types,,,
+QuestionText,Which type of alternate site is ready for immediate operation with current data and applications?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,Cold site,,Incorrect. Cold sites provide minimal infrastructure only.
+Option,0,Warm site,,Incorrect. Warm sites require some setup time.
+Option,100,Hot site,,Correct! Hot sites are fully configured for immediate operation.
+Option,0,Mobile site,,Incorrect. Mobile sites are a different category.
+Hint,Think about which site type requires no setup time,,,
+Feedback,Hot sites maintain fully configured environments with current data and applications, ready for immediate operation,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 12,,,,
+NewQuestion,MS,,,
+ID,RISK-132,,,
+Title,Disaster Recovery Plan Maintenance,,,
+QuestionText,Which activities are important for maintaining an effective disaster recovery plan? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Regular testing and updates,,Correct. This ensures the plan remains current and effective.
+Option,100,Personnel training and awareness,,Correct. This ensures staff know their roles.
+Option,100,Plan distribution to key stakeholders,,Correct. This ensures everyone has access to current procedures.
+Option,100,Review and update after significant organizational changes,,Correct. This maintains plan relevance.
+Option,0,Storing the plan in a desk drawer,,Incorrect. This makes the plan inaccessible when needed.
+Hint,Think about what keeps a DR plan useful over time,,,
+Feedback,Effective DR plan maintenance includes regular testing, personnel training, plan distribution, and updates after organizational changes,,,
+,,,, 
+//Question 13,,,,
+NewQuestion,MC,,,
+ID,RISK-133,,,
+Title,Disaster Recovery Budgeting,,,
+QuestionText,What is a key consideration when budgeting for disaster recovery capabilities?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,Choosing the cheapest options regardless of effectiveness,,Incorrect. This could compromise recovery.
+Option,100,Balancing recovery requirements against available resources,,Correct! This ensures realistic capabilities.
+Option,0,Spending as much as possible on all capabilities,,Incorrect. This is not efficient resource allocation.
+Option,0,Deferring all spending until a disaster occurs,,Incorrect. This would be too late.
+Hint,Think about how to make the best use of available resources,,,
+Feedback,Disaster recovery budgeting requires balancing recovery requirements against available resources to ensure realistic capabilities,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 14,,,,
+NewQuestion,MS,,,
+ID,RISK-134,,,
+Title,Disaster Recovery Metrics,,,
+QuestionText,Which metrics are important for measuring disaster recovery plan effectiveness? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Time to detect and declare a disaster,,Correct. This measures response speed.
+Option,100,Actual recovery time compared to RTO,,Correct. This validates time objectives.
+Option,100,Actual data loss compared to RPO,,Correct. This validates data protection.
+Option,100,Number of successful tests completed,,Correct. This measures plan reliability.
+Option,0,Number of disasters that occurred,,Incorrect. This measures frequency, not plan effectiveness.
+Hint,Think about what shows whether your DR plan is working well,,,
+Feedback,Important DR metrics include disaster detection time, actual vs. target recovery times, actual vs. target data loss, and successful test completion,,,
+,,,, 
+//Question 15,,,,
+NewQuestion,MC,,,
+ID,RISK-135,,,
+Title,Disaster Recovery Documentation,,,
+QuestionText,Why is detailed documentation critical for disaster recovery plans?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,To make the plan longer,,Incorrect. Length is not the goal.
+Option,100,To ensure procedures can be followed during high-stress situations,,Correct! This is the key reason.
+Option,0,To satisfy auditors only,,Incorrect. Documentation serves practical purposes.
+Option,0,To eliminate the need for training,,Incorrect. Training and documentation complement each other.
+Hint,Think about what happens during actual disaster recovery,,,
+Feedback,Detailed documentation ensures procedures can be followed during high-stress situations when normal decision-making may be impaired,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 16,,,,
+NewQuestion,MS,,,
+ID,RISK-136,,,
+Title,Disaster Recovery Activation,,,
+QuestionText,Which steps are typically part of disaster recovery plan activation? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Damage assessment and situation evaluation,,Correct. This determines the appropriate response.
+Option,100,Notification of key personnel and stakeholders,,Correct. This ensures everyone knows about the disaster.
+Option,100,Activation of backup systems and facilities,,Correct. This begins the recovery process.
+Option,100,Implementation of emergency response procedures,,Correct. This addresses immediate safety and security needs.
+Option,0,Waiting for the disaster to resolve itself,,Incorrect. Proactive response is essential.
+Hint,Think about what needs to happen immediately when a disaster occurs,,,
+Feedback,DR plan activation typically includes damage assessment, personnel notification, backup activation, and emergency response implementation,,,
+,,,, 
+//Question 17,,,,
+NewQuestion,MC,,,
+ID,RISK-137,,,
+Title,Disaster Recovery Team Training,,,
+QuestionText,How often should disaster recovery team members typically receive training?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,Only once when hired,,Incorrect. Skills and plans change over time.
+Option,100,At least annually, with additional training after plan updates,,Correct! This maintains readiness.
+Option,0,Only during actual disasters,,Incorrect. This would be too late for effective preparation.
+Option,0,Every ten years,,Incorrect. This is insufficient for maintaining skills.
+Hint,Think about how skills and knowledge change over time,,,
+Feedback,DR team members should receive training at least annually, with additional training after significant plan updates,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 18,,,,
+NewQuestion,MS,,,
+ID,RISK-138,,,
+Title,Disaster Recovery Plan Distribution,,,
+QuestionText,Which methods are appropriate for distributing disaster recovery plans to stakeholders? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Secure digital repositories accessible during emergencies,,Correct. This provides immediate access when needed.
+Option,100,Printed copies stored in secure, accessible locations,,Correct. This provides backup access if digital systems fail.
+Option,100,Regular updates to key personnel contact databases,,Correct. This ensures current contact information.
+Option,0,Posting plans on public websites,,Incorrect. This could compromise security.
+Option,0,Sharing plans through social media,,Incorrect. This is not a secure distribution method.
+Hint,Think about how to make plans available while maintaining security,,,
+Feedback,Appropriate DR plan distribution includes secure digital repositories, printed backup copies, and current contact databases,,,
+,,,, 
+//Question 19,,,,
+NewQuestion,MC,,,
+ID,RISK-139,,,
+Title,Disaster Recovery Plan Updates,,,
+QuestionText,What should trigger a review and update of disaster recovery plans?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Only when management feels like it,,Incorrect. Updates should be systematic.
+Option,100,Significant changes to IT infrastructure or business processes,,Correct! This ensures plan relevance.
+Option,0,Only on January 1st each year,,Incorrect. Updates should be based on need, not arbitrary dates.
+Option,0,When the plan document gets old,,Incorrect. Age alone doesn't determine relevance.
+Hint,Think about what changes would make a plan outdated,,,
+Feedback,DR plans should be reviewed and updated after significant changes to IT infrastructure or business processes,,,
+,,,, 
+//Question 20,,,,
+NewQuestion,MC,,,
+ID,RISK-140,,,
+Title,Disaster Recovery Success Factors,,,
+QuestionText,What is the most critical factor for successful disaster recovery implementation?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Having the most expensive backup systems,,Incorrect. Technology alone doesn't ensure success.
+Option,100,Senior management support and commitment,,Correct! Leadership support is essential for resource allocation.
+Option,0,Perfect plan documentation,,Incorrect. Even perfect plans fail without support.
+Option,0,Latest disaster recovery technology,,Incorrect. Tools matter less than commitment and planning.
+Hint,Think about what enables all other DR elements to succeed,,,
+Feedback,Senior management support and commitment are critical for successful disaster recovery, ensuring adequate resources and priority,,,

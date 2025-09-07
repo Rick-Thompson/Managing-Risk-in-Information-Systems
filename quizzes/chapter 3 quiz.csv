@@ -1,0 +1,303 @@
+//(Note: The 'images' folder is assumed to be in the "/content/<course path>/" directory),,,,
+//Question Text is always a required field,,,,
+// An ID will be generated using the (Course code)-(Question number) if an ID is not specified for a question,,,,
+,,,, 
+// Please ensure that the CSV file is saved as "CSV UTF-8" encoded to ensure that non-ASCII characters like à, ø, é and other are able to be correctly imported,,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 1,,,,
+NewQuestion,MC,,,
+ID,RISK-021,,,
+Title,Qualitative vs Quantitative Risk Analysis,,,
+QuestionText,Which approach to risk analysis uses descriptive scales such as "low, medium, high" to evaluate likelihood and impact?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,100,Qualitative risk analysis,,Correct! Qualitative analysis uses descriptive scales to evaluate risk.
+Option,0,Quantitative risk analysis,,Incorrect. Quantitative analysis uses specific numeric values.
+Option,0,Hybrid risk analysis,,Incorrect. This combines both approaches but doesn't specifically use descriptive scales.
+Option,0,Qualitative-quantitative risk analysis,,Incorrect. This is not a standard risk analysis approach.
+Hint,Think about which approach uses words rather than numbers to describe risk levels,,,
+Feedback,Qualitative risk analysis uses descriptive scales to evaluate the likelihood and impact of potential risks,,,
+,,,, 
+//Question 2,,,,
+NewQuestion,MC,,,
+ID,RISK-022,,,
+Title,Risk Rank Formula Components,,,
+QuestionText,"In the Risk Rank formula: Risk Rank = (Probability of Event × Potential Impact) / (Minimum Non-Recoverable Cost to Mitigate), what does the denominator represent?",,, 
+Points,1,,,
+Difficulty,3,,,
+Option,0,The severity of consequences if a risk materializes,,Incorrect. This is part of the potential impact.
+Option,0,The likelihood that a threat will exploit a vulnerability,,Incorrect. This is the probability of event.
+Option,100,The lowest cost required to implement effective controls,,Correct! This represents the minimum non-recoverable cost to mitigate.
+Option,0,The efficiency of addressing the risk,,Incorrect. This is what the formula helps determine.
+Hint,The denominator is about the cost of implementing controls,,,
+Feedback,The denominator represents the minimum non-recoverable cost to mitigate - the lowest cost required to implement effective controls,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 3,,,,
+NewQuestion,MS,,,
+ID,RISK-023,,,
+Title,Cost-Benefit Analysis Components,,,
+QuestionText,Which of the following are components of a cost-benefit analysis for security investments? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Initial implementation costs,,Correct. These include hardware, software, and personnel time.
+Option,100,Ongoing operational costs,,Correct. These include maintenance, updates, and administrative overhead.
+Option,100,Annual Loss Expectancy (ALE),,Correct. This helps calculate the benefits of controls.
+Option,0,Employee satisfaction surveys,,Incorrect. These are not part of security cost-benefit analysis.
+Option,100,Risk reduction value,,Correct. This measures how much the control decreases risk.
+Hint,Think about what costs and benefits are measured in security investments,,,
+Feedback,Cost-benefit analysis includes implementation costs, operational costs, and risk reduction benefits,,,
+,,,, 
+//Question 4,,,,
+NewQuestion,MC,,,
+ID,RISK-024,,,
+Title,Risk Tolerance Factors,,,
+QuestionText,Which factor would most likely influence an organization's risk tolerance?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,The color of the office walls,,Incorrect. This has no bearing on risk tolerance.
+Option,0,The number of employees who like coffee,,Incorrect. Personal preferences don't affect risk tolerance.
+Option,100,The organization's industry and regulatory environment,,Correct! These factors significantly influence risk tolerance.
+Option,0,The CEO's favorite lunch spot,,Incorrect. Personal preferences don't determine risk tolerance.
+Hint,Consider external factors that affect how much risk an organization can accept,,,
+Feedback,Risk tolerance is influenced by factors like industry, regulatory environment, and financial resources,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 5,,,,
+NewQuestion,MS,,,
+ID,RISK-025,,,
+Title,Security Control Categories,,,
+QuestionText,Which categories are used to classify security controls based on their function and timing? (Select all that apply),,,
+Points,2,,,
+Difficulty,2,,,
+Option,100,Preventive controls,,Correct. These aim to stop security incidents before they occur.
+Option,100,Detective controls,,Correct. These monitor systems to identify potential security incidents.
+Option,100,Corrective controls,,Correct. These mitigate the impact of security incidents after detection.
+Option,0,Proactive controls,,Incorrect. This is not a standard control category.
+Option,0,Reactive controls,,Incorrect. This is not a standard control category.
+Hint,Think about what controls do before, during, and after security incidents,,,
+Feedback,Security controls are classified as preventive, detective, and corrective based on their function,,,
+,,,, 
+//Question 6,,,,
+NewQuestion,MC,,,
+ID,RISK-026,,,
+Title,Defense-in-Depth Strategy,,,
+QuestionText,What is the primary principle behind defense-in-depth strategy?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,Using only the most expensive security controls,,Incorrect. Cost is not the principle of defense-in-depth.
+Option,100,Implementing overlapping security controls so that if one layer fails, others continue to protect,,Correct! This is the core principle of defense-in-depth.
+Option,0,Having all security controls managed by a single vendor,,Incorrect. This would create a single point of failure.
+Option,0,Focusing all security efforts on perimeter protection,,Incorrect. This is the opposite of defense-in-depth.
+Hint,Think about layers of protection and redundancy,,,
+Feedback,Defense-in-depth implements overlapping security controls to ensure continued protection even if one layer fails,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 7,,,,
+NewQuestion,MS,,,
+ID,RISK-027,,,
+Title,Defense-in-Depth Implementation,,,
+QuestionText,Which levels should a comprehensive defense-in-depth strategy address? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Physical level,,Correct. This includes access-controlled facilities and security guards.
+Option,100,Network level,,Correct. This includes firewalls and network segmentation.
+Option,100,Host level,,Correct. This includes endpoint protection and hardened configurations.
+Option,100,Application level,,Correct. This includes secure coding practices and authentication mechanisms.
+Option,0,Financial level,,Incorrect. This is not a standard level in defense-in-depth.
+Hint,Think about the different layers of an IT environment,,,
+Feedback,Defense-in-depth addresses security at physical, network, host, and application levels,,,
+,,,, 
+//Question 8,,,,
+NewQuestion,MC,,,
+ID,RISK-028,,,
+Title,Risk Assessment Process,,,
+QuestionText,What is typically the first step in conducting a risk assessment?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,100,Identifying critical assets,,Correct! Asset identification is the foundation of risk assessment.
+Option,0,Calculating the Annual Loss Expectancy,,Incorrect. This comes later in the process.
+Option,0,Implementing security controls,,Incorrect. This is a response to identified risks.
+Option,0,Assigning risk scores,,Incorrect. This happens after identifying assets, threats, and vulnerabilities.
+Hint,You need to know what you're protecting before you can assess risks to it,,,
+Feedback,Risk assessment begins with identifying critical assets that need protection,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 9,,,,
+NewQuestion,MS,,,
+ID,RISK-029,,,
+Title,Risk Assessment Components,,,
+QuestionText,Which elements are typically part of a comprehensive risk assessment? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Asset identification,,Correct. Identifying what needs protection is fundamental.
+Option,100,Threat identification,,Correct. Understanding potential threats is essential.
+Option,100,Vulnerability assessment,,Correct. Identifying weaknesses is crucial.
+Option,100,Impact analysis,,Correct. Understanding consequences is important.
+Option,0,Budget approval,,Incorrect. While important, this is not part of risk assessment itself.
+Hint,Think about what you need to know to understand risk,,,
+Feedback,Risk assessment includes asset identification, threat identification, vulnerability assessment, and impact analysis,,,
+,,,, 
+//Question 10,,,,
+NewQuestion,MC,,,
+ID,RISK-030,,,
+Title,Quantitative Risk Analysis,,,
+QuestionText,"If a company has an Annual Rate of Occurrence (ARO) of 0.5 and a Single Loss Expectancy (SLE) of $100,000, what is the Annual Loss Expectancy (ALE)?",,, 
+Points,1,,,
+Difficulty,3,,,
+Option,0,$200,000,,Incorrect. This would be if you divided SLE by ARO.
+Option,100,$50,000,,Correct! ALE = ARO × SLE = 0.5 × $100,000 = $50,000.
+Option,0,$100,000,,Incorrect. This ignores the ARO.
+Option,0,$25,000,,Incorrect. This would be if you divided SLE by ARO and then by 2.
+Hint,Remember the formula: ALE = ARO × SLE,,,
+Feedback,ALE is calculated by multiplying the Annual Rate of Occurrence by the Single Loss Expectancy,,,
+,,,, 
+//MULTIPLE CHOICE QUESTION TYPE,,,,
+//Question 11,,,,
+NewQuestion,MC,,,
+ID,RISK-031,,,
+Title,Risk Prioritization,,,
+QuestionText,What is the primary benefit of using the Risk Rank formula for prioritizing risks?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,It eliminates all risks,,Incorrect. Risk prioritization doesn't eliminate risks.
+Option,0,It makes all risks equal,,Incorrect. The formula is specifically for prioritization.
+Option,100,It incorporates economic efficiency by considering mitigation costs alongside risk factors,,Correct! This is a key benefit of the Risk Rank formula.
+Option,0,It reduces the number of risks to manage,,Incorrect. It helps prioritize but doesn't reduce the number.
+Hint,Think about what additional factor the Risk Rank formula considers compared to simple risk scoring,,,
+Feedback,The Risk Rank formula helps prioritize risks by considering mitigation costs alongside risk factors,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 12,,,,
+NewQuestion,MS,,,
+ID,RISK-032,,,
+Title,Return on Security Investment,,,
+QuestionText,Which metrics can help organizations evaluate and compare security investments? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Return on Security Investment (ROSI),,Correct. This adapts ROI for security contexts.
+Option,100,Net Present Value (NPV),,Correct. This accounts for the time value of money.
+Option,100,Internal Rate of Return (IRR),,Correct. This calculates the discount rate at which NPV equals zero.
+Option,0,Employee satisfaction index,,Incorrect. This is not a security investment metric.
+Option,0,Office decoration rating,,Incorrect. This is unrelated to security investments.
+Hint,Think about financial metrics used to evaluate investments,,,
+Feedback,ROSI, NPV, and IRR are all metrics used to evaluate security investments,,,
+,,,, 
+//Question 13,,,,
+NewQuestion,MC,,,
+ID,RISK-033,,,
+Title,Risk Acceptance Criteria,,,
+QuestionText,What is the primary purpose of establishing formal risk acceptance criteria?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,To eliminate the need for risk management,,Incorrect. Risk acceptance criteria are part of risk management.
+Option,0,To assign blame when incidents occur,,Incorrect. This is not the purpose of risk acceptance criteria.
+Option,100,To transform abstract risk tolerance into practical guidelines for decision-making,,Correct! This is the main purpose.
+Option,0,To reduce the number of identified risks,,Incorrect. Criteria don't reduce risk identification.
+Hint,Think about how risk tolerance is made actionable,,,
+Feedback,Risk acceptance criteria transform abstract risk tolerance into practical guidelines for decision-making,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 14,,,,
+NewQuestion,MS,,,
+ID,RISK-034,,,
+Title,Risk Acceptance Dimensions,,,
+QuestionText,Which dimensions should risk acceptance criteria typically address? (Select all that apply),,,
+Points,2,,,
+Difficulty,4,,,
+Option,100,Magnitude thresholds,,Correct. These define maximum acceptable impact.
+Option,100,Probability thresholds,,Correct. These establish maximum acceptable likelihood.
+Option,100,Cumulative risk limits,,Correct. These address aggregate risk across multiple areas.
+Option,100,Temporal considerations,,Correct. These acknowledge that risk tolerance may vary over time.
+Option,0,Employee birthday considerations,,Incorrect. This is not a standard dimension.
+Hint,Think about the different aspects of risk that need thresholds,,,
+Feedback,Risk acceptance criteria should address magnitude, probability, cumulative risk, and temporal dimensions,,,
+,,,, 
+//Question 15,,,,
+NewQuestion,MC,,,
+ID,RISK-035,,,
+Title,Preventive Controls,,,
+QuestionText,Which of the following is an example of a preventive security control?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,Intrusion detection system,,Incorrect. This is a detective control.
+Option,100,Firewall,,Correct! Firewalls are preventive controls that filter network traffic.
+Option,0,Incident response plan,,Incorrect. This is a corrective control.
+Option,0,Security log analysis,,Incorrect. This is a detective control.
+Hint,Think about controls that stop incidents before they occur,,,
+Feedback,Preventive controls like firewalls aim to stop security incidents before they occur,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 16,,,,
+NewQuestion,MS,,,
+ID,RISK-036,,,
+Title,Detective Controls,,,
+QuestionText,Which of the following are examples of detective security controls? (Select all that apply),,,
+Points,2,,,
+Difficulty,2,,,
+Option,100,Intrusion detection systems,,Correct. These analyze network traffic for suspicious patterns.
+Option,100,Security information and event management (SIEM) platforms,,Correct. These correlate security events across systems.
+Option,100,File integrity monitoring tools,,Correct. These detect unauthorized changes to critical files.
+Option,0,Multi-factor authentication,,Incorrect. This is a preventive control.
+Option,0,Data encryption,,Incorrect. This is a preventive control.
+Hint,Think about controls that identify incidents after they've started,,,
+Feedback,Detective controls like IDS, SIEM, and file integrity monitoring identify potential security incidents,,,
+,,,, 
+//Question 17,,,,
+NewQuestion,MC,,,
+ID,RISK-037,,,
+Title,Corrective Controls,,,
+QuestionText,What is the primary function of corrective security controls?,,,
+Points,1,,,
+Difficulty,2,,,
+Option,0,To prevent security incidents,,Incorrect. This is the function of preventive controls.
+Option,0,To detect security incidents,,Incorrect. This is the function of detective controls.
+Option,100,To mitigate the impact of security incidents after they have been detected,,Correct! This is the primary function.
+Option,0,To eliminate all security risks,,Incorrect. Controls can't eliminate all risks.
+Hint,Think about what happens after an incident is detected,,,
+Feedback,Corrective controls mitigate the impact of security incidents after they have been detected,,,
+,,,, 
+//MULTISELECT QUESTION TYPE,,,,
+//Question 18,,,,
+NewQuestion,MS,,,
+ID,RISK-038,,,
+Title,Control Selection Factors,,,
+QuestionText,Which factors should organizations consider when selecting and implementing security controls? (Select all that apply),,,
+Points,2,,,
+Difficulty,3,,,
+Option,100,Control effectiveness,,Correct. This measures how well the control mitigates the targeted risk.
+Option,100,Implementation and operational costs,,Correct. These include financial expenses and potential business impacts.
+Option,100,Usability and acceptance,,Correct. These reflect how readily users will adapt to the control.
+Option,100,Regulatory requirements,,Correct. These may mandate specific controls.
+Option,0,Color coordination with office decor,,Incorrect. This is not a relevant factor.
+Hint,Think about both technical and business considerations,,,
+Feedback,Organizations should consider effectiveness, costs, usability, and regulatory requirements when selecting controls,,,
+,,,, 
+//Question 19,,,,
+NewQuestion,MC,,,
+ID,RISK-039,,,
+Title,Control Independence,,,
+QuestionText,In a defense-in-depth strategy, what does the principle of control independence mean?,,,
+Points,1,,,
+Difficulty,4,,,
+Option,0,All controls must be from the same vendor,,Incorrect. This would create dependency, not independence.
+Option,0,Controls should be identical for redundancy,,Incorrect. This would also create dependency.
+Option,100,The failure of one control should not compromise others,,Correct! This is the principle of control independence.
+Option,0,Controls should operate without human intervention,,Incorrect. This describes automation, not independence.
+Hint,Think about how controls should relate to each other to maintain security,,,
+Feedback,Control independence means that the failure of one control should not compromise others,,,
+,,,, 
+//Question 20,,,,
+NewQuestion,MC,,,
+ID,RISK-040,,,
+Title,Risk Assessment Workshop,,,
+QuestionText,In the Alpha Tech Consulting risk assessment workshop example, which risk was identified as high-priority due to the significant reputational and financial consequences of a breach, coupled with moderate likelihood?,,,
+Points,1,,,
+Difficulty,3,,,
+Option,0,Data loss from inadequate backup procedures,,Incorrect. This was another significant risk but not the one described.
+Option,100,Unauthorized access to client data,,Correct! This represented a high-priority risk due to significant consequences.
+Option,0,Physical damage from natural disasters,,Incorrect. This was classified as lower-priority.
+Option,0,Employee turnover,,Incorrect. This wasn't mentioned as a specific risk in the example.
+Hint,Think about which risk had both significant consequences and moderate likelihood,,,
+Feedback,Unauthorized access to client data represented a high-priority risk due to significant reputational and financial consequences,,,
